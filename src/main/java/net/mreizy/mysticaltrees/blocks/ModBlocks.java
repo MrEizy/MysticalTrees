@@ -29,9 +29,6 @@ public class ModBlocks {
             () -> new Block(BlockBehaviour.Properties.of()
                     .strength(5.5f, 4.5f).requiresCorrectToolForDrops().sound(SoundType.NETHERITE_BLOCK)));
 
-    public static final DeferredBlock<Block> PILL_CAULDRON_HUMAN_LOW = registerBlock("pill_cauldron_low_human",
-            () -> new PillCauldronLowHumanBlock(BlockBehaviour.Properties.of()));
-
     private static <T extends Block> DeferredBlock<T> registerBlock(String name, Supplier<T> block) {
         DeferredBlock<T> toReturn = BLOCK.register(name, block);
         registerBlockItem(name, toReturn);

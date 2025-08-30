@@ -2,8 +2,9 @@ package net.mreizy.mysticaltrees.capabilities;
 
 
 import net.minecraft.nbt.CompoundTag;
+import net.minecraft.util.Mth;
 
-public class EtherAttachment{
+public class EtherAttachment {
     private int ether = 500; // Initial value
     private static final int MAX_ETHER = 1000;
 
@@ -12,7 +13,7 @@ public class EtherAttachment{
     }
 
     public void setEther(int value) {
-        this.ether = Math.clamp(value, 0, MAX_ETHER);
+        this.ether = Mth.clamp(value, 0, MAX_ETHER);
     }
 
     public void addEther(int value) {
@@ -27,17 +28,21 @@ public class EtherAttachment{
         return MAX_ETHER;
     }
 
-    // Make these methods static
-    public static CompoundTag save(EtherAttachment attachment, CompoundTag tag) {
-        tag.putInt("ether", attachment.ether);
+    // Instance method for saving (remove static)
+    public CompoundTag save(CompoundTag tag) {
+        tag.putInt("ether", this.ether);
         return tag;
     }
 
-    public static EtherAttachment load(CompoundTag tag) {
-        EtherAttachment attachment = new EtherAttachment();
+    // Instance method for loading
+    public void load(CompoundTag tag) {
         if (tag.contains("ether", CompoundTag.TAG_INT)) {
-            attachment.ether = tag.getInt("ether");
+            this.setEther(tag.getInt("ether")); // Use setter to ensure clamping
         }
-        return attachment;
+    }
+
+    // Copy data from another instance
+    public void copyFrom(EtherAttachment source) {
+        this.ether = source.ether;
     }
 }
