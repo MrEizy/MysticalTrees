@@ -3,12 +3,11 @@ package net.mreizy.mysticaltrees.blocks;
 import net.minecraft.util.valueproviders.UniformInt;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
-import net.minecraft.world.level.block.Block;
-import net.minecraft.world.level.block.DropExperienceBlock;
-import net.minecraft.world.level.block.SoundType;
+import net.minecraft.world.level.block.*;
 import net.minecraft.world.level.block.state.BlockBehaviour;
-import net.mreizy.mysticaltrees.blocks.custom.PillCauldronLowHumanBlock;
+import net.mreizy.mysticaltrees.blocks.logs.ModFlammableRotatedPillarBlock;
 import net.mreizy.mysticaltrees.items.ModItems;
+import net.mreizy.mysticaltrees.worldgen.tree.ModTreeGrowers;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredBlock;
 import net.neoforged.neoforge.registries.DeferredRegister;
@@ -20,14 +19,16 @@ public class ModBlocks {
     public static final DeferredRegister.Blocks BLOCK =
             DeferredRegister.createBlocks(MysticalTrees.MOD_ID);
 
-    public static final DeferredBlock<Block> JADE_ORE = registerBlock("jade_ore",
-            () -> new DropExperienceBlock(UniformInt.of(2, 4),
-                    BlockBehaviour.Properties.of()
-                            .strength(4.5f, 3.5f).requiresCorrectToolForDrops().sound(SoundType.AMETHYST)));
 
-    public static final DeferredBlock<Block> JADE_BLOCK = registerBlock("jade_block",
-            () -> new Block(BlockBehaviour.Properties.of()
-                    .strength(5.5f, 4.5f).requiresCorrectToolForDrops().sound(SoundType.NETHERITE_BLOCK)));
+
+    public static final DeferredBlock<Block> COAL_OAK_LOG = registerBlock("coal_oak_log",
+            () -> new ModFlammableRotatedPillarBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_LOG)));
+    public static final DeferredBlock<Block> COAL_OAK_WOOD = registerBlock("coal_oak_wood",
+            () -> new ModFlammableRotatedPillarBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_WOOD)));
+    public static final DeferredBlock<Block> COAL_OAK_LEAVES = registerBlock("coal_oak_leaves",
+            () -> new LeavesBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_LEAVES)));
+    public static final DeferredBlock<Block> COAL_OAK_SAPLING = registerBlock("coal_oak_sapling",
+            () -> new SaplingBlock(ModTreeGrowers.COAL_OAK, BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_SAPLING)));
 
     private static <T extends Block> DeferredBlock<T> registerBlock(String name, Supplier<T> block) {
         DeferredBlock<T> toReturn = BLOCK.register(name, block);

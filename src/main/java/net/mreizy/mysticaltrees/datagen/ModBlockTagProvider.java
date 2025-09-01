@@ -18,13 +18,13 @@ public class ModBlockTagProvider extends BlockTagsProvider {
 
     @Override
     protected void addTags(HolderLookup.Provider provider) {
-        tag(BlockTags.MINEABLE_WITH_PICKAXE)
+       /* tag(BlockTags.MINEABLE_WITH_PICKAXE)
                 .add(ModBlocks.JADE_BLOCK.get())
-                .add(ModBlocks.JADE_ORE.get());
+                .add(ModBlocks.JADE_ORE.get());*/
 
-        tag(BlockTags.NEEDS_DIAMOND_TOOL)
-                .add(ModBlocks.JADE_ORE.get())
-                .add(ModBlocks.JADE_BLOCK.get());
+        this.tag(BlockTags.LOGS_THAT_BURN)
+                .add(ModBlocks.COAL_OAK_LOG.get())
+                .add(ModBlocks.COAL_OAK_WOOD.get());
 
     }
 }

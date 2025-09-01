@@ -17,25 +17,16 @@ public class ModCreativeModeTabs {
     public static final DeferredRegister<CreativeModeTab> CREATIVE_MODE_TAB =
             DeferredRegister.create(Registries.CREATIVE_MODE_TAB, MysticalTrees.MOD_ID);
 
-    public static final Supplier<CreativeModeTab> ASCENSION_ITEMS_TAB = CREATIVE_MODE_TAB.register("ascensionitb_items_tab",
-            () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModItems.JADE.get()))
-                    .withTabsBefore(ResourceLocation.fromNamespaceAndPath(MysticalTrees.MOD_ID, "ascensionitb_blocks_tab"))
-                    .title(Component.translatable("creativetab.ascension.items"))
+    public static final Supplier<CreativeModeTab> ASCENSION_ITEMS_TAB = CREATIVE_MODE_TAB.register("mysticaltrees_main",
+            () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModItems.COAL_RESIN.get()))
+                    .title(Component.translatable("creativetab.mysticaltrees.root"))
                     .displayItems((itemDisplayParameters, output) -> {
-                        output.accept(ModItems.RAW_JADE);
-                        output.accept(ModItems.JADE);
-                        output.accept(ModItems.REGENERATION_PILL);
-                    }).build());
-
-    public static final Supplier<CreativeModeTab> ASCENSION_BLOCKS_TAB = CREATIVE_MODE_TAB.register("ascensionitb_blocks_tab",
-            () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModBlocks.JADE_ORE.get()))
-                    .title(Component.translatable("creativetab.ascensionitb.blocks"))
-                    .displayItems((itemDisplayParameters, output) -> {
-                        output.accept(ModBlocks.JADE_ORE);
-                        output.accept(ModBlocks.JADE_BLOCK);
-                        output.accept(ModBlocks.PILL_CAULDRON_HUMAN_LOW);
-
-
+                        output.accept(ModBlocks.COAL_OAK_LOG);
+                        output.accept(ModBlocks.COAL_OAK_WOOD);
+                        output.accept(ModBlocks.COAL_OAK_LEAVES);
+                        output.accept(ModBlocks.COAL_OAK_SAPLING);
+                        output.accept(ModItems.COAL_RESIN);
+                        output.accept(ModItems.COAL_ACORN);
                     }).build());
 
     public static void register(IEventBus eventBus) {

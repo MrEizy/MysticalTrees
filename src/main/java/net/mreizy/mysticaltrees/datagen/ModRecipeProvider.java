@@ -21,25 +21,25 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
 
     @Override
     protected void buildRecipes(RecipeOutput recipeOutput) {
-        List<ItemLike> JADE_SMELTABLES = List.of(ModItems.RAW_JADE,
-                ModBlocks.JADE_ORE);
+        /*List<ItemLike> JADE_SMELTABLES = List.of(ModItems.RAW_JADE,
+                ModBlocks.JADE_ORE);*/
 
 
-        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.JADE_BLOCK.get())
+        /*ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.JADE_BLOCK.get())
                 .pattern("JJJ")
                 .pattern("JJJ")
                 .pattern("JJJ")
                 .define('J', ModItems.JADE.get())
-                .unlockedBy("has_jade", has(ModItems.JADE)).save(recipeOutput);
+                .unlockedBy("has_jade", has(ModItems.JADE)).save(recipeOutput);*/
 
-        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModItems.JADE.get(), 9)
+        /*ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModItems.JADE.get(), 9)
                 .requires(ModBlocks.JADE_BLOCK)
-                .unlockedBy("has_jade_block", has(ModBlocks.JADE_BLOCK)).save(recipeOutput);
+                .unlockedBy("has_jade_block", has(ModBlocks.JADE_BLOCK)).save(recipeOutput);*/
 
 
 
-        oreSmelting(recipeOutput, JADE_SMELTABLES, RecipeCategory.MISC, ModItems.JADE.get(), 0.25f, 200, "jade");
-        oreBlasting(recipeOutput, JADE_SMELTABLES, RecipeCategory.MISC, ModItems.JADE.get(), 0.30f, 100, "jade");
+        /*oreSmelting(recipeOutput, JADE_SMELTABLES, RecipeCategory.MISC, ModItems.JADE.get(), 0.25f, 200, "jade");
+        oreBlasting(recipeOutput, JADE_SMELTABLES, RecipeCategory.MISC, ModItems.JADE.get(), 0.30f, 100, "jade");*/
 
 
     }
