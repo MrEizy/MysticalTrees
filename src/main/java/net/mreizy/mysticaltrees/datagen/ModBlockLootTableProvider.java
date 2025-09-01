@@ -35,6 +35,7 @@ public class ModBlockLootTableProvider extends BlockLootSubProvider {
         dropSelf(ModBlocks.COAL_OAK_WOOD.get());
         dropSelf(ModBlocks.COAL_OAK_SAPLING.get());
 
+
         dropSelf(ModBlocks.COAL_OAK_LOG.get());
 
         createMystLeafDrop(ModBlocks.COAL_OAK_LEAVES.get(), ModBlocks.COAL_OAK_SAPLING.get(), NORMAL_LEAVES_SAPLING_CHANCES, ModItems.COAL_ACORN.get(), 0.15f);
@@ -47,7 +48,7 @@ public class ModBlockLootTableProvider extends BlockLootSubProvider {
         HolderLookup.RegistryLookup<Enchantment> registrylookup = this.registries.lookupOrThrow(Registries.ENCHANTMENT);
         return this.createLeavesDrops(leavesBlock, saplingBlock, chances)
                 .withPool(LootPool.lootPool().setRolls(ConstantValue.exactly(1.0F))
-                        .when(this.doesNotHaveShearsOrSilkTouch())
+                        .when(this.doesNottHaveShearsOrSilkTouch())
                         .add(((LootPoolSingletonContainer.Builder)this
                                 .applyExplosionCondition(leavesBlock, LootItem.lootTableItem(customItem)))
                                 .when(BonusLevelTableCondition.bonusLevelFlatChance(registrylookup
@@ -55,6 +56,12 @@ public class ModBlockLootTableProvider extends BlockLootSubProvider {
                                         {0.0F, customChance, customChance * 1.1F, customChance * 1.25F, customChance * 2.0F}))));
     }
 
+    protected LootItemCondition.Builder doesNottHaveShearsOrSilkTouch() {
+        return this.hasShearssOrSilkTouch().invert();
+    }
+    private LootItemCondition.Builder hasShearssOrSilkTouch() {
+        return HAS_SHEARS.or(this.hasSilkTouch());
+    }
 
 
     @Override
