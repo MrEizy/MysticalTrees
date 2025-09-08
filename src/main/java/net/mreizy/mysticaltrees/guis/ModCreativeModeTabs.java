@@ -24,8 +24,8 @@ public class ModCreativeModeTabs {
                         output.accept(ModBlocks.COAL_OAK_LOG);
                         output.accept(ModBlocks.COAL_OAK_WOOD);
                         output.accept(ModBlocks.COAL_OAK_LEAVES);
-                        output.accept(ModBlocks.COAL_OAK_SAPLING);
                         output.accept(ModBlocks.COAL_AMBER);
+                        output.accept(ModBlocks.COAL_OAK_SAPLING);
                         output.accept(ModItems.COAL_RESIN);
                         output.accept(ModItems.COAL_ACORN);
                     }).build());

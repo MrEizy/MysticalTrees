@@ -5,6 +5,7 @@ import net.minecraft.core.Direction;
 import net.minecraft.world.item.AxeItem;
 import net.minecraft.world.item.context.UseOnContext;
 import net.minecraft.world.level.BlockGetter;
+import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.RotatedPillarBlock;
 import net.minecraft.world.level.block.state.BlockState;
@@ -12,7 +13,12 @@ import net.mreizy.mysticaltrees.blocks.ModBlocks;
 import net.neoforged.neoforge.common.ItemAbility;
 import org.jetbrains.annotations.Nullable;
 
+import java.util.HashMap;
+import java.util.Map;
+
 public class ModFlammableRotatedPillarBlock extends RotatedPillarBlock {
+
+    private static final Map<Block, Block> STRIPPABLES = new HashMap<>();
     public ModFlammableRotatedPillarBlock(Properties properties) {
         super(properties);
     }
@@ -37,11 +43,15 @@ public class ModFlammableRotatedPillarBlock extends RotatedPillarBlock {
     public @Nullable BlockState getToolModifiedState(BlockState state, UseOnContext context,
                                                      ItemAbility itemAbility, boolean simulate) {
         if (context.getItemInHand().getItem() instanceof AxeItem) {
-            if (state.is(ModBlocks.COAL_OAK_LOG)) {
-                return Blocks.STRIPPED_OAK_LOG.defaultBlockState().setValue(AXIS, state.getValue(AXIS));
+            if (STRIPPABLES.isEmpty()) {
+                STRIPPABLES.put(ModBlocks.COAL_OAK_LOG.get(), Blocks.STRIPPED_OAK_LOG);
+                STRIPPABLES.put(ModBlocks.COAL_OAK_WOOD.get(), Blocks.STRIPPED_OAK_WOOD);
+
             }
-            if (state.is(ModBlocks.COAL_OAK_WOOD)) {
-                return Blocks.STRIPPED_OAK_WOOD.defaultBlockState().setValue(AXIS, state.getValue(AXIS));
+
+            Block strippedBlock = STRIPPABLES.get(state.getBlock());
+            if (strippedBlock != null) {
+                return strippedBlock.defaultBlockState().setValue(AXIS, state.getValue(AXIS));
             }
         }
         return super.getToolModifiedState(state, context, itemAbility, simulate);

@@ -21,6 +21,7 @@ public class ModBlocks {
 
 
 
+    //Vanilla Ore Trees
     public static final DeferredBlock<Block> COAL_OAK_LOG = registerBlock("coal_oak_log",
             () -> new ModFlammableRotatedPillarBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_LOG)));
     public static final DeferredBlock<Block> COAL_OAK_WOOD = registerBlock("coal_oak_wood",
@@ -30,7 +31,7 @@ public class ModBlocks {
     public static final DeferredBlock<Block> COAL_OAK_SAPLING = registerBlock("coal_oak_sapling",
             () -> new SaplingBlock(ModTreeGrowers.COAL_OAK, BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_SAPLING)));
     public static final DeferredBlock<Block> COAL_AMBER = registerBlock("coal_amber",
-            () -> new TransparentBlock(BlockBehaviour.Properties.of().noOcclusion().sound(SoundType.SAND).strength(0.5f, 0.5f)));
+            () -> new TransparentBlock(BlockBehaviour.Properties.of().noOcclusion().sound(SoundType.WOOL).strength(0.6f, 0.6f)));
 
     private static <T extends Block> DeferredBlock<T> registerBlock(String name, Supplier<T> block) {
         DeferredBlock<T> toReturn = BLOCK.register(name, block);

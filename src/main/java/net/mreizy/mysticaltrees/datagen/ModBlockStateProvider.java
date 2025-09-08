@@ -25,7 +25,7 @@ public class ModBlockStateProvider extends BlockStateProvider {
         logMBlock(((RotatedPillarBlock) ModBlocks.COAL_OAK_LOG.get()));
         axisBlock(((RotatedPillarBlock) ModBlocks.COAL_OAK_WOOD.get()), blockTexture(ModBlocks.COAL_OAK_LOG.get()), blockTexture(ModBlocks.COAL_OAK_LOG.get()));
 
-        simpleBlockWithItem(ModBlocks.COAL_AMBER);
+        translucentBlockWithItem(ModBlocks.COAL_AMBER);
 
 
         blockItem(ModBlocks.COAL_OAK_LOG);
@@ -59,6 +59,24 @@ public class ModBlockStateProvider extends BlockStateProvider {
 
     private void blockWithItem(DeferredBlock<?> deferredBlock) {
         simpleBlockWithItem(deferredBlock.get(), cubeAll(deferredBlock.get()));
+    }
+    private void translucentBlockWithItem(DeferredBlock<?> deferredBlock) {
+        Block block = deferredBlock.get();
+        String path = key(deferredBlock).getPath();
+
+        // Create cubeAll-like model with translucent render type
+        ModelFile model = models().withExistingParent(path, mcLoc("block/cube_all"))
+                .texture("all", blockTexture(block))
+                .renderType("translucent"); // NeoForge 1.21.1 uses renderType() method
+
+        // Generate block state and item model
+        simpleBlock(block, model);
+        simpleBlockItem(block, model);
+    }
+
+    // Helper method to get ResourceLocation key from DeferredBlock
+    private ResourceLocation key(DeferredBlock<?> deferredBlock) {
+        return deferredBlock.getId();
     }
 
     private void blockItem(DeferredBlock<?> deferredBlock) {

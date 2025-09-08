@@ -1,10 +1,10 @@
-// 1.21.1	2025-09-08T11:13:49.491922	Block States: mysticaltrees
+// 1.21.1	2025-09-08T21:45:56.6601564	Block States: mysticaltrees
 87f64cd24ffd8b5f12839192ce41d5f2c064fb8f assets/mysticaltrees/blockstates/coal_amber.json
 233408d9e19b9e056ea194f1f2ec8cd7aae80063 assets/mysticaltrees/blockstates/coal_oak_leaves.json
 348e982176f99c4f9a4a084109c40e294d335fcd assets/mysticaltrees/blockstates/coal_oak_log.json
 82d6481372df70bc673f58c1205932bfe7c11f88 assets/mysticaltrees/blockstates/coal_oak_sapling.json
 ec48ab4036ac8f650cdf42b6ea486d8b9b307e48 assets/mysticaltrees/blockstates/coal_oak_wood.json
-b3e337bb998679d78103a340ab94c3ff4dd7b79b assets/mysticaltrees/models/block/coal_amber.json
+52502322653997926c18bfcb6d353fef6bf94702 assets/mysticaltrees/models/block/coal_amber.json
 7a9c26cb7adf89a3c60013b34cf018ae3ad2a6a8 assets/mysticaltrees/models/block/coal_oak_leaves.json
 e45d9606a9c56c3d1234bb050ea989678b85f714 assets/mysticaltrees/models/block/coal_oak_log.json
 3f78578672c8b9e139aa16ffcad9bc29778a88f2 assets/mysticaltrees/models/block/coal_oak_log_horizontal.json
