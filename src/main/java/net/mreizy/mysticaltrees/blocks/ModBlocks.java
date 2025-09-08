@@ -29,6 +29,8 @@ public class ModBlocks {
             () -> new LeavesBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_LEAVES)));
     public static final DeferredBlock<Block> COAL_OAK_SAPLING = registerBlock("coal_oak_sapling",
             () -> new SaplingBlock(ModTreeGrowers.COAL_OAK, BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_SAPLING)));
+    public static final DeferredBlock<Block> COAL_AMBER = registerBlock("coal_amber",
+            () -> new TransparentBlock(BlockBehaviour.Properties.of().noOcclusion().sound(SoundType.SAND).strength(0.5f, 0.5f)));
 
     private static <T extends Block> DeferredBlock<T> registerBlock(String name, Supplier<T> block) {
         DeferredBlock<T> toReturn = BLOCK.register(name, block);

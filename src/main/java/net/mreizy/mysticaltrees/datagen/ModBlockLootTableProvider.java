@@ -39,6 +39,7 @@ public class ModBlockLootTableProvider extends BlockLootSubProvider {
 
 
         dropSelf(ModBlocks.COAL_OAK_WOOD.get());
+        dropSelf(ModBlocks.COAL_AMBER.get());
         dropSelf(ModBlocks.COAL_OAK_SAPLING.get());
         add(ModBlocks.COAL_OAK_LEAVES.get(), createMystLeafDrop(ModBlocks.COAL_OAK_LEAVES.get(), ModBlocks.COAL_OAK_SAPLING.get(),
                         NORMAL_LEAVES_SAPLING_CHANCES, ModItems.COAL_ACORN.get(), 0.15f));

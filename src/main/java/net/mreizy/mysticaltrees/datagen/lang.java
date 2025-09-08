@@ -24,6 +24,7 @@ public class lang extends LanguageProvider {
         add("block.mysticaltrees.coal_oak_wood", "Coal Oak Wood");
         add("block.mysticaltrees.coal_oak_leaves", "Coal Oak Leaves");
         add("block.mysticaltrees.coal_oak_sapling", "Coal Oak Sapling");
+        add("block.mysticaltrees.coal_amber", "Coal Amber");
         add("item.mysticaltrees.coal_resin", "Coal Resin");
         add("item.mysticaltrees.coal_acorn", "Coal Acorn");
     }

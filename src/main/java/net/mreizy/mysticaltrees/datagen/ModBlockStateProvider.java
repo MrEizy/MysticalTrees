@@ -7,6 +7,7 @@ import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.RotatedPillarBlock;
 import net.mreizy.mysticaltrees.MysticalTrees;
 import net.mreizy.mysticaltrees.blocks.ModBlocks;
+import net.neoforged.neoforge.client.model.generators.BlockModelBuilder;
 import net.neoforged.neoforge.client.model.generators.BlockStateProvider;
 import net.neoforged.neoforge.client.model.generators.ModelFile;
 import net.neoforged.neoforge.common.data.ExistingFileHelper;
@@ -23,6 +24,8 @@ public class ModBlockStateProvider extends BlockStateProvider {
         //logBlock(((RotatedPillarBlock) ModBlocks.COAL_OAK_LOG.get()));
         logMBlock(((RotatedPillarBlock) ModBlocks.COAL_OAK_LOG.get()));
         axisBlock(((RotatedPillarBlock) ModBlocks.COAL_OAK_WOOD.get()), blockTexture(ModBlocks.COAL_OAK_LOG.get()), blockTexture(ModBlocks.COAL_OAK_LOG.get()));
+
+        simpleBlockWithItem(ModBlocks.COAL_AMBER);
 
 
         blockItem(ModBlocks.COAL_OAK_LOG);
