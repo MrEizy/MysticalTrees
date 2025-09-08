@@ -12,11 +12,15 @@ import net.minecraft.world.item.enchantment.Enchantments;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.storage.loot.LootPool;
 import net.minecraft.world.level.storage.loot.LootTable;
+import net.minecraft.world.level.storage.loot.entries.AlternativesEntry;
 import net.minecraft.world.level.storage.loot.entries.LootItem;
 import net.minecraft.world.level.storage.loot.entries.LootPoolSingletonContainer;
+import net.minecraft.world.level.storage.loot.functions.ApplyBonusCount;
+import net.minecraft.world.level.storage.loot.functions.SetItemCountFunction;
 import net.minecraft.world.level.storage.loot.predicates.BonusLevelTableCondition;
 import net.minecraft.world.level.storage.loot.predicates.LootItemCondition;
 import net.minecraft.world.level.storage.loot.providers.number.ConstantValue;
+import net.minecraft.world.level.storage.loot.providers.number.UniformGenerator;
 import net.mreizy.mysticaltrees.blocks.ModBlocks;
 import net.mreizy.mysticaltrees.items.ModItems;
 
@@ -32,36 +36,55 @@ public class ModBlockLootTableProvider extends BlockLootSubProvider {
 
     @Override
     protected void generate() {
+
+
         dropSelf(ModBlocks.COAL_OAK_WOOD.get());
         dropSelf(ModBlocks.COAL_OAK_SAPLING.get());
-
-
-        dropSelf(ModBlocks.COAL_OAK_LOG.get());
-
-        createMystLeafDrop(ModBlocks.COAL_OAK_LEAVES.get(), ModBlocks.COAL_OAK_SAPLING.get(), NORMAL_LEAVES_SAPLING_CHANCES, ModItems.COAL_ACORN.get(), 0.15f);
+        add(ModBlocks.COAL_OAK_LEAVES.get(), createMystLeafDrop(ModBlocks.COAL_OAK_LEAVES.get(), ModBlocks.COAL_OAK_SAPLING.get(),
+                        NORMAL_LEAVES_SAPLING_CHANCES, ModItems.COAL_ACORN.get(), 0.15f));
+        add(ModBlocks.COAL_OAK_LOG.get(), createMystLogDrop(ModBlocks.COAL_OAK_LOG.get(), ModItems.COAL_RESIN.get()));
 
 
 
+    }
+
+    protected LootTable.Builder createMystLogDrop(Block mysticalLog, Item coalResin) {
+        return LootTable.lootTable()
+                .withPool(LootPool.lootPool()
+                        .setRolls(ConstantValue.exactly(1.0F))
+                        .add(AlternativesEntry.alternatives(
+                                LootItem.lootTableItem(mysticalLog)
+                                        .when(hasSilkTouch()),
+                                LootItem.lootTableItem(Items.OAK_LOG)
+                        ))
+                )
+                .withPool(LootPool.lootPool()
+                        .setRolls(ConstantValue.exactly(1.0F))
+                        .when(hasSilkTouch().invert())
+                        .add(LootItem.lootTableItem(coalResin)
+                                .apply(SetItemCountFunction.setCount(UniformGenerator.between(1.0F, 4.0F)))
+                        )
+                );
     }
 
     protected LootTable.Builder createMystLeafDrop(Block leavesBlock, Block saplingBlock, float[] chances, Item customItem, float customChance) {
         HolderLookup.RegistryLookup<Enchantment> registrylookup = this.registries.lookupOrThrow(Registries.ENCHANTMENT);
-        return this.createLeavesDrops(leavesBlock, saplingBlock, chances)
-                .withPool(LootPool.lootPool().setRolls(ConstantValue.exactly(1.0F))
-                        .when(this.doesNottHaveShearsOrSilkTouch())
-                        .add(((LootPoolSingletonContainer.Builder)this
-                                .applyExplosionCondition(leavesBlock, LootItem.lootTableItem(customItem)))
-                                .when(BonusLevelTableCondition.bonusLevelFlatChance(registrylookup
-                                        .getOrThrow(Enchantments.FORTUNE), new float[]
-                                        {0.0F, customChance, customChance * 1.1F, customChance * 1.25F, customChance * 2.0F}))));
+
+        return createLeavesDrops(leavesBlock, saplingBlock, chances)
+                .withPool(LootPool.lootPool()
+                        .setRolls(ConstantValue.exactly(1.0F))
+                        .when(HAS_NO_SHEARS_OR_SILK_TOUCH)
+                        .add(LootItem.lootTableItem(customItem)
+                                .apply(ApplyBonusCount.addBonusBinomialDistributionCount(registrylookup.getOrThrow(Enchantments.FORTUNE), customChance, 1))
+                                .when(BonusLevelTableCondition.bonusLevelFlatChance(registrylookup.getOrThrow(Enchantments.FORTUNE),
+                                        new float[]{0.05f, customChance, customChance * 1.1f, customChance * 1.25f, customChance * 2.0f}))
+                        )
+                );
     }
 
-    protected LootItemCondition.Builder doesNottHaveShearsOrSilkTouch() {
-        return this.hasShearssOrSilkTouch().invert();
-    }
-    private LootItemCondition.Builder hasShearssOrSilkTouch() {
-        return HAS_SHEARS.or(this.hasSilkTouch());
-    }
+    // Use the standard condition from BlockLootSubProvider
+    private final LootItemCondition.Builder HAS_NO_SHEARS_OR_SILK_TOUCH =
+            HAS_SHEARS.or(hasSilkTouch()).invert();
 
 
     @Override
