@@ -2,8 +2,11 @@ package net.mreizy.mysticaltrees;
 
 import net.mreizy.mysticaltrees.blocks.ModBlocks;
 import net.mreizy.mysticaltrees.items.ModItems;
+import net.mreizy.mysticaltrees.network.ModPayloads;
+import net.mreizy.mysticaltrees.util.ModAttachments;
 import net.neoforged.neoforge.client.event.RegisterMenuScreensEvent;
 import net.mreizy.mysticaltrees.guis.ModCreativeModeTabs;
+import net.neoforged.neoforge.network.event.RegisterPayloadHandlersEvent;
 import org.slf4j.Logger;
 
 import com.mojang.logging.LogUtils;
@@ -36,7 +39,7 @@ public class MysticalTrees {
         ModBlocks.register(modEventBus);
         ModItems.register(modEventBus);
         ModCreativeModeTabs.register(modEventBus);
-
+        ModAttachments.register(modEventBus);
         // Register the item to a creative tab
         modEventBus.addListener(this::addCreative);
 
@@ -67,6 +70,10 @@ public class MysticalTrees {
         }
         @SubscribeEvent
         public static void registerScreens(RegisterMenuScreensEvent event) {
+        }
+        @SubscribeEvent
+        public static void registerPayloads(RegisterPayloadHandlersEvent event){
+            ModPayloads.registerPayloads(event);
         }
     }
 }
