@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_acorn": {
+      "conditions": {
+        "items": [
+          {
+            "items": "mysticaltrees:amethyst_acorn"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "mysticaltrees:amethyst_amber"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_acorn"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "mysticaltrees:amethyst_amber"
+    ]
+  }
+}

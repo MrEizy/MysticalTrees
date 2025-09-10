@@ -3,6 +3,7 @@ package net.mreizy.mysticaltrees.datagen;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
 import net.minecraft.data.recipes.*;
+import net.minecraft.world.item.Items;
 import net.minecraft.world.item.crafting.*;
 import net.minecraft.world.level.ItemLike;
 import net.mreizy.mysticaltrees.MysticalTrees;
@@ -25,12 +26,136 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 ModBlocks.JADE_ORE);*/
 
 
-        /*ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.JADE_BLOCK.get())
-                .pattern("JJJ")
-                .pattern("JJJ")
-                .pattern("JJJ")
-                .define('J', ModItems.JADE.get())
-                .unlockedBy("has_jade", has(ModItems.JADE)).save(recipeOutput);*/
+        // COAL
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.COAL_AMBER.get())
+                .pattern("ARA")
+                .pattern("RAR")
+                .pattern("ARA")
+                .define('A', ModItems.COAL_ACORN.get())
+                .define('R', ModItems.COAL_RESIN.get())
+                .unlockedBy("has_acorn", has(ModItems.COAL_ACORN)).save(recipeOutput);
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, Items.COAL, 8)
+                .pattern("AAA")
+                .pattern("AAA")
+                .pattern("AAA")
+                .define('A', ModItems.COAL_ACORN.get())
+                .unlockedBy("has_acorn", has(ModItems.COAL_ACORN)).save(recipeOutput);
+        // COPPER
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.COPPER_AMBER.get())
+                .pattern("ARA")
+                .pattern("RAR")
+                .pattern("ARA")
+                .define('A', ModItems.COPPER_ACORN.get())
+                .define('R', ModItems.COPPER_RESIN.get())
+                .unlockedBy("has_acorn", has(ModItems.COPPER_ACORN)).save(recipeOutput);
+        // IRON
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.IRON_AMBER.get())
+                .pattern("ARA")
+                .pattern("RAR")
+                .pattern("ARA")
+                .define('A', ModItems.IRON_ACORN.get())
+                .define('R', ModItems.IRON_RESIN.get())
+                .unlockedBy("has_acorn", has(ModItems.IRON_ACORN)).save(recipeOutput);
+        // GOLD
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.GOLD_AMBER.get())
+                .pattern("ARA")
+                .pattern("RAR")
+                .pattern("ARA")
+                .define('A', ModItems.GOLD_ACORN.get())
+                .define('R', ModItems.GOLD_RESIN.get())
+                .unlockedBy("has_acorn", has(ModItems.GOLD_ACORN)).save(recipeOutput);
+        // DIAMOND
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.DIAMOND_AMBER.get())
+                .pattern("ARA")
+                .pattern("RAR")
+                .pattern("ARA")
+                .define('A', ModItems.DIAMOND_ACORN.get())
+                .define('R', ModItems.DIAMOND_RESIN.get())
+                .unlockedBy("has_acorn", has(ModItems.DIAMOND_ACORN)).save(recipeOutput);
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, Items.DIAMOND, 4)
+                .pattern("AAA")
+                .pattern("AAA")
+                .pattern("AAA")
+                .define('A', ModItems.DIAMOND_ACORN.get())
+                .unlockedBy("has_acorn", has(ModItems.DIAMOND_ACORN)).save(recipeOutput);
+        // NETHERITE
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.NETHERITE_AMBER.get())
+                .pattern("ARA")
+                .pattern("RAR")
+                .pattern("ARA")
+                .define('A', ModItems.NETHERITE_ACORN.get())
+                .define('R', ModItems.NETHERITE_RESIN.get())
+                .unlockedBy("has_acorn", has(ModItems.NETHERITE_ACORN)).save(recipeOutput);
+        // AMETHYST
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.AMETHYST_AMBER.get())
+                .pattern("ARA")
+                .pattern("RAR")
+                .pattern("ARA")
+                .define('A', ModItems.AMETHYST_ACORN.get())
+                .define('R', ModItems.AMETHYST_RESIN.get())
+                .unlockedBy("has_acorn", has(ModItems.AMETHYST_ACORN)).save(recipeOutput);
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, Items.AMETHYST_SHARD, 8)
+                .pattern("AAA")
+                .pattern("AAA")
+                .pattern("AAA")
+                .define('A', ModItems.AMETHYST_ACORN.get())
+                .unlockedBy("has_acorn", has(ModItems.AMETHYST_ACORN)).save(recipeOutput);
+        // QUARTZ
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.QUARTZ_AMBER.get())
+                .pattern("ARA")
+                .pattern("RAR")
+                .pattern("ARA")
+                .define('A', ModItems.QUARTZ_ACORN.get())
+                .define('R', ModItems.QUARTZ_RESIN.get())
+                .unlockedBy("has_acorn", has(ModItems.QUARTZ_ACORN)).save(recipeOutput);
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, Items.QUARTZ, 8)
+                .pattern("AAA")
+                .pattern("AAA")
+                .pattern("AAA")
+                .define('A', ModItems.QUARTZ_ACORN.get())
+                .unlockedBy("has_acorn", has(ModItems.QUARTZ_ACORN)).save(recipeOutput);
+        // EMERALD
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.EMERALD_AMBER.get())
+                .pattern("ARA")
+                .pattern("RAR")
+                .pattern("ARA")
+                .define('A', ModItems.EMERALD_ACORN.get())
+                .define('R', ModItems.EMERALD_RESIN.get())
+                .unlockedBy("has_acorn", has(ModItems.EMERALD_ACORN)).save(recipeOutput);
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, Items.EMERALD, 4)
+                .pattern("AAA")
+                .pattern("AAA")
+                .pattern("AAA")
+                .define('A', ModItems.EMERALD_ACORN.get())
+                .unlockedBy("has_acorn", has(ModItems.EMERALD_ACORN)).save(recipeOutput);
+        // REDSTONE
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.REDSTONE_AMBER.get())
+                .pattern("ARA")
+                .pattern("RAR")
+                .pattern("ARA")
+                .define('A', ModItems.REDSTONE_ACORN.get())
+                .define('R', ModItems.REDSTONE_RESIN.get())
+                .unlockedBy("has_acorn", has(ModItems.REDSTONE_ACORN)).save(recipeOutput);
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, Items.REDSTONE, 8)
+                .pattern("AAA")
+                .pattern("AAA")
+                .pattern("AAA")
+                .define('A', ModItems.REDSTONE_ACORN.get())
+                .unlockedBy("has_acorn", has(ModItems.REDSTONE_ACORN)).save(recipeOutput);
+        // LAPIS
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.LAPIS_AMBER.get())
+                .pattern("ARA")
+                .pattern("RAR")
+                .pattern("ARA")
+                .define('A', ModItems.LAPIS_ACORN.get())
+                .define('R', ModItems.LAPIS_RESIN.get())
+                .unlockedBy("has_acorn", has(ModItems.LAPIS_ACORN)).save(recipeOutput);
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, Items.LAPIS_LAZULI, 8)
+                .pattern("AAA")
+                .pattern("AAA")
+                .pattern("AAA")
+                .define('A', ModItems.LAPIS_ACORN.get())
+                .unlockedBy("has_acorn", has(ModItems.LAPIS_ACORN)).save(recipeOutput);
 
         /*ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModItems.JADE.get(), 9)
                 .requires(ModBlocks.JADE_BLOCK)

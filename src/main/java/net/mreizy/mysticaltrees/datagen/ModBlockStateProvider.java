@@ -20,18 +20,104 @@ public class ModBlockStateProvider extends BlockStateProvider {
 
     @Override
     protected void registerStatesAndModels() {
-        //simpleBlockWithItem(ModBlocks.JADE_ORE);
-        //logBlock(((RotatedPillarBlock) ModBlocks.COAL_OAK_LOG.get()));
+        // COAL
         logMBlock(((RotatedPillarBlock) ModBlocks.COAL_OAK_LOG.get()));
         axisBlock(((RotatedPillarBlock) ModBlocks.COAL_OAK_WOOD.get()), blockTexture(ModBlocks.COAL_OAK_LOG.get()), blockTexture(ModBlocks.COAL_OAK_LOG.get()));
-
-        translucentBlockWithItem(ModBlocks.COAL_AMBER);
-
-
+        simpleBlockWithItem(ModBlocks.COAL_AMBER);
         blockItem(ModBlocks.COAL_OAK_LOG);
         blockItem(ModBlocks.COAL_OAK_WOOD);
         leavesBlock(ModBlocks.COAL_OAK_LEAVES);
         saplingBlock(ModBlocks.COAL_OAK_SAPLING);
+
+        // COPPER
+        logMBlock(((RotatedPillarBlock) ModBlocks.COPPER_OAK_LOG.get()));
+        axisBlock(((RotatedPillarBlock) ModBlocks.COPPER_OAK_WOOD.get()), blockTexture(ModBlocks.COPPER_OAK_LOG.get()), blockTexture(ModBlocks.COPPER_OAK_LOG.get()));
+        simpleBlockWithItem(ModBlocks.COPPER_AMBER);
+        blockItem(ModBlocks.COPPER_OAK_LOG);
+        blockItem(ModBlocks.COPPER_OAK_WOOD);
+        leavesBlock(ModBlocks.COPPER_OAK_LEAVES);
+        saplingBlock(ModBlocks.COPPER_OAK_SAPLING);
+
+        // IRON
+        logMBlock(((RotatedPillarBlock) ModBlocks.IRON_OAK_LOG.get()));
+        axisBlock(((RotatedPillarBlock) ModBlocks.IRON_OAK_WOOD.get()), blockTexture(ModBlocks.IRON_OAK_LOG.get()), blockTexture(ModBlocks.IRON_OAK_LOG.get()));
+        simpleBlockWithItem(ModBlocks.IRON_AMBER);
+        blockItem(ModBlocks.IRON_OAK_LOG);
+        blockItem(ModBlocks.IRON_OAK_WOOD);
+        leavesBlock(ModBlocks.IRON_OAK_LEAVES);
+        saplingBlock(ModBlocks.IRON_OAK_SAPLING);
+
+        // GOLD
+        logMBlock(((RotatedPillarBlock) ModBlocks.GOLD_OAK_LOG.get()));
+        axisBlock(((RotatedPillarBlock) ModBlocks.GOLD_OAK_WOOD.get()), blockTexture(ModBlocks.GOLD_OAK_LOG.get()), blockTexture(ModBlocks.GOLD_OAK_LOG.get()));
+        simpleBlockWithItem(ModBlocks.GOLD_AMBER);
+        blockItem(ModBlocks.GOLD_OAK_LOG);
+        blockItem(ModBlocks.GOLD_OAK_WOOD);
+        leavesBlock(ModBlocks.GOLD_OAK_LEAVES);
+        saplingBlock(ModBlocks.GOLD_OAK_SAPLING);
+
+        // DIAMOND
+        logMBlock(((RotatedPillarBlock) ModBlocks.DIAMOND_OAK_LOG.get()));
+        axisBlock(((RotatedPillarBlock) ModBlocks.DIAMOND_OAK_WOOD.get()), blockTexture(ModBlocks.DIAMOND_OAK_LOG.get()), blockTexture(ModBlocks.DIAMOND_OAK_LOG.get()));
+        simpleBlockWithItem(ModBlocks.DIAMOND_AMBER);
+        blockItem(ModBlocks.DIAMOND_OAK_LOG);
+        blockItem(ModBlocks.DIAMOND_OAK_WOOD);
+        leavesBlock(ModBlocks.DIAMOND_OAK_LEAVES);
+        saplingBlock(ModBlocks.DIAMOND_OAK_SAPLING);
+
+        // NETHERITE
+        logMBlock(((RotatedPillarBlock) ModBlocks.NETHERITE_OAK_LOG.get()));
+        axisBlock(((RotatedPillarBlock) ModBlocks.NETHERITE_OAK_WOOD.get()), blockTexture(ModBlocks.NETHERITE_OAK_LOG.get()), blockTexture(ModBlocks.NETHERITE_OAK_LOG.get()));
+        simpleBlockWithItem(ModBlocks.NETHERITE_AMBER);
+        blockItem(ModBlocks.NETHERITE_OAK_LOG);
+        blockItem(ModBlocks.NETHERITE_OAK_WOOD);
+        leavesBlock(ModBlocks.NETHERITE_OAK_LEAVES);
+        saplingBlock(ModBlocks.NETHERITE_OAK_SAPLING);
+
+        // AMETHYST
+        logMBlock(((RotatedPillarBlock) ModBlocks.AMETHYST_OAK_LOG.get()));
+        axisBlock(((RotatedPillarBlock) ModBlocks.AMETHYST_OAK_WOOD.get()), blockTexture(ModBlocks.AMETHYST_OAK_LOG.get()), blockTexture(ModBlocks.AMETHYST_OAK_LOG.get()));
+        simpleBlockWithItem(ModBlocks.AMETHYST_AMBER);
+        blockItem(ModBlocks.AMETHYST_OAK_LOG);
+        blockItem(ModBlocks.AMETHYST_OAK_WOOD);
+        leavesBlock(ModBlocks.AMETHYST_OAK_LEAVES);
+        saplingBlock(ModBlocks.AMETHYST_OAK_SAPLING);
+
+        // QUARTZ
+        logMBlock(((RotatedPillarBlock) ModBlocks.QUARTZ_OAK_LOG.get()));
+        axisBlock(((RotatedPillarBlock) ModBlocks.QUARTZ_OAK_WOOD.get()), blockTexture(ModBlocks.QUARTZ_OAK_LOG.get()), blockTexture(ModBlocks.QUARTZ_OAK_LOG.get()));
+        simpleBlockWithItem(ModBlocks.QUARTZ_AMBER);
+        blockItem(ModBlocks.QUARTZ_OAK_LOG);
+        blockItem(ModBlocks.QUARTZ_OAK_WOOD);
+        leavesBlock(ModBlocks.QUARTZ_OAK_LEAVES);
+        saplingBlock(ModBlocks.QUARTZ_OAK_SAPLING);
+
+        // EMERALD
+        logMBlock(((RotatedPillarBlock) ModBlocks.EMERALD_OAK_LOG.get()));
+        axisBlock(((RotatedPillarBlock) ModBlocks.EMERALD_OAK_WOOD.get()), blockTexture(ModBlocks.EMERALD_OAK_LOG.get()), blockTexture(ModBlocks.EMERALD_OAK_LOG.get()));
+        simpleBlockWithItem(ModBlocks.EMERALD_AMBER);
+        blockItem(ModBlocks.EMERALD_OAK_LOG);
+        blockItem(ModBlocks.EMERALD_OAK_WOOD);
+        leavesBlock(ModBlocks.EMERALD_OAK_LEAVES);
+        saplingBlock(ModBlocks.EMERALD_OAK_SAPLING);
+
+        // REDSTONE
+        logMBlock(((RotatedPillarBlock) ModBlocks.REDSTONE_OAK_LOG.get()));
+        axisBlock(((RotatedPillarBlock) ModBlocks.REDSTONE_OAK_WOOD.get()), blockTexture(ModBlocks.REDSTONE_OAK_LOG.get()), blockTexture(ModBlocks.REDSTONE_OAK_LOG.get()));
+        simpleBlockWithItem(ModBlocks.REDSTONE_AMBER);
+        blockItem(ModBlocks.REDSTONE_OAK_LOG);
+        blockItem(ModBlocks.REDSTONE_OAK_WOOD);
+        leavesBlock(ModBlocks.REDSTONE_OAK_LEAVES);
+        saplingBlock(ModBlocks.REDSTONE_OAK_SAPLING);
+
+        // LAPIS
+        logMBlock(((RotatedPillarBlock) ModBlocks.LAPIS_OAK_LOG.get()));
+        axisBlock(((RotatedPillarBlock) ModBlocks.LAPIS_OAK_WOOD.get()), blockTexture(ModBlocks.LAPIS_OAK_LOG.get()), blockTexture(ModBlocks.LAPIS_OAK_LOG.get()));
+        simpleBlockWithItem(ModBlocks.LAPIS_AMBER);
+        blockItem(ModBlocks.LAPIS_OAK_LOG);
+        blockItem(ModBlocks.LAPIS_OAK_WOOD);
+        leavesBlock(ModBlocks.LAPIS_OAK_LEAVES);
+        saplingBlock(ModBlocks.LAPIS_OAK_SAPLING);
     }
 
 

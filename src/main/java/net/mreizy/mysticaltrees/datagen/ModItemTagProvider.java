@@ -24,6 +24,26 @@ public class ModItemTagProvider extends ItemTagsProvider {
 
 
         this.tag(ItemTags.LOGS_THAT_BURN)
+                .add(ModBlocks.IRON_OAK_LOG.get().asItem())
+                .add(ModBlocks.IRON_OAK_WOOD.get().asItem())
+                .add(ModBlocks.GOLD_OAK_LOG.get().asItem())
+                .add(ModBlocks.GOLD_OAK_WOOD.get().asItem())
+                .add(ModBlocks.DIAMOND_OAK_LOG.get().asItem())
+                .add(ModBlocks.DIAMOND_OAK_WOOD.get().asItem())
+                .add(ModBlocks.NETHERITE_OAK_LOG.get().asItem())
+                .add(ModBlocks.NETHERITE_OAK_WOOD.get().asItem())
+                .add(ModBlocks.AMETHYST_OAK_LOG.get().asItem())
+                .add(ModBlocks.AMETHYST_OAK_WOOD.get().asItem())
+                .add(ModBlocks.QUARTZ_OAK_LOG.get().asItem())
+                .add(ModBlocks.QUARTZ_OAK_WOOD.get().asItem())
+                .add(ModBlocks.EMERALD_OAK_LOG.get().asItem())
+                .add(ModBlocks.EMERALD_OAK_WOOD.get().asItem())
+                .add(ModBlocks.REDSTONE_OAK_LOG.get().asItem())
+                .add(ModBlocks.REDSTONE_OAK_WOOD.get().asItem())
+                .add(ModBlocks.LAPIS_OAK_LOG.get().asItem())
+                .add(ModBlocks.LAPIS_OAK_WOOD.get().asItem())
+                .add(ModBlocks.COPPER_OAK_LOG.get().asItem())
+                .add(ModBlocks.COPPER_OAK_WOOD.get().asItem())
                 .add(ModBlocks.COAL_OAK_LOG.get().asItem())
                 .add(ModBlocks.COAL_OAK_WOOD.get().asItem());
 

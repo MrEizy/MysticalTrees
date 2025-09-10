@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column",
+  "textures": {
+    "end": "mysticaltrees:block/netherite_oak_log",
+    "side": "mysticaltrees:block/netherite_oak_log"
+  }
+}

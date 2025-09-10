@@ -1,5 +1,25 @@
 {
   "values": [
+    "mysticaltrees:iron_oak_log",
+    "mysticaltrees:iron_oak_wood",
+    "mysticaltrees:gold_oak_log",
+    "mysticaltrees:gold_oak_wood",
+    "mysticaltrees:diamond_oak_log",
+    "mysticaltrees:diamond_oak_wood",
+    "mysticaltrees:netherite_oak_log",
+    "mysticaltrees:netherite_oak_wood",
+    "mysticaltrees:amethyst_oak_log",
+    "mysticaltrees:amethyst_oak_wood",
+    "mysticaltrees:quartz_oak_log",
+    "mysticaltrees:quartz_oak_wood",
+    "mysticaltrees:emerald_oak_log",
+    "mysticaltrees:emerald_oak_wood",
+    "mysticaltrees:redstone_oak_log",
+    "mysticaltrees:redstone_oak_wood",
+    "mysticaltrees:lapis_oak_log",
+    "mysticaltrees:lapis_oak_wood",
+    "mysticaltrees:copper_oak_log",
+    "mysticaltrees:copper_oak_wood",
     "mysticaltrees:coal_oak_log",
     "mysticaltrees:coal_oak_wood"
   ]

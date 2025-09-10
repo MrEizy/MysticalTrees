@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "A": {
+      "item": "mysticaltrees:netherite_acorn"
+    },
+    "R": {
+      "item": "mysticaltrees:netherite_resin"
+    }
+  },
+  "pattern": [
+    "ARA",
+    "RAR",
+    "ARA"
+  ],
+  "result": {
+    "count": 1,
+    "id": "mysticaltrees:netherite_amber"
+  }
+}

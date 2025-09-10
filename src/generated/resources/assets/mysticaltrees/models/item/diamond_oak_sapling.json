@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "mysticaltrees:block/diamond_oak_sapling"
+  }
+}

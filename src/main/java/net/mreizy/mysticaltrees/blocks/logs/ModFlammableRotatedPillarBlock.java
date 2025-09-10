@@ -46,6 +46,26 @@ public class ModFlammableRotatedPillarBlock extends RotatedPillarBlock {
             if (STRIPPABLES.isEmpty()) {
                 STRIPPABLES.put(ModBlocks.COAL_OAK_LOG.get(), Blocks.STRIPPED_OAK_LOG);
                 STRIPPABLES.put(ModBlocks.COAL_OAK_WOOD.get(), Blocks.STRIPPED_OAK_WOOD);
+                STRIPPABLES.put(ModBlocks.COPPER_OAK_LOG.get(), Blocks.STRIPPED_OAK_LOG);
+                STRIPPABLES.put(ModBlocks.COPPER_OAK_WOOD.get(), Blocks.STRIPPED_OAK_WOOD);
+                STRIPPABLES.put(ModBlocks.IRON_OAK_LOG.get(), Blocks.STRIPPED_OAK_LOG);
+                STRIPPABLES.put(ModBlocks.IRON_OAK_WOOD.get(), Blocks.STRIPPED_OAK_WOOD);
+                STRIPPABLES.put(ModBlocks.GOLD_OAK_LOG.get(), Blocks.STRIPPED_OAK_LOG);
+                STRIPPABLES.put(ModBlocks.GOLD_OAK_WOOD.get(), Blocks.STRIPPED_OAK_WOOD);
+                STRIPPABLES.put(ModBlocks.DIAMOND_OAK_LOG.get(), Blocks.STRIPPED_OAK_LOG);
+                STRIPPABLES.put(ModBlocks.DIAMOND_OAK_WOOD.get(), Blocks.STRIPPED_OAK_WOOD);
+                STRIPPABLES.put(ModBlocks.NETHERITE_OAK_LOG.get(), Blocks.STRIPPED_OAK_LOG);
+                STRIPPABLES.put(ModBlocks.NETHERITE_OAK_WOOD.get(), Blocks.STRIPPED_OAK_WOOD);
+                STRIPPABLES.put(ModBlocks.EMERALD_OAK_LOG.get(), Blocks.STRIPPED_OAK_LOG);
+                STRIPPABLES.put(ModBlocks.EMERALD_OAK_WOOD.get(), Blocks.STRIPPED_OAK_WOOD);
+                STRIPPABLES.put(ModBlocks.AMETHYST_OAK_LOG.get(), Blocks.STRIPPED_OAK_LOG);
+                STRIPPABLES.put(ModBlocks.AMETHYST_OAK_WOOD.get(), Blocks.STRIPPED_OAK_WOOD);
+                STRIPPABLES.put(ModBlocks.LAPIS_OAK_LOG.get(), Blocks.STRIPPED_OAK_LOG);
+                STRIPPABLES.put(ModBlocks.LAPIS_OAK_WOOD.get(), Blocks.STRIPPED_OAK_WOOD);
+                STRIPPABLES.put(ModBlocks.QUARTZ_OAK_LOG.get(), Blocks.STRIPPED_OAK_LOG);
+                STRIPPABLES.put(ModBlocks.QUARTZ_OAK_WOOD.get(), Blocks.STRIPPED_OAK_WOOD);
+                STRIPPABLES.put(ModBlocks.REDSTONE_OAK_LOG.get(), Blocks.STRIPPED_OAK_LOG);
+                STRIPPABLES.put(ModBlocks.REDSTONE_OAK_WOOD.get(), Blocks.STRIPPED_OAK_WOOD);
 
             }
 
