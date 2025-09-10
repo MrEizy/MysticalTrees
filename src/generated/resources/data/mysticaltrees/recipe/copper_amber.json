@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "A": {
+      "item": "mysticaltrees:copper_acorn"
+    },
+    "R": {
+      "item": "mysticaltrees:copper_resin"
+    }
+  },
+  "pattern": [
+    "ARA",
+    "RAR",
+    "ARA"
+  ],
+  "result": {
+    "count": 1,
+    "id": "mysticaltrees:copper_amber"
+  }
+}

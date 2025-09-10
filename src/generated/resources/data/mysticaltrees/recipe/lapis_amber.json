@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "A": {
+      "item": "mysticaltrees:lapis_acorn"
+    },
+    "R": {
+      "item": "mysticaltrees:lapis_resin"
+    }
+  },
+  "pattern": [
+    "ARA",
+    "RAR",
+    "ARA"
+  ],
+  "result": {
+    "count": 1,
+    "id": "mysticaltrees:lapis_amber"
+  }
+}

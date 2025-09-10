@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column_horizontal",
+  "textures": {
+    "end": "mysticaltrees:block/quartz_oak_log",
+    "side": "mysticaltrees:block/quartz_oak_log"
+  }
+}
