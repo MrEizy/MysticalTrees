@@ -114,5 +114,24 @@ public class lang extends LanguageProvider {
         add("item.mysticaltrees.lapis_resin", "Lapis Resin");
         add("item.mysticaltrees.lapis_acorn", "Lapis Acorn");
 
+        // STONE
+        add("block.mysticaltrees.stone_oak_log", "Stone Oak Log");
+        add("block.mysticaltrees.stone_oak_wood", "Stone Oak Wood");
+        add("block.mysticaltrees.stone_oak_leaves", "Stone Oak Leaves");
+        add("block.mysticaltrees.stone_oak_sapling", "Stone Oak Sapling");
+        add("block.mysticaltrees.stone_amber", "Stone Amber");
+        add("item.mysticaltrees.stone_resin", "Stone Resin");
+        add("item.mysticaltrees.stone_acorn", "Stone Acorn");
+        add("tooltip.mysticaltrees.stone_acorn", "Omniscient & Omnipresent Stone Acorn");
+
+        // DIRT
+        add("block.mysticaltrees.dirt_oak_log", "Dirt Oak Log");
+        add("block.mysticaltrees.dirt_oak_wood", "Dirt Oak Wood");
+        add("block.mysticaltrees.dirt_oak_leaves", "Dirt Oak Leaves");
+        add("block.mysticaltrees.dirt_oak_sapling", "Dirt Oak Sapling");
+        add("block.mysticaltrees.dirt_amber", "Dirt Amber");
+        add("item.mysticaltrees.dirt_resin", "Dirt Resin");
+        add("item.mysticaltrees.dirt_acorn", "Dirt Acorn");
+
     }
 }

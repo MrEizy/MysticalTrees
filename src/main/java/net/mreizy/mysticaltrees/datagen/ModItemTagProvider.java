@@ -45,7 +45,11 @@ public class ModItemTagProvider extends ItemTagsProvider {
                 .add(ModBlocks.COPPER_OAK_LOG.get().asItem())
                 .add(ModBlocks.COPPER_OAK_WOOD.get().asItem())
                 .add(ModBlocks.COAL_OAK_LOG.get().asItem())
-                .add(ModBlocks.COAL_OAK_WOOD.get().asItem());
+                .add(ModBlocks.COAL_OAK_WOOD.get().asItem())
+                .add(ModBlocks.STONE_OAK_LOG.get().asItem())
+                .add(ModBlocks.STONE_OAK_WOOD.get().asItem())
+                .add(ModBlocks.DIRT_OAK_LOG.get().asItem())
+                .add(ModBlocks.DIRT_OAK_WOOD.get().asItem());
 
     }
 }

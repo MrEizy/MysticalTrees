@@ -1,4 +1,4 @@
-// 1.21.1	2025-09-10T20:59:48.9422006	Loot Tables
+// 1.21.1	2025-09-11T17:26:40.1376483	Loot Tables
 f7b83b90a9dd7651e3762630b104a86cd6a517a9 data/mysticaltrees/loot_table/blocks/amethyst_amber.json
 ef464a1294102e0e770401ce5003f6332bb5ae00 data/mysticaltrees/loot_table/blocks/amethyst_oak_leaves.json
 6d71fbe982e942ec080f9b2374697c1fbcb1a514 data/mysticaltrees/loot_table/blocks/amethyst_oak_log.json
@@ -19,6 +19,11 @@ db7f5cca20cf00e2cacdc231795e186ea71d49a0 data/mysticaltrees/loot_table/blocks/co
 a6b553906998af5b236d064c197a1263f2e7d07b data/mysticaltrees/loot_table/blocks/diamond_oak_log.json
 bc97674477b19d5dbdba7502390946e52ce40bc4 data/mysticaltrees/loot_table/blocks/diamond_oak_sapling.json
 83de1a0c8879125e72bc869ce338a9e8b169dfed data/mysticaltrees/loot_table/blocks/diamond_oak_wood.json
+6d37daa0df07c80afc41ab41b0ec2740336ddff2 data/mysticaltrees/loot_table/blocks/dirt_amber.json
+a9dfd35442c851f65f6ae17cf270cff65c3fc07d data/mysticaltrees/loot_table/blocks/dirt_oak_leaves.json
+bb68b3c5a72160aad590ca71d05da0123e6d553d data/mysticaltrees/loot_table/blocks/dirt_oak_log.json
+3ed571ab1a9bf6356624b0c42c45f55f970912cb data/mysticaltrees/loot_table/blocks/dirt_oak_sapling.json
+6d9a72a9d2391dfd997351795a9e55a659a188ff data/mysticaltrees/loot_table/blocks/dirt_oak_wood.json
 9e903c5ee0e314fdb23ea99314e6a3a17323273d data/mysticaltrees/loot_table/blocks/emerald_amber.json
 f8cc5d81404b4466da5400250d5b54b701ed8d0d data/mysticaltrees/loot_table/blocks/emerald_oak_leaves.json
 df736f796c1a833a632794638b1460c304b0eddf data/mysticaltrees/loot_table/blocks/emerald_oak_log.json
@@ -54,3 +59,8 @@ bd65635f9a8de8595f1776ee2311f1253a07031c data/mysticaltrees/loot_table/blocks/qu
 36fac0e09ce8c52ff4f0f5b8306b076faa66026a data/mysticaltrees/loot_table/blocks/redstone_oak_log.json
 943ad913a21b6e4d02c99498223efd96737087e6 data/mysticaltrees/loot_table/blocks/redstone_oak_sapling.json
 8161a0c70e1a6283dba55d58df324d1fc85d1fe7 data/mysticaltrees/loot_table/blocks/redstone_oak_wood.json
+80f1c9ecac0cd622b80ee9bf5b568c9f71775c1a data/mysticaltrees/loot_table/blocks/stone_amber.json
+b2f7037863959c9ea45143650993cd93f8a08072 data/mysticaltrees/loot_table/blocks/stone_oak_leaves.json
+2f840e8996ec7d305e4aed286bb2631b35305c2f data/mysticaltrees/loot_table/blocks/stone_oak_log.json
+8a77ecb84c2310202912a550856f7d7a9624f8c8 data/mysticaltrees/loot_table/blocks/stone_oak_sapling.json
+8b8fea2d110b8d03287372cb03fd21b48c823c85 data/mysticaltrees/loot_table/blocks/stone_oak_wood.json

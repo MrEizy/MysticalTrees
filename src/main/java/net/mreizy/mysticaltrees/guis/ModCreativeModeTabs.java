@@ -21,6 +21,21 @@ public class ModCreativeModeTabs {
             () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModItems.COAL_RESIN.get()))
                     .title(Component.translatable("creativetab.mysticaltrees.root"))
                     .displayItems((itemDisplayParameters, output) -> {
+                        output.accept(ModBlocks.STONE_OAK_LOG);
+                        output.accept(ModBlocks.STONE_OAK_WOOD);
+                        output.accept(ModBlocks.STONE_OAK_LEAVES);
+                        output.accept(ModBlocks.STONE_AMBER);
+                        output.accept(ModBlocks.STONE_OAK_SAPLING);
+                        output.accept(ModItems.STONE_RESIN);
+                        output.accept(ModItems.STONE_ACORN);
+                        output.accept(ModBlocks.DIRT_OAK_LOG);
+                        output.accept(ModBlocks.DIRT_OAK_WOOD);
+                        output.accept(ModBlocks.DIRT_OAK_LEAVES);
+                        output.accept(ModBlocks.DIRT_AMBER);
+                        output.accept(ModBlocks.DIRT_OAK_SAPLING);
+                        output.accept(ModItems.DIRT_RESIN);
+                        output.accept(ModItems.DIRT_ACORN);
+
                         output.accept(ModBlocks.COAL_OAK_LOG);
                         output.accept(ModBlocks.COAL_OAK_WOOD);
                         output.accept(ModBlocks.COAL_OAK_LEAVES);
@@ -49,6 +64,13 @@ public class ModCreativeModeTabs {
                         output.accept(ModBlocks.REDSTONE_OAK_SAPLING);
                         output.accept(ModItems.REDSTONE_RESIN);
                         output.accept(ModItems.REDSTONE_ACORN);
+                        output.accept(ModBlocks.LAPIS_OAK_LOG);
+                        output.accept(ModBlocks.LAPIS_OAK_WOOD);
+                        output.accept(ModBlocks.LAPIS_OAK_LEAVES);
+                        output.accept(ModBlocks.LAPIS_AMBER);
+                        output.accept(ModBlocks.LAPIS_OAK_SAPLING);
+                        output.accept(ModItems.LAPIS_RESIN);
+                        output.accept(ModItems.LAPIS_ACORN);
                         output.accept(ModBlocks.COPPER_OAK_LOG);
                         output.accept(ModBlocks.COPPER_OAK_WOOD);
                         output.accept(ModBlocks.COPPER_OAK_LEAVES);

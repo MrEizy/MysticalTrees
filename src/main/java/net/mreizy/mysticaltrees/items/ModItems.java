@@ -1,10 +1,16 @@
 package net.mreizy.mysticaltrees.items;
 
+import net.minecraft.network.chat.Component;
 import net.minecraft.world.item.Item;
+import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.item.TooltipFlag;
 import net.neoforged.bus.api.IEventBus;
+import net.neoforged.fml.common.Mod;
 import net.neoforged.neoforge.registries.DeferredItem;
 import net.neoforged.neoforge.registries.DeferredRegister;
 import net.mreizy.mysticaltrees.MysticalTrees;
+
+import java.util.List;
 
 public class ModItems {
     public static final DeferredRegister.Items ITEMS = DeferredRegister.createItems(MysticalTrees.MOD_ID);
@@ -54,7 +60,20 @@ public class ModItems {
             () -> new Item(new Item.Properties()));
     public static final DeferredItem<Item> REDSTONE_ACORN = ITEMS.register("redstone_acorn",
             () -> new Item(new Item.Properties().food(ModFoodProperties.ACORNS)));
-
+    public static final DeferredItem<Item> STONE_RESIN = ITEMS.register("stone_resin",
+            () -> new Item(new Item.Properties()));
+    public static final DeferredItem<Item> STONE_ACORN = ITEMS.register("stone_acorn",
+            () -> new Item(new Item.Properties().food(ModFoodProperties.ACORNS)){
+                @Override
+                public void appendHoverText(ItemStack stack, Item.TooltipContext context, List<Component> tooltipComponents, TooltipFlag tooltipFlag) {{
+                    tooltipComponents.add(Component.translatable("tooltip.mysticaltrees.stone_acorn").withColor(0x9000D3));}
+                    super.appendHoverText(stack, context, tooltipComponents, tooltipFlag);
+                }
+            });
+    public static final DeferredItem<Item> DIRT_RESIN = ITEMS.register("dirt_resin",
+            () -> new Item(new Item.Properties()));
+    public static final DeferredItem<Item> DIRT_ACORN = ITEMS.register("dirt_acorn",
+            () -> new Item(new Item.Properties().food(ModFoodProperties.ACORNS)));
 
 
     public static void register(IEventBus eventBus) {

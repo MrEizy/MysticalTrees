@@ -36,6 +36,8 @@ public class ModConfiguredFeatures {
     public static final ResourceKey<ConfiguredFeature<?, ?>> EMERALD_OAK_KEY = registerKey("emerald_oak");
     public static final ResourceKey<ConfiguredFeature<?, ?>> REDSTONE_OAK_KEY = registerKey("redstone_oak");
     public static final ResourceKey<ConfiguredFeature<?, ?>> LAPIS_OAK_KEY = registerKey("lapis_oak");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> STONE_OAK_KEY = registerKey("stone_oak");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> DIRT_OAK_KEY = registerKey("dirt_oak");
 
     public static void bootstrap(BootstrapContext<ConfiguredFeature<?, ?>> context) {
         RuleTest stoneReplaceables = new TagMatchTest(BlockTags.DEEPSLATE_ORE_REPLACEABLES);
@@ -108,6 +110,18 @@ public class ModConfiguredFeatures {
                 BlockStateProvider.simple(ModBlocks.LAPIS_OAK_LOG.get()),
                 new StraightTrunkPlacer(4, 2, 0),
                 BlockStateProvider.simple(ModBlocks.LAPIS_OAK_LEAVES.get()),
+                new BlobFoliagePlacer(ConstantInt.of(2), ConstantInt.of(0), 3),
+                new TwoLayersFeatureSize(1, 0, 2)).build());
+        register(context, STONE_OAK_KEY, Feature.TREE, new TreeConfiguration.TreeConfigurationBuilder(
+                BlockStateProvider.simple(ModBlocks.STONE_OAK_LOG.get()),
+                new StraightTrunkPlacer(4, 2, 0),
+                BlockStateProvider.simple(ModBlocks.STONE_OAK_LEAVES.get()),
+                new BlobFoliagePlacer(ConstantInt.of(2), ConstantInt.of(0), 3),
+                new TwoLayersFeatureSize(1, 0, 2)).build());
+        register(context, DIRT_OAK_KEY, Feature.TREE, new TreeConfiguration.TreeConfigurationBuilder(
+                BlockStateProvider.simple(ModBlocks.DIRT_OAK_LOG.get()),
+                new StraightTrunkPlacer(4, 2, 0),
+                BlockStateProvider.simple(ModBlocks.DIRT_OAK_LEAVES.get()),
                 new BlobFoliagePlacer(ConstantInt.of(2), ConstantInt.of(0), 3),
                 new TwoLayersFeatureSize(1, 0, 2)).build());
     }

@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "mysticaltrees:stone_acorn"
+    },
+    {
+      "item": "mysticaltrees:stone_acorn"
+    },
+    {
+      "item": "mysticaltrees:stone_acorn"
+    },
+    {
+      "item": "mysticaltrees:stone_acorn"
+    }
+  ],
+  "result": {
+    "count": 4,
+    "id": "minecraft:cobblestone"
+  }
+}
