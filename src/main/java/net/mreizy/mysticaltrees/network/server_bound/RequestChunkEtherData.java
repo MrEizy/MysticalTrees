@@ -17,7 +17,7 @@ import net.neoforged.neoforge.network.handling.IPayloadContext;
 import org.checkerframework.checker.units.qual.C;
 
 import java.math.BigDecimal;
-
+//seems to be bugged rn
 public record RequestChunkEtherData(BlockPos pos) implements CustomPacketPayload {
     public static final CustomPacketPayload.Type<RequestChunkEtherData> TYPE = new CustomPacketPayload.Type<>(ResourceLocation.fromNamespaceAndPath(MysticalTrees.MOD_ID, "request_chunk_ether_data"));
     public static final StreamCodec<ByteBuf, RequestChunkEtherData> STREAM_CODEC = StreamCodec.composite(
