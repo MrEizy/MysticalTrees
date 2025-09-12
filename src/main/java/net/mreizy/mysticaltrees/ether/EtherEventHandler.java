@@ -36,7 +36,7 @@ public class EtherEventHandler {
     public static void onServerTick(ServerTickEvent.Pre event){
         for (Level level : event.getServer().getAllLevels()){
             if(level.isClientSide) continue;
-            System.out.println("number of loaded chunks: "+level.getChunkSource().getLoadedChunksCount());
+            //System.out.println("number of loaded chunks: "+level.getChunkSource().getLoadedChunksCount());
             if(level.getChunkSource() instanceof ServerChunkCache serverChunkCache){
                 int count = 0;
                 for(ChunkHolder holder:serverChunkCache.chunkMap.getChunks()){
@@ -47,7 +47,7 @@ public class EtherEventHandler {
                     EtherData data = holder.getTickingChunk().getData(ModAttachments.CHUNK_ETHER_DATA);
                     data.setEther(data.getEther().add(new BigDecimal("0.05")));
                 }
-                System.out.println("number of chunks in map: "+count);
+                //System.out.println("number of chunks in map: "+count);
 
             }
         }
@@ -56,7 +56,7 @@ public class EtherEventHandler {
     public static void onPlayerTick(PlayerTickEvent.Pre event) {
         if(!event.getEntity().level().isClientSide()) {
             ChunkAccess chunk = event.getEntity().level().getChunk(event.getEntity().getOnPos());
-            System.out.println("chunk ("+chunk.getPos().x+","+chunk.getPos().z+") has ether: "+chunk.getData(ModAttachments.CHUNK_ETHER_DATA).getEther().toString());
+            //System.out.println("chunk ("+chunk.getPos().x+","+chunk.getPos().z+") has ether: "+chunk.getData(ModAttachments.CHUNK_ETHER_DATA).getEther().toString());
 
         }
         /*
