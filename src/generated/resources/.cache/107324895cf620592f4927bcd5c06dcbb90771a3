@@ -1,4 +1,4 @@
-// 1.21.1	2025-09-10T21:09:34.4905342	Item Models: mysticaltrees
+// 1.21.1	2025-09-11T17:26:40.1280061	Item Models: mysticaltrees
 32aa7677b7404ff75c51b7beaf1a117462dc596e assets/mysticaltrees/models/item/amethyst_acorn.json
 ab1969043ba05a76934cfce28ad46a99a2c0991b assets/mysticaltrees/models/item/amethyst_oak_sapling.json
 bba29b562343494a25eb4e08141a5b659a38d2dd assets/mysticaltrees/models/item/amethyst_resin.json
@@ -11,6 +11,9 @@ f3e235664925027dc68aaebb64ce3576727e40f2 assets/mysticaltrees/models/item/copper
 dfc791d27a102a7d5d317a6e365810b74a56b661 assets/mysticaltrees/models/item/diamond_acorn.json
 3a3701406ed64486decfd48803359374fabba051 assets/mysticaltrees/models/item/diamond_oak_sapling.json
 19ed2e41c04b8730d17af881604db2d24868aa5c assets/mysticaltrees/models/item/diamond_resin.json
+56154a34b623a122972bcc95ffcc54ce0e435c0d assets/mysticaltrees/models/item/dirt_acorn.json
+211508f2314a6136ee39d58618d189dafad0c3a7 assets/mysticaltrees/models/item/dirt_oak_sapling.json
+a3ea0d4f138f79c99952b78cc324ca8fd2111614 assets/mysticaltrees/models/item/dirt_resin.json
 ec3058e30db74e8bb0b30a2ba0667ad828637c6a assets/mysticaltrees/models/item/emerald_acorn.json
 9593e2cf4e143b9ab6104606aa2e0e3ffa6c689e assets/mysticaltrees/models/item/emerald_oak_sapling.json
 91e5caccdedfd955d67f6f03ea4dbc81e4b1ca2e assets/mysticaltrees/models/item/emerald_resin.json
@@ -32,3 +35,6 @@ c08b571c4642c6828032cccebc58e77160f24b5f assets/mysticaltrees/models/item/nether
 57a6440aeb1edb83ccee8d5faccd9c45f0699009 assets/mysticaltrees/models/item/redstone_acorn.json
 c51a00c48dd6faab9671cb482892581c74bdc82e assets/mysticaltrees/models/item/redstone_oak_sapling.json
 215e114a820c2e7d6000b245e668f698cdaf07fe assets/mysticaltrees/models/item/redstone_resin.json
+430c5142825f63310a6cc2085b6079aa6803b517 assets/mysticaltrees/models/item/stone_acorn.json
+b83b719a187406a62c9a4acd2a322ea74ad55a5b assets/mysticaltrees/models/item/stone_oak_sapling.json
+5a4204559710f0dc354ab7bb150eb1083dec6eda assets/mysticaltrees/models/item/stone_resin.json

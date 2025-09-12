@@ -21,6 +21,10 @@
     "mysticaltrees:redstone_oak_log",
     "mysticaltrees:redstone_oak_wood",
     "mysticaltrees:lapis_oak_log",
-    "mysticaltrees:lapis_oak_wood"
+    "mysticaltrees:lapis_oak_wood",
+    "mysticaltrees:stone_oak_log",
+    "mysticaltrees:stone_oak_wood",
+    "mysticaltrees:dirt_oak_log",
+    "mysticaltrees:dirt_oak_wood"
   ]
 }

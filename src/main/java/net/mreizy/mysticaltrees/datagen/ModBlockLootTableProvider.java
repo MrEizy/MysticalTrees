@@ -125,6 +125,22 @@ public class ModBlockLootTableProvider extends BlockLootSubProvider {
         dropSelf(ModBlocks.LAPIS_AMBER.get());
         dropSelf(ModBlocks.LAPIS_OAK_SAPLING.get());
 
+        // STONE
+        add(ModBlocks.STONE_OAK_LEAVES.get(), createMystLeafDrop(ModBlocks.STONE_OAK_LEAVES.get(), ModBlocks.STONE_OAK_SAPLING.get(),
+                NORMAL_LEAVES_SAPLING_CHANCES, ModItems.STONE_ACORN.get(), 0.15f));
+        add(ModBlocks.STONE_OAK_LOG.get(), createMystLogDrop(ModBlocks.STONE_OAK_LOG.get(), ModItems.STONE_RESIN.get()));
+        dropSelf(ModBlocks.STONE_OAK_WOOD.get());
+        dropSelf(ModBlocks.STONE_AMBER.get());
+        dropSelf(ModBlocks.STONE_OAK_SAPLING.get());
+
+        // DIRT
+        add(ModBlocks.DIRT_OAK_LEAVES.get(), createMystLeafDrop(ModBlocks.DIRT_OAK_LEAVES.get(), ModBlocks.DIRT_OAK_SAPLING.get(),
+                NORMAL_LEAVES_SAPLING_CHANCES, ModItems.DIRT_ACORN.get(), 0.15f));
+        add(ModBlocks.DIRT_OAK_LOG.get(), createMystLogDrop(ModBlocks.DIRT_OAK_LOG.get(), ModItems.DIRT_RESIN.get()));
+        dropSelf(ModBlocks.DIRT_OAK_WOOD.get());
+        dropSelf(ModBlocks.DIRT_AMBER.get());
+        dropSelf(ModBlocks.DIRT_OAK_SAPLING.get());
+
     }
 
     protected LootTable.Builder createMystLogDrop(Block mysticalLog, Item coalResin) {

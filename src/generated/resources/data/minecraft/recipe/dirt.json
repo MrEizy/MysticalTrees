@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "mysticaltrees:dirt_acorn"
+    },
+    {
+      "item": "mysticaltrees:dirt_acorn"
+    },
+    {
+      "item": "mysticaltrees:dirt_acorn"
+    },
+    {
+      "item": "mysticaltrees:dirt_acorn"
+    }
+  ],
+  "result": {
+    "count": 4,
+    "id": "minecraft:dirt"
+  }
+}

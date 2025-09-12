@@ -25,6 +25,7 @@ import net.neoforged.neoforge.event.server.ServerStartingEvent;
 // The value here should match an entry in the META-INF/neoforge.mods.toml file
 @Mod(MysticalTrees.MOD_ID)
 public class MysticalTrees {
+    public static float hue;
     public static final String MOD_ID = "mysticaltrees";
     private static final Logger LOGGER = LogUtils.getLogger();
 

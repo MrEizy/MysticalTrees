@@ -21,6 +21,10 @@
     "mysticaltrees:copper_oak_log",
     "mysticaltrees:copper_oak_wood",
     "mysticaltrees:coal_oak_log",
-    "mysticaltrees:coal_oak_wood"
+    "mysticaltrees:coal_oak_wood",
+    "mysticaltrees:stone_oak_log",
+    "mysticaltrees:stone_oak_wood",
+    "mysticaltrees:dirt_oak_log",
+    "mysticaltrees:dirt_oak_wood"
   ]
 }
