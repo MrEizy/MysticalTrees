@@ -69,8 +69,7 @@ public class ModItems {
                 @Override
                 public void appendHoverText(ItemStack stack, Item.TooltipContext context, List<Component> tooltipComponents, TooltipFlag tooltipFlag) {
                     if (context.level() != null && context.level().isClientSide()) {
-                        String translationKey = "tooltip.mysticaltrees.stone_acorn";
-                        String text = Component.translatable(translationKey).getString();
+                        String text = Component.translatable("tooltip.mysticaltrees.stone_acorn").getString();
                         time += 0.001f;
                         if (time > 1.0f) time = 0;
                         tooltipComponents.add(Tooltips.RGBEachLetter(time, text, 0.01f));
@@ -83,6 +82,18 @@ public class ModItems {
     public static final DeferredItem<Item> DIRT_RESIN = ITEMS.register("dirt_resin",
             () -> new Item(new Item.Properties()));
     public static final DeferredItem<Item> DIRT_ACORN = ITEMS.register("dirt_acorn",
+            () -> new Item(new Item.Properties().food(ModFoodProperties.ACORNS)));
+    public static final DeferredItem<Item> SAND_RESIN = ITEMS.register("sand_resin",
+            () -> new Item(new Item.Properties()));
+    public static final DeferredItem<Item> SAND_ACORN = ITEMS.register("sand_acorn",
+            () -> new Item(new Item.Properties().food(ModFoodProperties.ACORNS)));
+    public static final DeferredItem<Item> CLAY_RESIN = ITEMS.register("clay_resin",
+            () -> new Item(new Item.Properties()));
+    public static final DeferredItem<Item> CLAY_ACORN = ITEMS.register("clay_acorn",
+            () -> new Item(new Item.Properties().food(ModFoodProperties.ACORNS)));
+    public static final DeferredItem<Item> GRAVEL_RESIN = ITEMS.register("gravel_resin",
+            () -> new Item(new Item.Properties()));
+    public static final DeferredItem<Item> GRAVEL_ACORN = ITEMS.register("gravel_acorn",
             () -> new Item(new Item.Properties().food(ModFoodProperties.ACORNS)));
 
 

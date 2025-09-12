@@ -141,6 +141,30 @@ public class ModBlockLootTableProvider extends BlockLootSubProvider {
         dropSelf(ModBlocks.DIRT_AMBER.get());
         dropSelf(ModBlocks.DIRT_OAK_SAPLING.get());
 
+        // SAND
+        add(ModBlocks.SAND_OAK_LEAVES.get(), createMystLeafDrop(ModBlocks.SAND_OAK_LEAVES.get(), ModBlocks.SAND_OAK_SAPLING.get(),
+                NORMAL_LEAVES_SAPLING_CHANCES, ModItems.SAND_ACORN.get(), 0.15f));
+        add(ModBlocks.SAND_OAK_LOG.get(), createMystLogDrop(ModBlocks.SAND_OAK_LOG.get(), ModItems.SAND_RESIN.get()));
+        dropSelf(ModBlocks.SAND_OAK_WOOD.get());
+        dropSelf(ModBlocks.SAND_AMBER.get());
+        dropSelf(ModBlocks.SAND_OAK_SAPLING.get());
+
+        // CLAY
+        add(ModBlocks.CLAY_OAK_LEAVES.get(), createMystLeafDrop(ModBlocks.CLAY_OAK_LEAVES.get(), ModBlocks.CLAY_OAK_SAPLING.get(),
+                NORMAL_LEAVES_SAPLING_CHANCES, ModItems.CLAY_ACORN.get(), 0.15f));
+        add(ModBlocks.CLAY_OAK_LOG.get(), createMystLogDrop(ModBlocks.CLAY_OAK_LOG.get(), ModItems.CLAY_RESIN.get()));
+        dropSelf(ModBlocks.CLAY_OAK_WOOD.get());
+        dropSelf(ModBlocks.CLAY_AMBER.get());
+        dropSelf(ModBlocks.CLAY_OAK_SAPLING.get());
+
+        // GRAVEL
+        add(ModBlocks.GRAVEL_OAK_LEAVES.get(), createMystLeafDrop(ModBlocks.GRAVEL_OAK_LEAVES.get(), ModBlocks.GRAVEL_OAK_SAPLING.get(),
+                NORMAL_LEAVES_SAPLING_CHANCES, ModItems.GRAVEL_ACORN.get(), 0.15f));
+        add(ModBlocks.GRAVEL_OAK_LOG.get(), createMystLogDrop(ModBlocks.GRAVEL_OAK_LOG.get(), ModItems.GRAVEL_RESIN.get()));
+        dropSelf(ModBlocks.GRAVEL_OAK_WOOD.get());
+        dropSelf(ModBlocks.GRAVEL_AMBER.get());
+        dropSelf(ModBlocks.GRAVEL_OAK_SAPLING.get());
+
     }
 
     protected LootTable.Builder createMystLogDrop(Block mysticalLog, Item coalResin) {

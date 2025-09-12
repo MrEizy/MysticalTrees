@@ -133,5 +133,32 @@ public class lang extends LanguageProvider {
         add("item.mysticaltrees.dirt_resin", "Dirt Resin");
         add("item.mysticaltrees.dirt_acorn", "Dirt Acorn");
 
+        // SAND
+        add("block.mysticaltrees.sand_oak_log", "Sand Oak Log");
+        add("block.mysticaltrees.sand_oak_wood", "Sand Oak Wood");
+        add("block.mysticaltrees.sand_oak_leaves", "Sand Oak Leaves");
+        add("block.mysticaltrees.sand_oak_sapling", "Sand Oak Sapling");
+        add("block.mysticaltrees.sand_amber", "Sand Amber");
+        add("item.mysticaltrees.sand_resin", "Sand Resin");
+        add("item.mysticaltrees.sand_acorn", "Sand Acorn");
+
+        // CLAY
+        add("block.mysticaltrees.clay_oak_log", "Clay Oak Log");
+        add("block.mysticaltrees.clay_oak_wood", "Clay Oak Wood");
+        add("block.mysticaltrees.clay_oak_leaves", "Clay Oak Leaves");
+        add("block.mysticaltrees.clay_oak_sapling", "Clay Oak Sapling");
+        add("block.mysticaltrees.clay_amber", "Clay Amber");
+        add("item.mysticaltrees.clay_resin", "Clay Resin");
+        add("item.mysticaltrees.clay_acorn", "Clay Acorn");
+
+        // GRAVEL
+        add("block.mysticaltrees.gravel_oak_log", "Gravel Oak Log");
+        add("block.mysticaltrees.gravel_oak_wood", "Gravel Oak Wood");
+        add("block.mysticaltrees.gravel_oak_leaves", "Gravel Oak Leaves");
+        add("block.mysticaltrees.gravel_oak_sapling", "Gravel Oak Sapling");
+        add("block.mysticaltrees.gravel_amber", "Gravel Amber");
+        add("item.mysticaltrees.gravel_resin", "Gravel Resin");
+        add("item.mysticaltrees.gravel_acorn", "Gravel Acorn");
+
     }
 }

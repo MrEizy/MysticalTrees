@@ -49,7 +49,13 @@ public class ModItemTagProvider extends ItemTagsProvider {
                 .add(ModBlocks.STONE_OAK_LOG.get().asItem())
                 .add(ModBlocks.STONE_OAK_WOOD.get().asItem())
                 .add(ModBlocks.DIRT_OAK_LOG.get().asItem())
-                .add(ModBlocks.DIRT_OAK_WOOD.get().asItem());
+                .add(ModBlocks.DIRT_OAK_WOOD.get().asItem())
+                .add(ModBlocks.SAND_OAK_LOG.get().asItem())
+                .add(ModBlocks.SAND_OAK_WOOD.get().asItem())
+                .add(ModBlocks.CLAY_OAK_LOG.get().asItem())
+                .add(ModBlocks.CLAY_OAK_WOOD.get().asItem())
+                .add(ModBlocks.GRAVEL_OAK_LOG.get().asItem())
+                .add(ModBlocks.GRAVEL_OAK_WOOD.get().asItem());
 
     }
 }
