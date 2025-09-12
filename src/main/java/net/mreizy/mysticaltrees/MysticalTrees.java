@@ -1,5 +1,6 @@
 package net.mreizy.mysticaltrees;
 
+import net.mreizy.mysticaltrees.blocks.ModBlockEntities;
 import net.mreizy.mysticaltrees.blocks.ModBlocks;
 import net.mreizy.mysticaltrees.items.ModItems;
 import net.mreizy.mysticaltrees.network.ModPayloads;
@@ -38,6 +39,7 @@ public class MysticalTrees {
         NeoForge.EVENT_BUS.register(this);
 
         ModBlocks.register(modEventBus);
+        ModBlockEntities.register(modEventBus);
         ModItems.register(modEventBus);
         ModCreativeModeTabs.register(modEventBus);
         ModAttachments.register(modEventBus);

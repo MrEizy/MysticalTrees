@@ -1,12 +1,12 @@
 package net.mreizy.mysticaltrees.blocks;
 
 import net.minecraft.util.ColorRGBA;
-import net.minecraft.util.valueproviders.UniformInt;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.*;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.mreizy.mysticaltrees.blocks.logs.ModFlammableRotatedPillarBlock;
+import net.mreizy.mysticaltrees.blocks.saplings.EtherSapling;
 import net.mreizy.mysticaltrees.items.ModItems;
 import net.mreizy.mysticaltrees.worldgen.tree.ModTreeGrowers;
 import net.neoforged.bus.api.IEventBus;
@@ -14,14 +14,16 @@ import net.neoforged.neoforge.registries.DeferredBlock;
 import net.neoforged.neoforge.registries.DeferredRegister;
 import net.mreizy.mysticaltrees.MysticalTrees;
 
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
+import java.math.BigDecimal;
 import java.util.function.Supplier;
 
 public class ModBlocks {
     public static final DeferredRegister.Blocks BLOCK =
             DeferredRegister.createBlocks(MysticalTrees.MOD_ID);
+
+    //block entity saplings
+    //public static final DeferredBlock<Block> TEST_SAPLING = registerBlock("test_sapling",
+    //        ()-> new EtherSaplingOld(ModTreeGrowers.DIRT_OAK, BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_SAPLING), BigDecimal.TEN,BigDecimal.ONE));
 
     //Vanilla Ore Trees
     //Coal
@@ -32,7 +34,7 @@ public class ModBlocks {
     public static final DeferredBlock<Block> COAL_OAK_LEAVES = registerBlock("coal_oak_leaves",
             () -> new LeavesBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_LEAVES)));
     public static final DeferredBlock<Block> COAL_OAK_SAPLING = registerBlock("coal_oak_sapling",
-            () -> new SaplingBlock(ModTreeGrowers.COAL_OAK, BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_SAPLING)));
+            () -> new EtherSapling(ModTreeGrowers.COAL_OAK, BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_SAPLING),new BigDecimal(40),new BigDecimal(1)));
     public static final DeferredBlock<Block> COAL_AMBER = registerBlock("coal_amber",
             () -> new ColoredFallingBlock(new ColorRGBA(13214124), BlockBehaviour.Properties.of().strength(0.6f, 0.6f).sound(SoundType.GRAVEL)));
     //Copper
@@ -43,7 +45,7 @@ public class ModBlocks {
     public static final DeferredBlock<Block> COPPER_OAK_LEAVES = registerBlock("copper_oak_leaves",
             () -> new LeavesBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_LEAVES)));
     public static final DeferredBlock<Block> COPPER_OAK_SAPLING = registerBlock("copper_oak_sapling",
-            () -> new SaplingBlock(ModTreeGrowers.COPPER_OAK, BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_SAPLING)));
+            () -> new EtherSapling(ModTreeGrowers.COPPER_OAK, BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_SAPLING),new BigDecimal("200"),new BigDecimal("0.1")));
     public static final DeferredBlock<Block> COPPER_AMBER = registerBlock("copper_amber",
             () -> new ColoredFallingBlock(new ColorRGBA(13214124), BlockBehaviour.Properties.of().strength(0.6f, 0.6f).sound(SoundType.GRAVEL)));
     //Gold

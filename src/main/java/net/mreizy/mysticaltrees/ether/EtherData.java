@@ -32,8 +32,11 @@ public class EtherData {
     //works if amount is < remaining ether
     //else returns false
     public boolean decreaseEther(double amount){
-        if(ether.compareTo(new BigDecimal(amount)) > 0) return false;
-        ether = ether.subtract(new BigDecimal(amount));
+        return decreaseEther(new BigDecimal(amount));
+    }
+    public boolean decreaseEther(BigDecimal amount){
+        if(ether.compareTo(amount) < 0) return false;
+        ether = ether.subtract(amount);
         return true;
     }
     public void loadNBTData(CompoundTag tag, HolderLookup.Provider provider){
