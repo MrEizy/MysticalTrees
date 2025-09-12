@@ -228,6 +228,42 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .requires(ModItems.DIRT_ACORN, 4)
                 .unlockedBy("has_acorn", has(ModItems.DIRT_ACORN)).save(recipeOutput);
 
+        // SAND
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.SAND_AMBER.get())
+                .pattern("ARA")
+                .pattern("RAR")
+                .pattern("ARA")
+                .define('A', ModItems.SAND_ACORN.get())
+                .define('R', ModItems.SAND_RESIN.get())
+                .unlockedBy("has_acorn", has(ModItems.SAND_ACORN)).save(recipeOutput);
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, Items.SAND, 4)
+                .requires(ModItems.SAND_ACORN, 4)
+                .unlockedBy("has_acorn", has(ModItems.SAND_ACORN)).save(recipeOutput);
+
+        // CLAY
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.CLAY_AMBER.get())
+                .pattern("ARA")
+                .pattern("RAR")
+                .pattern("ARA")
+                .define('A', ModItems.CLAY_ACORN.get())
+                .define('R', ModItems.CLAY_RESIN.get())
+                .unlockedBy("has_acorn", has(ModItems.CLAY_ACORN)).save(recipeOutput);
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, Items.CLAY_BALL, 4)
+                .requires(ModItems.CLAY_ACORN, 4)
+                .unlockedBy("has_acorn", has(ModItems.CLAY_ACORN)).save(recipeOutput);
+
+        // GRAVEL
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.GRAVEL_AMBER.get())
+                .pattern("ARA")
+                .pattern("RAR")
+                .pattern("ARA")
+                .define('A', ModItems.GRAVEL_ACORN.get())
+                .define('R', ModItems.GRAVEL_RESIN.get())
+                .unlockedBy("has_acorn", has(ModItems.GRAVEL_ACORN)).save(recipeOutput);
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, Items.GRAVEL, 4)
+                .requires(ModItems.GRAVEL_ACORN, 4)
+                .unlockedBy("has_acorn", has(ModItems.GRAVEL_ACORN)).save(recipeOutput);
+
 
 
         /*oreSmelting(recipeOutput, JADE_SMELTABLES, RecipeCategory.MISC, ModItems.JADE.get(), 0.25f, 200, "jade");

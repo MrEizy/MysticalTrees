@@ -38,6 +38,9 @@ public class ModConfiguredFeatures {
     public static final ResourceKey<ConfiguredFeature<?, ?>> LAPIS_OAK_KEY = registerKey("lapis_oak");
     public static final ResourceKey<ConfiguredFeature<?, ?>> STONE_OAK_KEY = registerKey("stone_oak");
     public static final ResourceKey<ConfiguredFeature<?, ?>> DIRT_OAK_KEY = registerKey("dirt_oak");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> GRAVEL_OAK_KEY = registerKey("gravel_oak");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> CLAY_OAK_KEY = registerKey("clay_oak");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> SAND_OAK_KEY = registerKey("sand_oak");
 
     public static void bootstrap(BootstrapContext<ConfiguredFeature<?, ?>> context) {
         RuleTest stoneReplaceables = new TagMatchTest(BlockTags.DEEPSLATE_ORE_REPLACEABLES);
@@ -122,6 +125,24 @@ public class ModConfiguredFeatures {
                 BlockStateProvider.simple(ModBlocks.DIRT_OAK_LOG.get()),
                 new StraightTrunkPlacer(4, 2, 0),
                 BlockStateProvider.simple(ModBlocks.DIRT_OAK_LEAVES.get()),
+                new BlobFoliagePlacer(ConstantInt.of(2), ConstantInt.of(0), 3),
+                new TwoLayersFeatureSize(1, 0, 2)).build());
+        register(context, SAND_OAK_KEY, Feature.TREE, new TreeConfiguration.TreeConfigurationBuilder(
+                BlockStateProvider.simple(ModBlocks.SAND_OAK_LOG.get()),
+                new StraightTrunkPlacer(4, 2, 0),
+                BlockStateProvider.simple(ModBlocks.SAND_OAK_LEAVES.get()),
+                new BlobFoliagePlacer(ConstantInt.of(2), ConstantInt.of(0), 3),
+                new TwoLayersFeatureSize(1, 0, 2)).build());
+        register(context, CLAY_OAK_KEY, Feature.TREE, new TreeConfiguration.TreeConfigurationBuilder(
+                BlockStateProvider.simple(ModBlocks.CLAY_OAK_LOG.get()),
+                new StraightTrunkPlacer(4, 2, 0),
+                BlockStateProvider.simple(ModBlocks.CLAY_OAK_LEAVES.get()),
+                new BlobFoliagePlacer(ConstantInt.of(2), ConstantInt.of(0), 3),
+                new TwoLayersFeatureSize(1, 0, 2)).build());
+        register(context, GRAVEL_OAK_KEY, Feature.TREE, new TreeConfiguration.TreeConfigurationBuilder(
+                BlockStateProvider.simple(ModBlocks.GRAVEL_OAK_LOG.get()),
+                new StraightTrunkPlacer(4, 2, 0),
+                BlockStateProvider.simple(ModBlocks.GRAVEL_OAK_LEAVES.get()),
                 new BlobFoliagePlacer(ConstantInt.of(2), ConstantInt.of(0), 3),
                 new TwoLayersFeatureSize(1, 0, 2)).build());
     }

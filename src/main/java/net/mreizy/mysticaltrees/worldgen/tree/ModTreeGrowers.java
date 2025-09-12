@@ -31,8 +31,14 @@ public class ModTreeGrowers {
             Optional.empty(), Optional.of(ModConfiguredFeatures.REDSTONE_OAK_KEY), Optional.empty());
     public static final TreeGrower STONE_OAK = new TreeGrower(MysticalTrees.MOD_ID + ":stone_oak",
             Optional.empty(), Optional.of(ModConfiguredFeatures.STONE_OAK_KEY), Optional.empty());
-    public static final TreeGrower DIRT_OAK = new TreeGrower(MysticalTrees.MOD_ID + ":stone_oak",
+    public static final TreeGrower DIRT_OAK = new TreeGrower(MysticalTrees.MOD_ID + ":dirt_oak",
             Optional.empty(), Optional.of(ModConfiguredFeatures.DIRT_OAK_KEY), Optional.empty());
+    public static final TreeGrower GRAVEL_OAK = new TreeGrower(MysticalTrees.MOD_ID + ":gravel_oak",
+            Optional.empty(), Optional.of(ModConfiguredFeatures.GRAVEL_OAK_KEY), Optional.empty());
+    public static final TreeGrower CLAY_OAK = new TreeGrower(MysticalTrees.MOD_ID + ":clay_oak",
+            Optional.empty(), Optional.of(ModConfiguredFeatures.CLAY_OAK_KEY), Optional.empty());
+    public static final TreeGrower SAND_OAK = new TreeGrower(MysticalTrees.MOD_ID + ":sand_oak",
+            Optional.empty(), Optional.of(ModConfiguredFeatures.SAND_OAK_KEY), Optional.empty());
 
 
 }

@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "mysticaltrees:gravel_acorn"
+    },
+    {
+      "item": "mysticaltrees:gravel_acorn"
+    },
+    {
+      "item": "mysticaltrees:gravel_acorn"
+    },
+    {
+      "item": "mysticaltrees:gravel_acorn"
+    }
+  ],
+  "result": {
+    "count": 4,
+    "id": "minecraft:gravel"
+  }
+}

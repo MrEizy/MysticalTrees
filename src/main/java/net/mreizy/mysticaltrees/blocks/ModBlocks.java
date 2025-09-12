@@ -169,6 +169,39 @@ public class ModBlocks {
             () -> new SaplingBlock(ModTreeGrowers.DIRT_OAK, BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_SAPLING)));
     public static final DeferredBlock<Block> DIRT_AMBER = registerBlock("dirt_amber",
             () -> new ColoredFallingBlock(new ColorRGBA(13214124), BlockBehaviour.Properties.of().strength(0.6f, 0.6f).sound(SoundType.GRAVEL)));
+    //Gravel
+    public static final DeferredBlock<Block> GRAVEL_OAK_LOG = registerBlock("gravel_oak_log",
+            () -> new ModFlammableRotatedPillarBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_LOG)));
+    public static final DeferredBlock<Block> GRAVEL_OAK_WOOD = registerBlock("gravel_oak_wood",
+            () -> new ModFlammableRotatedPillarBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_WOOD)));
+    public static final DeferredBlock<Block> GRAVEL_OAK_LEAVES = registerBlock("gravel_oak_leaves",
+            () -> new LeavesBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_LEAVES)));
+    public static final DeferredBlock<Block> GRAVEL_OAK_SAPLING = registerBlock("gravel_oak_sapling",
+            () -> new SaplingBlock(ModTreeGrowers.GRAVEL_OAK, BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_SAPLING)));
+    public static final DeferredBlock<Block> GRAVEL_AMBER = registerBlock("gravel_amber",
+            () -> new ColoredFallingBlock(new ColorRGBA(13214124), BlockBehaviour.Properties.of().strength(0.6f, 0.6f).sound(SoundType.GRAVEL)));
+    //Sand
+    public static final DeferredBlock<Block> SAND_OAK_LOG = registerBlock("sand_oak_log",
+            () -> new ModFlammableRotatedPillarBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_LOG)));
+    public static final DeferredBlock<Block> SAND_OAK_WOOD = registerBlock("sand_oak_wood",
+            () -> new ModFlammableRotatedPillarBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_WOOD)));
+    public static final DeferredBlock<Block> SAND_OAK_LEAVES = registerBlock("sand_oak_leaves",
+            () -> new LeavesBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_LEAVES)));
+    public static final DeferredBlock<Block> SAND_OAK_SAPLING = registerBlock("sand_oak_sapling",
+            () -> new SaplingBlock(ModTreeGrowers.SAND_OAK, BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_SAPLING)));
+    public static final DeferredBlock<Block> SAND_AMBER = registerBlock("sand_amber",
+            () -> new ColoredFallingBlock(new ColorRGBA(13214124), BlockBehaviour.Properties.of().strength(0.6f, 0.6f).sound(SoundType.GRAVEL)));
+    //Clay
+    public static final DeferredBlock<Block> CLAY_OAK_LOG = registerBlock("clay_oak_log",
+            () -> new ModFlammableRotatedPillarBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_LOG)));
+    public static final DeferredBlock<Block> CLAY_OAK_WOOD = registerBlock("clay_oak_wood",
+            () -> new ModFlammableRotatedPillarBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_WOOD)));
+    public static final DeferredBlock<Block> CLAY_OAK_LEAVES = registerBlock("clay_oak_leaves",
+            () -> new LeavesBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_LEAVES)));
+    public static final DeferredBlock<Block> CLAY_OAK_SAPLING = registerBlock("clay_oak_sapling",
+            () -> new SaplingBlock(ModTreeGrowers.CLAY_OAK, BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_SAPLING)));
+    public static final DeferredBlock<Block> CLAY_AMBER = registerBlock("clay_amber",
+            () -> new ColoredFallingBlock(new ColorRGBA(13214124), BlockBehaviour.Properties.of().strength(0.6f, 0.6f).sound(SoundType.GRAVEL)));
 
     private static <T extends Block> DeferredBlock<T> registerBlock(String name, Supplier<T> block) {
         DeferredBlock<T> toReturn = BLOCK.register(name, block);

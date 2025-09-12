@@ -4,6 +4,7 @@ import net.minecraft.network.chat.Component;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.TooltipFlag;
+import net.mreizy.mysticaltrees.util.Tooltips;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.fml.common.Mod;
 import net.neoforged.neoforge.registries.DeferredItem;
@@ -64,15 +65,35 @@ public class ModItems {
             () -> new Item(new Item.Properties()));
     public static final DeferredItem<Item> STONE_ACORN = ITEMS.register("stone_acorn",
             () -> new Item(new Item.Properties().food(ModFoodProperties.ACORNS)){
+                private float time = 0;
                 @Override
-                public void appendHoverText(ItemStack stack, Item.TooltipContext context, List<Component> tooltipComponents, TooltipFlag tooltipFlag) {{
-                    tooltipComponents.add(Component.translatable("tooltip.mysticaltrees.stone_acorn").withColor(0x9000D3));}
+                public void appendHoverText(ItemStack stack, Item.TooltipContext context, List<Component> tooltipComponents, TooltipFlag tooltipFlag) {
+                    if (context.level() != null && context.level().isClientSide()) {
+                        String text = Component.translatable("tooltip.mysticaltrees.stone_acorn").getString();
+                        time += 0.001f;
+                        if (time > 1.0f) time = 0;
+                        tooltipComponents.add(Tooltips.RGBEachLetter(time, text, 0.01f));
+                    } else {
+                        tooltipComponents.add(Component.translatable("tooltip.mysticaltrees.stone_acorn"));
+                    }
                     super.appendHoverText(stack, context, tooltipComponents, tooltipFlag);
                 }
             });
     public static final DeferredItem<Item> DIRT_RESIN = ITEMS.register("dirt_resin",
             () -> new Item(new Item.Properties()));
     public static final DeferredItem<Item> DIRT_ACORN = ITEMS.register("dirt_acorn",
+            () -> new Item(new Item.Properties().food(ModFoodProperties.ACORNS)));
+    public static final DeferredItem<Item> SAND_RESIN = ITEMS.register("sand_resin",
+            () -> new Item(new Item.Properties()));
+    public static final DeferredItem<Item> SAND_ACORN = ITEMS.register("sand_acorn",
+            () -> new Item(new Item.Properties().food(ModFoodProperties.ACORNS)));
+    public static final DeferredItem<Item> CLAY_RESIN = ITEMS.register("clay_resin",
+            () -> new Item(new Item.Properties()));
+    public static final DeferredItem<Item> CLAY_ACORN = ITEMS.register("clay_acorn",
+            () -> new Item(new Item.Properties().food(ModFoodProperties.ACORNS)));
+    public static final DeferredItem<Item> GRAVEL_RESIN = ITEMS.register("gravel_resin",
+            () -> new Item(new Item.Properties()));
+    public static final DeferredItem<Item> GRAVEL_ACORN = ITEMS.register("gravel_acorn",
             () -> new Item(new Item.Properties().food(ModFoodProperties.ACORNS)));
 
 

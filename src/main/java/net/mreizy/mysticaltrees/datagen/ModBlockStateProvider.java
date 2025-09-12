@@ -136,6 +136,33 @@ public class ModBlockStateProvider extends BlockStateProvider {
         blockItem(ModBlocks.DIRT_OAK_WOOD);
         leavesBlock(ModBlocks.DIRT_OAK_LEAVES);
         saplingBlock(ModBlocks.DIRT_OAK_SAPLING);
+
+        // SAND
+        logMBlock(((RotatedPillarBlock) ModBlocks.SAND_OAK_LOG.get()));
+        axisBlock(((RotatedPillarBlock) ModBlocks.SAND_OAK_WOOD.get()), blockTexture(ModBlocks.SAND_OAK_LOG.get()), blockTexture(ModBlocks.SAND_OAK_LOG.get()));
+        simpleBlockWithItem(ModBlocks.SAND_AMBER);
+        blockItem(ModBlocks.SAND_OAK_LOG);
+        blockItem(ModBlocks.SAND_OAK_WOOD);
+        leavesBlock(ModBlocks.SAND_OAK_LEAVES);
+        saplingBlock(ModBlocks.SAND_OAK_SAPLING);
+
+        // CLAY
+        logMBlock(((RotatedPillarBlock) ModBlocks.CLAY_OAK_LOG.get()));
+        axisBlock(((RotatedPillarBlock) ModBlocks.CLAY_OAK_WOOD.get()), blockTexture(ModBlocks.CLAY_OAK_LOG.get()), blockTexture(ModBlocks.CLAY_OAK_LOG.get()));
+        simpleBlockWithItem(ModBlocks.CLAY_AMBER);
+        blockItem(ModBlocks.CLAY_OAK_LOG);
+        blockItem(ModBlocks.CLAY_OAK_WOOD);
+        leavesBlock(ModBlocks.CLAY_OAK_LEAVES);
+        saplingBlock(ModBlocks.CLAY_OAK_SAPLING);
+
+        // GRAVEL
+        logMBlock(((RotatedPillarBlock) ModBlocks.GRAVEL_OAK_LOG.get()));
+        axisBlock(((RotatedPillarBlock) ModBlocks.GRAVEL_OAK_WOOD.get()), blockTexture(ModBlocks.GRAVEL_OAK_LOG.get()), blockTexture(ModBlocks.GRAVEL_OAK_LOG.get()));
+        simpleBlockWithItem(ModBlocks.GRAVEL_AMBER);
+        blockItem(ModBlocks.GRAVEL_OAK_LOG);
+        blockItem(ModBlocks.GRAVEL_OAK_WOOD);
+        leavesBlock(ModBlocks.GRAVEL_OAK_LEAVES);
+        saplingBlock(ModBlocks.GRAVEL_OAK_SAPLING);
     }
 
 

@@ -25,6 +25,12 @@
     "mysticaltrees:stone_oak_log",
     "mysticaltrees:stone_oak_wood",
     "mysticaltrees:dirt_oak_log",
-    "mysticaltrees:dirt_oak_wood"
+    "mysticaltrees:dirt_oak_wood",
+    "mysticaltrees:sand_oak_log",
+    "mysticaltrees:sand_oak_wood",
+    "mysticaltrees:clay_oak_log",
+    "mysticaltrees:clay_oak_wood",
+    "mysticaltrees:gravel_oak_log",
+    "mysticaltrees:gravel_oak_wood"
   ]
 }

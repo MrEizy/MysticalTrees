@@ -71,6 +71,21 @@ public class ModItemModelProvider extends ItemModelProvider {
         basicItem(ModItems.DIRT_RESIN.get());
         basicItem(ModItems.DIRT_ACORN.get());
 
+        // SAND
+        saplingItem(ModBlocks.SAND_OAK_SAPLING);
+        basicItem(ModItems.SAND_RESIN.get());
+        basicItem(ModItems.SAND_ACORN.get());
+
+        // CLAY
+        saplingItem(ModBlocks.CLAY_OAK_SAPLING);
+        basicItem(ModItems.CLAY_RESIN.get());
+        basicItem(ModItems.CLAY_ACORN.get());
+
+        // GRAVEL
+        saplingItem(ModBlocks.GRAVEL_OAK_SAPLING);
+        basicItem(ModItems.GRAVEL_RESIN.get());
+        basicItem(ModItems.GRAVEL_ACORN.get());
+
 
 
     }

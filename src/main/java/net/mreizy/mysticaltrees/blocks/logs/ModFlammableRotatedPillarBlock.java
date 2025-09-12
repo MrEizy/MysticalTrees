@@ -70,6 +70,12 @@ public class ModFlammableRotatedPillarBlock extends RotatedPillarBlock {
                 STRIPPABLES.put(ModBlocks.STONE_OAK_WOOD.get(), Blocks.STRIPPED_OAK_WOOD);
                 STRIPPABLES.put(ModBlocks.DIRT_OAK_LOG.get(), Blocks.STRIPPED_OAK_LOG);
                 STRIPPABLES.put(ModBlocks.DIRT_OAK_WOOD.get(), Blocks.STRIPPED_OAK_WOOD);
+                STRIPPABLES.put(ModBlocks.GRAVEL_OAK_LOG.get(), Blocks.STRIPPED_OAK_LOG);
+                STRIPPABLES.put(ModBlocks.GRAVEL_OAK_WOOD.get(), Blocks.STRIPPED_OAK_WOOD);
+                STRIPPABLES.put(ModBlocks.SAND_OAK_LOG.get(), Blocks.STRIPPED_OAK_LOG);
+                STRIPPABLES.put(ModBlocks.SAND_OAK_WOOD.get(), Blocks.STRIPPED_OAK_WOOD);
+                STRIPPABLES.put(ModBlocks.CLAY_OAK_LOG.get(), Blocks.STRIPPED_OAK_LOG);
+                STRIPPABLES.put(ModBlocks.CLAY_OAK_WOOD.get(), Blocks.STRIPPED_OAK_WOOD);
 
             }
 

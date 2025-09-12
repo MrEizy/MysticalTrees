@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "mysticaltrees:sand_acorn"
+    },
+    {
+      "item": "mysticaltrees:sand_acorn"
+    },
+    {
+      "item": "mysticaltrees:sand_acorn"
+    },
+    {
+      "item": "mysticaltrees:sand_acorn"
+    }
+  ],
+  "result": {
+    "count": 4,
+    "id": "minecraft:sand"
+  }
+}
