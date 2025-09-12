@@ -21,9 +21,6 @@ public class Tooltips
         {
             if (event.getFlags().hasShiftDown())
             {
-                tooltipComponents.add(Component.translatable("tooltip.laicaps.generic.shift_down"));
-                tooltipComponents.add(Component.translatable("tooltip.laicaps.generic.empty"));
-
                 for (int i = 0; i < 100; i++)
                 {
                     if (!I18n.exists("tooltip." + BuiltInRegistries.ITEM.getKey(stack.getItem()).getNamespace() + "." + BuiltInRegistries.ITEM.getKey(stack.getItem()).getPath() + "." + i))
