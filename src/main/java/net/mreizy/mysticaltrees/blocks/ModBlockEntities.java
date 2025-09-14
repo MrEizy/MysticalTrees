@@ -18,7 +18,27 @@ public class ModBlockEntities {
             BLOCK_ENTITIES.register("ether_sapling_be",() -> BlockEntityType.Builder.of(
                     EtherSaplingBlockEntity::new,
                     ModBlocks.COAL_OAK_SAPLING.get(),
-                    ModBlocks.COPPER_OAK_SAPLING.get()).build(null));
+                    ModBlocks.COPPER_OAK_SAPLING.get(),
+                    ModBlocks.IRON_OAK_SAPLING.get(),
+                    ModBlocks.GOLD_OAK_SAPLING.get(),
+                    ModBlocks.DIAMOND_OAK_SAPLING.get(),
+                    ModBlocks.NETHERITE_OAK_SAPLING.get(),
+                    ModBlocks.AMETHYST_OAK_SAPLING.get(),
+                    ModBlocks.QUARTZ_OAK_SAPLING.get(),
+                    ModBlocks.EMERALD_OAK_SAPLING.get(),
+                    ModBlocks.REDSTONE_OAK_SAPLING.get(),
+                    ModBlocks.LAPIS_OAK_SAPLING.get(),
+                    ModBlocks.SAND_OAK_SAPLING.get(),
+                    ModBlocks.CLAY_OAK_SAPLING.get(),
+                    ModBlocks.GRAVEL_OAK_SAPLING.get(),
+                    ModBlocks.STONE_OAK_SAPLING.get(),
+                    ModBlocks.DIRT_OAK_SAPLING.get()
+
+
+
+
+
+                    ).build(null));
 
 
     public static void register(IEventBus eventBus){

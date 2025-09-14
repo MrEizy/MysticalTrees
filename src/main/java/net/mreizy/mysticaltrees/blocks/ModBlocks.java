@@ -56,7 +56,7 @@ public class ModBlocks {
     public static final DeferredBlock<Block> GOLD_OAK_LEAVES = registerBlock("gold_oak_leaves",
             () -> new LeavesBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_LEAVES)));
     public static final DeferredBlock<Block> GOLD_OAK_SAPLING = registerBlock("gold_oak_sapling",
-            () -> new SaplingBlock(ModTreeGrowers.GOLD_OAK, BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_SAPLING)));
+            () -> new EtherSapling(ModTreeGrowers.GOLD_OAK, BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_SAPLING),new BigDecimal("200"),new BigDecimal("0.1")));
     public static final DeferredBlock<Block> GOLD_AMBER = registerBlock("gold_amber",
             () -> new ColoredFallingBlock(new ColorRGBA(13214124), BlockBehaviour.Properties.of().strength(0.6f, 0.6f).sound(SoundType.GRAVEL)));
     //Iron
@@ -67,7 +67,7 @@ public class ModBlocks {
     public static final DeferredBlock<Block> IRON_OAK_LEAVES = registerBlock("iron_oak_leaves",
             () -> new LeavesBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_LEAVES)));
     public static final DeferredBlock<Block> IRON_OAK_SAPLING = registerBlock("iron_oak_sapling",
-            () -> new SaplingBlock(ModTreeGrowers.IRON_OAK, BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_SAPLING)));
+            () -> new EtherSapling(ModTreeGrowers.IRON_OAK, BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_SAPLING),new BigDecimal("200"),new BigDecimal("0.1")));
     public static final DeferredBlock<Block> IRON_AMBER = registerBlock("iron_amber",
             () -> new ColoredFallingBlock(new ColorRGBA(13214124), BlockBehaviour.Properties.of().strength(0.6f, 0.6f).sound(SoundType.GRAVEL)));
     //Diamond
@@ -78,7 +78,7 @@ public class ModBlocks {
     public static final DeferredBlock<Block> DIAMOND_OAK_LEAVES = registerBlock("diamond_oak_leaves",
             () -> new LeavesBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_LEAVES)));
     public static final DeferredBlock<Block> DIAMOND_OAK_SAPLING = registerBlock("diamond_oak_sapling",
-            () -> new SaplingBlock(ModTreeGrowers.DIAMOND_OAK, BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_SAPLING)));
+            () -> new EtherSapling(ModTreeGrowers.DIAMOND_OAK, BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_SAPLING),new BigDecimal("200"),new BigDecimal("0.1")));
     public static final DeferredBlock<Block> DIAMOND_AMBER = registerBlock("diamond_amber",
             () -> new ColoredFallingBlock(new ColorRGBA(13214124), BlockBehaviour.Properties.of().strength(0.6f, 0.6f).sound(SoundType.GRAVEL)));
     //Netherite
@@ -89,7 +89,7 @@ public class ModBlocks {
     public static final DeferredBlock<Block> NETHERITE_OAK_LEAVES = registerBlock("netherite_oak_leaves",
             () -> new LeavesBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_LEAVES)));
     public static final DeferredBlock<Block> NETHERITE_OAK_SAPLING = registerBlock("netherite_oak_sapling",
-            () -> new SaplingBlock(ModTreeGrowers.NETHERITE_OAK, BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_SAPLING)));
+            () -> new EtherSapling(ModTreeGrowers.NETHERITE_OAK, BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_SAPLING),new BigDecimal("200"),new BigDecimal("0.1")));
     public static final DeferredBlock<Block> NETHERITE_AMBER = registerBlock("netherite_amber",
             () -> new ColoredFallingBlock(new ColorRGBA(13214124), BlockBehaviour.Properties.of().strength(0.6f, 0.6f).sound(SoundType.GRAVEL)));
     //Amethyst
@@ -100,7 +100,7 @@ public class ModBlocks {
     public static final DeferredBlock<Block> AMETHYST_OAK_LEAVES = registerBlock("amethyst_oak_leaves",
             () -> new LeavesBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_LEAVES)));
     public static final DeferredBlock<Block> AMETHYST_OAK_SAPLING = registerBlock("amethyst_oak_sapling",
-            () -> new SaplingBlock(ModTreeGrowers.AMETHYST_OAK, BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_SAPLING)));
+            () -> new EtherSapling(ModTreeGrowers.AMETHYST_OAK, BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_SAPLING),new BigDecimal("200"),new BigDecimal("0.1")));
     public static final DeferredBlock<Block> AMETHYST_AMBER = registerBlock("amethyst_amber",
             () -> new ColoredFallingBlock(new ColorRGBA(13214124), BlockBehaviour.Properties.of().strength(0.6f, 0.6f).sound(SoundType.GRAVEL)));
     //Emerald
@@ -111,7 +111,7 @@ public class ModBlocks {
     public static final DeferredBlock<Block> EMERALD_OAK_LEAVES = registerBlock("emerald_oak_leaves",
             () -> new LeavesBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_LEAVES)));
     public static final DeferredBlock<Block> EMERALD_OAK_SAPLING = registerBlock("emerald_oak_sapling",
-            () -> new SaplingBlock(ModTreeGrowers.EMERALD_OAK, BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_SAPLING)));
+            () -> new EtherSapling(ModTreeGrowers.EMERALD_OAK, BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_SAPLING),new BigDecimal("200"),new BigDecimal("0.1")));
     public static final DeferredBlock<Block> EMERALD_AMBER = registerBlock("emerald_amber",
             () -> new ColoredFallingBlock(new ColorRGBA(13214124), BlockBehaviour.Properties.of().strength(0.6f, 0.6f).sound(SoundType.GRAVEL)));
     //Quartz
@@ -122,7 +122,7 @@ public class ModBlocks {
     public static final DeferredBlock<Block> QUARTZ_OAK_LEAVES = registerBlock("quartz_oak_leaves",
             () -> new LeavesBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_LEAVES)));
     public static final DeferredBlock<Block> QUARTZ_OAK_SAPLING = registerBlock("quartz_oak_sapling",
-            () -> new SaplingBlock(ModTreeGrowers.QUARTZ_OAK, BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_SAPLING)));
+            () -> new EtherSapling(ModTreeGrowers.QUARTZ_OAK, BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_SAPLING),new BigDecimal("200"),new BigDecimal("0.1")));
     public static final DeferredBlock<Block> QUARTZ_AMBER = registerBlock("quartz_amber",
             () -> new ColoredFallingBlock(new ColorRGBA(13214124), BlockBehaviour.Properties.of().strength(0.6f, 0.6f).sound(SoundType.GRAVEL)));
     //Redstone
@@ -133,7 +133,7 @@ public class ModBlocks {
     public static final DeferredBlock<Block> REDSTONE_OAK_LEAVES = registerBlock("redstone_oak_leaves",
             () -> new LeavesBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_LEAVES)));
     public static final DeferredBlock<Block> REDSTONE_OAK_SAPLING = registerBlock("redstone_oak_sapling",
-            () -> new SaplingBlock(ModTreeGrowers.REDSTONE_OAK, BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_SAPLING)));
+            () -> new EtherSapling(ModTreeGrowers.REDSTONE_OAK, BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_SAPLING),new BigDecimal("200"),new BigDecimal("0.1")));
     public static final DeferredBlock<Block> REDSTONE_AMBER = registerBlock("redstone_amber",
             () -> new ColoredFallingBlock(new ColorRGBA(13214124), BlockBehaviour.Properties.of().strength(0.6f, 0.6f).sound(SoundType.GRAVEL)));
     //Lapis
@@ -144,7 +144,7 @@ public class ModBlocks {
     public static final DeferredBlock<Block> LAPIS_OAK_LEAVES = registerBlock("lapis_oak_leaves",
             () -> new LeavesBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_LEAVES)));
     public static final DeferredBlock<Block> LAPIS_OAK_SAPLING = registerBlock("lapis_oak_sapling",
-            () -> new SaplingBlock(ModTreeGrowers.LAPIS_OAK, BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_SAPLING)));
+            () -> new EtherSapling(ModTreeGrowers.LAPIS_OAK, BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_SAPLING),new BigDecimal("200"),new BigDecimal("0.1")));
     public static final DeferredBlock<Block> LAPIS_AMBER = registerBlock("lapis_amber",
             () -> new ColoredFallingBlock(new ColorRGBA(13214124), BlockBehaviour.Properties.of().strength(0.6f, 0.6f).sound(SoundType.GRAVEL)));
     //Stone
@@ -155,7 +155,7 @@ public class ModBlocks {
     public static final DeferredBlock<Block> STONE_OAK_LEAVES = registerBlock("stone_oak_leaves",
             () -> new LeavesBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_LEAVES)));
     public static final DeferredBlock<Block> STONE_OAK_SAPLING = registerBlock("stone_oak_sapling",
-            () -> new SaplingBlock(ModTreeGrowers.STONE_OAK, BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_SAPLING)));
+            () -> new EtherSapling(ModTreeGrowers.STONE_OAK, BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_SAPLING),new BigDecimal("200"),new BigDecimal("0.1")));
     public static final DeferredBlock<Block> STONE_AMBER = registerBlock("stone_amber",
             () -> new ColoredFallingBlock(new ColorRGBA(13214124), BlockBehaviour.Properties.of().strength(0.6f, 0.6f).sound(SoundType.GRAVEL)));
     //Dirt
@@ -166,7 +166,7 @@ public class ModBlocks {
     public static final DeferredBlock<Block> DIRT_OAK_LEAVES = registerBlock("dirt_oak_leaves",
             () -> new LeavesBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_LEAVES)));
     public static final DeferredBlock<Block> DIRT_OAK_SAPLING = registerBlock("dirt_oak_sapling",
-            () -> new SaplingBlock(ModTreeGrowers.DIRT_OAK, BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_SAPLING)));
+            () -> new EtherSapling(ModTreeGrowers.DIRT_OAK, BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_SAPLING),new BigDecimal("200"),new BigDecimal("0.1")));
     public static final DeferredBlock<Block> DIRT_AMBER = registerBlock("dirt_amber",
             () -> new ColoredFallingBlock(new ColorRGBA(13214124), BlockBehaviour.Properties.of().strength(0.6f, 0.6f).sound(SoundType.GRAVEL)));
     //Gravel
@@ -177,7 +177,7 @@ public class ModBlocks {
     public static final DeferredBlock<Block> GRAVEL_OAK_LEAVES = registerBlock("gravel_oak_leaves",
             () -> new LeavesBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_LEAVES)));
     public static final DeferredBlock<Block> GRAVEL_OAK_SAPLING = registerBlock("gravel_oak_sapling",
-            () -> new SaplingBlock(ModTreeGrowers.GRAVEL_OAK, BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_SAPLING)));
+            () -> new EtherSapling(ModTreeGrowers.GRAVEL_OAK, BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_SAPLING),new BigDecimal("200"),new BigDecimal("0.1")));
     public static final DeferredBlock<Block> GRAVEL_AMBER = registerBlock("gravel_amber",
             () -> new ColoredFallingBlock(new ColorRGBA(13214124), BlockBehaviour.Properties.of().strength(0.6f, 0.6f).sound(SoundType.GRAVEL)));
     //Sand
@@ -188,7 +188,7 @@ public class ModBlocks {
     public static final DeferredBlock<Block> SAND_OAK_LEAVES = registerBlock("sand_oak_leaves",
             () -> new LeavesBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_LEAVES)));
     public static final DeferredBlock<Block> SAND_OAK_SAPLING = registerBlock("sand_oak_sapling",
-            () -> new SaplingBlock(ModTreeGrowers.SAND_OAK, BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_SAPLING)));
+            () -> new EtherSapling(ModTreeGrowers.SAND_OAK, BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_SAPLING),new BigDecimal("200"),new BigDecimal("0.1")));
     public static final DeferredBlock<Block> SAND_AMBER = registerBlock("sand_amber",
             () -> new ColoredFallingBlock(new ColorRGBA(13214124), BlockBehaviour.Properties.of().strength(0.6f, 0.6f).sound(SoundType.GRAVEL)));
     //Clay
@@ -199,7 +199,7 @@ public class ModBlocks {
     public static final DeferredBlock<Block> CLAY_OAK_LEAVES = registerBlock("clay_oak_leaves",
             () -> new LeavesBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_LEAVES)));
     public static final DeferredBlock<Block> CLAY_OAK_SAPLING = registerBlock("clay_oak_sapling",
-            () -> new SaplingBlock(ModTreeGrowers.CLAY_OAK, BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_SAPLING)));
+            () -> new EtherSapling(ModTreeGrowers.CLAY_OAK, BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_SAPLING),new BigDecimal("200"),new BigDecimal("0.1")));
     public static final DeferredBlock<Block> CLAY_AMBER = registerBlock("clay_amber",
             () -> new ColoredFallingBlock(new ColorRGBA(13214124), BlockBehaviour.Properties.of().strength(0.6f, 0.6f).sound(SoundType.GRAVEL)));
 
