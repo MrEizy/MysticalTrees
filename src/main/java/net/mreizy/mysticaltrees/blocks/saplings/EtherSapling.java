@@ -13,6 +13,7 @@ import net.minecraft.world.level.block.entity.BlockEntityType;
 import net.minecraft.world.level.block.grower.TreeGrower;
 import net.minecraft.world.level.block.state.BlockState;
 import net.mreizy.mysticaltrees.blocks.ModBlockEntities;
+import net.mreizy.mysticaltrees.Config;
 import org.jetbrains.annotations.Nullable;
 
 import java.math.BigDecimal;
@@ -25,15 +26,18 @@ public class EtherSapling extends SaplingBlock implements EntityBlock {
         super(treeGrower, properties);
         this.requiredEther = requiredEther;
         this.etherRate = etherRate;
+    }
 
+    public EtherSapling(TreeGrower treeGrower, Properties properties) {
+        this(treeGrower, properties, new BigDecimal("100"), new BigDecimal("0.1"));
     }
-    public EtherSapling(TreeGrower treeGrower,Properties properties){
-        this(treeGrower,properties,new BigDecimal("100"),new BigDecimal("0.1"));
-    }
-    //ether trees do not grow using random tick instead they consume ether per tick until threshold
+
     @Override
     protected void randomTick(BlockState state, ServerLevel level, BlockPos pos, RandomSource random) {
-
+        if (!Config.isUseEtherMechanics()) {
+            super.randomTick(state, level, pos, random); // Use normal sapling growth when ether mechanics are disabled
+        }
+        // When useEtherMechanics is true, do nothing to prevent random growth
     }
 
     @Override
@@ -43,23 +47,20 @@ public class EtherSapling extends SaplingBlock implements EntityBlock {
 
     @Override
     public boolean isValidBonemealTarget(LevelReader level, BlockPos pos, BlockState state) {
-        return false;
+        return !Config.isUseEtherMechanics(); // Allow bonemeal only when ether mechanics are disabled
     }
 
     @Override
     public @Nullable BlockEntity newBlockEntity(BlockPos blockPos, BlockState blockState) {
-        return new EtherSaplingBlockEntity(
-                blockPos,
-                blockState
-        );
-
+        return Config.isUseEtherMechanics() ? new EtherSaplingBlockEntity(blockPos, blockState) : null; // Only use block entity for ether mechanics
     }
 
     @SuppressWarnings("unchecked")
     @Override
     public @Nullable <T extends BlockEntity> BlockEntityTicker<T> getTicker(Level level, BlockState state, BlockEntityType<T> blockEntityType) {
-        if(level.isClientSide()) return null;
-
+        if (level.isClientSide() || !Config.isUseEtherMechanics()) {
+            return null; // No ticker when on client side or ether mechanics are disabled
+        }
         return blockEntityType == ModBlockEntities.ETHER_SAPLING_BE.get() ? (BlockEntityTicker<T>) EtherSaplingBlockEntity::tick : null;
     }
 }
