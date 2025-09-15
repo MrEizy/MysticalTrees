@@ -7,6 +7,8 @@ import net.mreizy.mysticaltrees.network.ModPayloads;
 import net.mreizy.mysticaltrees.util.ModAttachments;
 import net.neoforged.neoforge.client.event.RegisterMenuScreensEvent;
 import net.mreizy.mysticaltrees.guis.ModCreativeModeTabs;
+import net.neoforged.neoforge.client.gui.ConfigurationScreen;
+import net.neoforged.neoforge.client.gui.IConfigScreenFactory;
 import net.neoforged.neoforge.network.event.RegisterPayloadHandlersEvent;
 import org.slf4j.Logger;
 
@@ -37,6 +39,7 @@ public class MysticalTrees {
         modEventBus.addListener(this::commonSetup);
 
         NeoForge.EVENT_BUS.register(this);
+        modContainer.registerExtensionPoint(IConfigScreenFactory.class, ConfigurationScreen::new);
 
         ModBlocks.register(modEventBus);
         ModBlockEntities.register(modEventBus);

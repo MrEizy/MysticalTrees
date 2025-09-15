@@ -1,40 +1,42 @@
 package net.mreizy.mysticaltrees;
 
-import java.util.List;
-import java.util.Set;
-import java.util.stream.Collectors;
-
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.resources.ResourceLocation;
-import net.minecraft.world.item.Item;
 import net.neoforged.bus.api.SubscribeEvent;
-import net.neoforged.fml.common.EventBusSubscriber;
 import net.neoforged.fml.event.config.ModConfigEvent;
 import net.neoforged.neoforge.common.ModConfigSpec;
 
-@EventBusSubscriber(modid = MysticalTrees.MOD_ID, bus = EventBusSubscriber.Bus.MOD)
 public class Config
 {
-    private static final ModConfigSpec.Builder BUILDER = new ModConfigSpec.Builder();
+    public static final ModConfigSpec.Builder BUILDER = new ModConfigSpec.Builder();
+    public static ModConfigSpec SPEC;
 
-    private static final ModConfigSpec.BooleanValue USE_ETHER_MECHANICS = BUILDER
-            .comment("Whether EtherSapling uses ether-based mechanics (true) or behaves like a normal sapling (false)")
-            .define("useEtherMechanics", true);
+    public static class Common
+    {
+        public static ModConfigSpec.BooleanValue USE_ETHER_MECHANICS;
 
-    static final ModConfigSpec SPEC = BUILDER.build();
+        public Common(ModConfigSpec.Builder builder) {
+            builder.push("EtherSaplingOptions");
+            USE_ETHER_MECHANICS = builder
+                    .comment("Whether Saplings uses Ether-Based mechanics (§2True§f) or behaves like a normal Saplings (§4False§f)")
+                    .translation("mysticaltrees.config.useEtherMechanics")
+                    .define("useEtherMechanics", true);
+            builder.pop();
+        }
+    }
 
-    private static boolean logDirtBlock;
+    static
+    {
+        new Common(BUILDER);
+        SPEC = BUILDER.build();
+    }
+
     private static boolean useEtherMechanics;
 
     @SubscribeEvent
     static void onLoad(final ModConfigEvent event)
     {
-        useEtherMechanics = USE_ETHER_MECHANICS.get();
-    }
-
-    public static boolean isLogDirtBlock()
-    {
-        return logDirtBlock;
+        useEtherMechanics = Common.USE_ETHER_MECHANICS.get();
     }
 
     public static boolean isUseEtherMechanics()

@@ -14,6 +14,14 @@ public class lang extends LanguageProvider {
 
         //GUI & Other Stuff
         add("creativetab.mysticaltrees.root", "Mystical Trees");
+        add("mysticaltrees.config.useEtherMechanics", "Ether Mechanics");
+        add("mysticaltrees.config.useEtherMechanics.tooltip", "Whether Saplings uses Ether-Based mechanics (§2True§f) or behaves like a normal Saplings (§4False§f)");
+        add("mysticaltrees.configuration.EtherSaplingOptions", "Ether Sapling Options");
+        add("mysticaltrees.configuration.EtherSaplingOptions.tooltip", "Here you can change all things related to Ether Mechanics");
+        add("mysticaltrees.configuration.section.mysticaltrees.common.toml.title", "All Configs for Mystical Trees");
+        add("mysticaltrees.configuration.section.mysticaltrees.common.toml", "All Configs for Mystical Trees");
+        add("mysticaltrees.configuration.EtherSaplingOptions.button", "Ether Mechanic");
+        add("mysticaltrees.configuration.title", "Mystical Trees");
 
         // COAL
         add("block.mysticaltrees.coal_oak_log", "Coal Oak Log");

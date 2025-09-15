@@ -112,5 +112,13 @@
   "item.mysticaltrees.sand_resin": "Sand Resin",
   "item.mysticaltrees.stone_acorn": "Stone Acorn",
   "item.mysticaltrees.stone_resin": "Stone Resin",
+  "mysticaltrees.config.useEtherMechanics": "Ether Mechanics",
+  "mysticaltrees.config.useEtherMechanics.tooltip": "Whether Saplings uses Ether-Based mechanics (§2True§f) or behaves like a normal Saplings (§4False§f)",
+  "mysticaltrees.configuration.EtherSaplingOptions": "Ether Sapling Options",
+  "mysticaltrees.configuration.EtherSaplingOptions.button": "Ether Mechanic",
+  "mysticaltrees.configuration.EtherSaplingOptions.tooltip": "Here you can change all things related to Ether Mechanics",
+  "mysticaltrees.configuration.section.mysticaltrees.common.toml": "All Configs for Mystical Trees",
+  "mysticaltrees.configuration.section.mysticaltrees.common.toml.title": "All Configs for Mystical Trees",
+  "mysticaltrees.configuration.title": "Mystical Trees",
   "tooltip.mysticaltrees.stone_acorn": "Omniscient & Omnipresent Stone Acorn"
 }
