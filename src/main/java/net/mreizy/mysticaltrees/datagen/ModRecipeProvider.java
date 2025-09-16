@@ -264,6 +264,19 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .requires(ModItems.GRAVEL_ACORN, 4)
                 .unlockedBy("has_acorn", has(ModItems.GRAVEL_ACORN)).save(recipeOutput);
 
+        // LAVA
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.LAVA_AMBER.get())
+                .pattern("ARA")
+                .pattern("RAR")
+                .pattern("ARA")
+                .define('A', ModItems.LAVA_ACORN.get())
+                .define('R', ModItems.LAVA_RESIN.get())
+                .unlockedBy("has_acorn", has(ModItems.LAVA_ACORN)).save(recipeOutput);
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, Items.LAVA_BUCKET, 1)
+                .requires(ModItems.LAVA_ACORN, 4)
+                .requires(Items.BUCKET)
+                .unlockedBy("has_acorn", has(ModItems.LAVA_ACORN)).save(recipeOutput);
+
 
 
         /*oreSmelting(recipeOutput, JADE_SMELTABLES, RecipeCategory.MISC, ModItems.JADE.get(), 0.25f, 200, "jade");

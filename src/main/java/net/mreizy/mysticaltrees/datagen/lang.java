@@ -168,5 +168,14 @@ public class lang extends LanguageProvider {
         add("item.mysticaltrees.gravel_resin", "Gravel Resin");
         add("item.mysticaltrees.gravel_acorn", "Gravel Acorn");
 
+        // LAVA
+        add("block.mysticaltrees.lava_oak_log", "Lava Oak Log");
+        add("block.mysticaltrees.lava_oak_wood", "Lava Oak Wood");
+        add("block.mysticaltrees.lava_oak_leaves", "Lava Oak Leaves");
+        add("block.mysticaltrees.lava_oak_sapling", "Lava Oak Sapling");
+        add("block.mysticaltrees.lava_amber", "Lava Amber");
+        add("item.mysticaltrees.lava_resin", "Lava Resin");
+        add("item.mysticaltrees.lava_acorn", "Lava Acorn");
+
     }
 }

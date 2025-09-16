@@ -1,4 +1,4 @@
-// 1.21.1	2025-09-12T14:44:17.29114	Item Models: mysticaltrees
+// 1.21.1	2025-09-16T17:32:59.6588276	Item Models: mysticaltrees
 32aa7677b7404ff75c51b7beaf1a117462dc596e assets/mysticaltrees/models/item/amethyst_acorn.json
 ab1969043ba05a76934cfce28ad46a99a2c0991b assets/mysticaltrees/models/item/amethyst_oak_sapling.json
 bba29b562343494a25eb4e08141a5b659a38d2dd assets/mysticaltrees/models/item/amethyst_resin.json
@@ -32,6 +32,9 @@ eef7abc585fe27df16c428116fc04494d7fec361 assets/mysticaltrees/models/item/iron_a
 886cdfb3b1e511e3195ced3de033ae8ec4f97763 assets/mysticaltrees/models/item/lapis_acorn.json
 56d9a1b716a7747a77ebd4bf6f003dfb1993ef4d assets/mysticaltrees/models/item/lapis_oak_sapling.json
 6642aea2dc2be18f8f8ec3b33f06756051810ed4 assets/mysticaltrees/models/item/lapis_resin.json
+2763d378e59dc4bfc29fcc00412cd4aeac8b5257 assets/mysticaltrees/models/item/lava_acorn.json
+7946128f7926b2618ae78452e08149feacc840f9 assets/mysticaltrees/models/item/lava_oak_sapling.json
+311eef0bf4d50c2e9013c4865b1290dbc18013f8 assets/mysticaltrees/models/item/lava_resin.json
 ad699f1cbc884d6485e3eac432b78758660f3c3c assets/mysticaltrees/models/item/netherite_acorn.json
 613f6cfe7fb36b456608cbf10f8f4c231adfe940 assets/mysticaltrees/models/item/netherite_oak_sapling.json
 c08b571c4642c6828032cccebc58e77160f24b5f assets/mysticaltrees/models/item/netherite_resin.json

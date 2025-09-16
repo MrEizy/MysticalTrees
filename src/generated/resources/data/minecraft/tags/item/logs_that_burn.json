@@ -31,6 +31,8 @@
     "mysticaltrees:clay_oak_log",
     "mysticaltrees:clay_oak_wood",
     "mysticaltrees:gravel_oak_log",
-    "mysticaltrees:gravel_oak_wood"
+    "mysticaltrees:gravel_oak_wood",
+    "mysticaltrees:lava_oak_log",
+    "mysticaltrees:lava_oak_wood"
   ]
 }

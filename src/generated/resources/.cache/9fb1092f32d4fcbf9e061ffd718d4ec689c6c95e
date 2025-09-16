@@ -1,4 +1,4 @@
-// 1.21.1	2025-09-12T14:44:17.3025832	Recipes
+// 1.21.1	2025-09-16T17:32:59.6720836	Recipes
 76a06610f694cadc5b5bb9a83aa136bd0d30b096 data/minecraft/advancement/recipes/misc/amethyst_shard.json
 114aaf3ab01116fe6df7199f3e766a79fd5e8d57 data/minecraft/advancement/recipes/misc/andesite.json
 9e1065ed1c2950268ff26deed65ee6b78e6b90c3 data/minecraft/advancement/recipes/misc/blackstone.json
@@ -15,6 +15,7 @@ aced9e25e7167f13bff7f5440f96cd28f3459783 data/minecraft/advancement/recipes/misc
 4c5a342453f2e83120b0ae12e5227fa78b0ad981 data/minecraft/advancement/recipes/misc/granite.json
 15ac62e029840129b3a53abe7989ab57a7baf378 data/minecraft/advancement/recipes/misc/gravel.json
 adeedb68fafe4a728a894f62c44241b8d9c37820 data/minecraft/advancement/recipes/misc/lapis_lazuli.json
+edbca24aa8a5b7f295bd7e707075a438cd4becfb data/minecraft/advancement/recipes/misc/lava_bucket.json
 d73c7f4d0e9ea6200ef701de39cf69a5e06a6729 data/minecraft/advancement/recipes/misc/quartz.json
 2acdfebda103bddd1e1e881183c22ac4845939a2 data/minecraft/advancement/recipes/misc/redstone.json
 d3344e62c2e04bb9d945a9ff626a91fc720aa1c3 data/minecraft/advancement/recipes/misc/sand.json
@@ -35,6 +36,7 @@ a7f5873baf4265215b88dd683d3fade52ac2a579 data/minecraft/recipe/emerald.json
 a5d0f339cbd6b65421de5ae0b3a0215974b7c9ee data/minecraft/recipe/granite.json
 2cb1591e866e386b12ec7b386bb296bf351323ec data/minecraft/recipe/gravel.json
 059730046cb98cbfcfb8a9348d9fbe3c388863c8 data/minecraft/recipe/lapis_lazuli.json
+08beca62a1d9a8c2273a0a4ab62193f6941c4ae7 data/minecraft/recipe/lava_bucket.json
 8bb5b5e826bd7ee6d1031830e112b2cc1d8d9c79 data/minecraft/recipe/quartz.json
 a6d4811c628417eb8ef2264550223fb0cdd11925 data/minecraft/recipe/redstone.json
 7c58c638562c67d1126dc8adc4d308ff1f5b7909 data/minecraft/recipe/sand.json
@@ -50,6 +52,7 @@ f985e46e871ad85c14db7dcd6490d7fa8feb5f23 data/mysticaltrees/advancement/recipes/
 05f06c9adbc28eff35250e30bec9d9368ab3bb91 data/mysticaltrees/advancement/recipes/misc/gravel_amber.json
 6679bec291825e107ff5a10570df2a228e19ed7f data/mysticaltrees/advancement/recipes/misc/iron_amber.json
 8f2be5996adcd419013e3bcceee6dd90e512db05 data/mysticaltrees/advancement/recipes/misc/lapis_amber.json
+0a7932c817bad898b40b5a5dad47c3cf93d39c09 data/mysticaltrees/advancement/recipes/misc/lava_amber.json
 f5ed3e0b5a58b91bcc1851443c64c34c0e31802c data/mysticaltrees/advancement/recipes/misc/netherite_amber.json
 4ec58e69738d0c67d563cdb7d9d86b0f8019d9f8 data/mysticaltrees/advancement/recipes/misc/quartz_amber.json
 67de6ecc09be187a2d66a9dc06471d8eeac1a439 data/mysticaltrees/advancement/recipes/misc/redstone_amber.json
@@ -66,6 +69,7 @@ d9049b330b3dc7a1e4333e902a48273d078a86aa data/mysticaltrees/recipe/emerald_amber
 a1e4eb76951f8509e19cfa602882ac81ddcadf88 data/mysticaltrees/recipe/gravel_amber.json
 9bc212327527080ac3d31eefee4d9288c730ca80 data/mysticaltrees/recipe/iron_amber.json
 de6195dd662acfd3b4c36420ecc1f034849613b6 data/mysticaltrees/recipe/lapis_amber.json
+d30973b90f61662df8e285375040941b2a0d102a data/mysticaltrees/recipe/lava_amber.json
 a1e22ed4964919454112b985091e79a5c0fb89d8 data/mysticaltrees/recipe/netherite_amber.json
 668f36c610e7cf73ad84f183292d101bdf918d91 data/mysticaltrees/recipe/quartz_amber.json
 16ba342f65c82c85754d8bfcf77d17ec6c5d2403 data/mysticaltrees/recipe/redstone_amber.json

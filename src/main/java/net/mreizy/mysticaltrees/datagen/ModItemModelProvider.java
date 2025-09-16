@@ -86,6 +86,11 @@ public class ModItemModelProvider extends ItemModelProvider {
         basicItem(ModItems.GRAVEL_RESIN.get());
         basicItem(ModItems.GRAVEL_ACORN.get());
 
+        // LAVA
+        saplingItem(ModBlocks.LAVA_OAK_SAPLING);
+        basicItem(ModItems.LAVA_RESIN.get());
+        basicItem(ModItems.LAVA_ACORN.get());
+
 
 
     }

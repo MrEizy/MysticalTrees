@@ -57,6 +57,14 @@ public class ModCreativeModeTabs {
                         output.accept(ModItems.GRAVEL_RESIN);
                         output.accept(ModItems.GRAVEL_ACORN);
 
+                        output.accept(ModBlocks.LAVA_OAK_LOG);
+                        output.accept(ModBlocks.LAVA_OAK_WOOD);
+                        output.accept(ModBlocks.LAVA_OAK_LEAVES);
+                        output.accept(ModBlocks.LAVA_AMBER);
+                        output.accept(ModBlocks.LAVA_OAK_SAPLING);
+                        output.accept(ModItems.LAVA_RESIN);
+                        output.accept(ModItems.LAVA_ACORN);
+
                         output.accept(ModBlocks.COAL_OAK_LOG);
                         output.accept(ModBlocks.COAL_OAK_WOOD);
                         output.accept(ModBlocks.COAL_OAK_LEAVES);

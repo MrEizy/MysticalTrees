@@ -41,6 +41,7 @@ public class ModConfiguredFeatures {
     public static final ResourceKey<ConfiguredFeature<?, ?>> GRAVEL_OAK_KEY = registerKey("gravel_oak");
     public static final ResourceKey<ConfiguredFeature<?, ?>> CLAY_OAK_KEY = registerKey("clay_oak");
     public static final ResourceKey<ConfiguredFeature<?, ?>> SAND_OAK_KEY = registerKey("sand_oak");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> LAVA_OAK_KEY = registerKey("lava_oak");
 
     public static void bootstrap(BootstrapContext<ConfiguredFeature<?, ?>> context) {
         RuleTest stoneReplaceables = new TagMatchTest(BlockTags.DEEPSLATE_ORE_REPLACEABLES);
@@ -143,6 +144,12 @@ public class ModConfiguredFeatures {
                 BlockStateProvider.simple(ModBlocks.GRAVEL_OAK_LOG.get()),
                 new StraightTrunkPlacer(4, 2, 0),
                 BlockStateProvider.simple(ModBlocks.GRAVEL_OAK_LEAVES.get()),
+                new BlobFoliagePlacer(ConstantInt.of(2), ConstantInt.of(0), 3),
+                new TwoLayersFeatureSize(1, 0, 2)).build());
+        register(context, LAVA_OAK_KEY, Feature.TREE, new TreeConfiguration.TreeConfigurationBuilder(
+                BlockStateProvider.simple(ModBlocks.LAVA_OAK_LOG.get()),
+                new StraightTrunkPlacer(4, 2, 0),
+                BlockStateProvider.simple(ModBlocks.LAVA_OAK_LEAVES.get()),
                 new BlobFoliagePlacer(ConstantInt.of(2), ConstantInt.of(0), 3),
                 new TwoLayersFeatureSize(1, 0, 2)).build());
     }

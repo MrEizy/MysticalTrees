@@ -95,6 +95,10 @@ public class ModItems {
             () -> new Item(new Item.Properties()));
     public static final DeferredItem<Item> GRAVEL_ACORN = ITEMS.register("gravel_acorn",
             () -> new Item(new Item.Properties().food(ModFoodProperties.ACORNS)));
+    public static final DeferredItem<Item> LAVA_RESIN = ITEMS.register("lava_resin",
+            () -> new Item(new Item.Properties()));
+    public static final DeferredItem<Item> LAVA_ACORN = ITEMS.register("lava_acorn",
+            () -> new Item(new Item.Properties().food(ModFoodProperties.ACORNS)));
 
 
     public static void register(IEventBus eventBus) {

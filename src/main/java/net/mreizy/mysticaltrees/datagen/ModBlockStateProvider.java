@@ -163,6 +163,15 @@ public class ModBlockStateProvider extends BlockStateProvider {
         blockItem(ModBlocks.GRAVEL_OAK_WOOD);
         leavesBlock(ModBlocks.GRAVEL_OAK_LEAVES);
         saplingBlock(ModBlocks.GRAVEL_OAK_SAPLING);
+
+        // GRAVEL
+        logMBlock(((RotatedPillarBlock) ModBlocks.LAVA_OAK_LOG.get()));
+        axisBlock(((RotatedPillarBlock) ModBlocks.LAVA_OAK_WOOD.get()), blockTexture(ModBlocks.LAVA_OAK_LOG.get()), blockTexture(ModBlocks.LAVA_OAK_LOG.get()));
+        simpleBlockWithItem(ModBlocks.LAVA_AMBER);
+        blockItem(ModBlocks.LAVA_OAK_LOG);
+        blockItem(ModBlocks.LAVA_OAK_WOOD);
+        leavesBlock(ModBlocks.LAVA_OAK_LEAVES);
+        saplingBlock(ModBlocks.LAVA_OAK_SAPLING);
     }
 
 
