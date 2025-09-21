@@ -27,7 +27,7 @@ public class SidePedestalBlockEntityRenderer implements BlockEntityRenderer<Side
         ItemStack stack = pBlockEntity.inventory.getStackInSlot(0);
 
         pPoseStack.pushPose();
-        pPoseStack.translate(0.5f, 1.15f, 0.5f);
+        pPoseStack.translate(0.5f, 1.35f, 0.5f);
         pPoseStack.scale(0.5f, 0.5f, 0.5f);
         pPoseStack.mulPose(Axis.YP.rotationDegrees(pBlockEntity.getRenderingRotation()));
 

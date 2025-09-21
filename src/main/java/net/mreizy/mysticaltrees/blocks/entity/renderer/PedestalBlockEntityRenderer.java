@@ -56,7 +56,7 @@ public class PedestalBlockEntityRenderer implements BlockEntityRenderer<Pedestal
         EntityRenderDispatcher entityRenderDispatcher = Minecraft.getInstance().getEntityRenderDispatcher();
 
         pPoseStack.pushPose();
-        pPoseStack.translate(0.5f, 1.15f, 0.5f);
+        pPoseStack.translate(0.5f, 1.25f, 0.5f);
         pPoseStack.scale(0.5f, 0.5f, 0.5f);
         pPoseStack.mulPose(Axis.YP.rotationDegrees(pBlockEntity.getRenderingRotation()));
 
