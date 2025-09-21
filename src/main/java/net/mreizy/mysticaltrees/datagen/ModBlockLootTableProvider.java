@@ -172,6 +172,20 @@ public class ModBlockLootTableProvider extends BlockLootSubProvider {
         dropSelf(ModBlocks.LAVA_OAK_WOOD.get());
         dropSelf(ModBlocks.LAVA_AMBER.get());
         dropSelf(ModBlocks.LAVA_OAK_SAPLING.get());
+        // WATER
+        add(ModBlocks.WATER_OAK_LEAVES.get(), createMystLeafDrop(ModBlocks.WATER_OAK_LEAVES.get(), ModBlocks.WATER_OAK_SAPLING.get(),
+                NORMAL_LEAVES_SAPLING_CHANCES, ModItems.WATER_ACORN.get(), 0.15f));
+        add(ModBlocks.WATER_OAK_LOG.get(), createMystLogDrop(ModBlocks.WATER_OAK_LOG.get(), ModItems.WATER_RESIN.get()));
+        dropSelf(ModBlocks.WATER_OAK_WOOD.get());
+        dropSelf(ModBlocks.WATER_AMBER.get());
+        dropSelf(ModBlocks.WATER_OAK_SAPLING.get());
+        // ICE
+        add(ModBlocks.ICE_OAK_LEAVES.get(), createMystLeafDrop(ModBlocks.ICE_OAK_LEAVES.get(), ModBlocks.ICE_OAK_SAPLING.get(),
+                NORMAL_LEAVES_SAPLING_CHANCES, ModItems.ICE_ACORN.get(), 0.15f));
+        add(ModBlocks.ICE_OAK_LOG.get(), createMystLogDrop(ModBlocks.ICE_OAK_LOG.get(), ModItems.ICE_RESIN.get()));
+        dropSelf(ModBlocks.ICE_OAK_WOOD.get());
+        dropSelf(ModBlocks.ICE_AMBER.get());
+        dropSelf(ModBlocks.ICE_OAK_SAPLING.get());
 
         // DYE
         add(ModBlocks.DYE_OAK_LEAVES.get(), createMystLeafDrop(ModBlocks.DYE_OAK_LEAVES.get(), ModBlocks.DYE_OAK_SAPLING.get(),
@@ -180,6 +194,14 @@ public class ModBlockLootTableProvider extends BlockLootSubProvider {
         dropSelf(ModBlocks.DYE_OAK_WOOD.get());
         dropSelf(ModBlocks.DYE_AMBER.get());
         dropSelf(ModBlocks.DYE_OAK_SAPLING.get());
+
+        // HONEY
+        add(ModBlocks.HONEY_OAK_LEAVES.get(), createMystLeafDrop(ModBlocks.HONEY_OAK_LEAVES.get(), ModBlocks.HONEY_OAK_SAPLING.get(),
+                NORMAL_LEAVES_SAPLING_CHANCES, ModItems.HONEY_ACORN.get(), 0.15f));
+        add(ModBlocks.HONEY_OAK_LOG.get(), createMystLogDrop(ModBlocks.HONEY_OAK_LOG.get(), ModItems.HONEY_RESIN.get()));
+        dropSelf(ModBlocks.HONEY_OAK_WOOD.get());
+        dropSelf(ModBlocks.HONEY_AMBER.get());
+        dropSelf(ModBlocks.HONEY_OAK_SAPLING.get());
 
     }
 

@@ -99,6 +99,14 @@ public class ModItems {
             () -> new Item(new Item.Properties()));
     public static final DeferredItem<Item> LAVA_ACORN = ITEMS.register("lava_acorn",
             () -> new Item(new Item.Properties().food(ModFoodProperties.ACORNS)));
+    public static final DeferredItem<Item> WATER_RESIN = ITEMS.register("water_resin",
+            () -> new Item(new Item.Properties()));
+    public static final DeferredItem<Item> WATER_ACORN = ITEMS.register("water_acorn",
+            () -> new Item(new Item.Properties().food(ModFoodProperties.ACORNS)));
+    public static final DeferredItem<Item> ICE_RESIN = ITEMS.register("ice_resin",
+            () -> new Item(new Item.Properties()));
+    public static final DeferredItem<Item> ICE_ACORN = ITEMS.register("ice_acorn",
+            () -> new Item(new Item.Properties().food(ModFoodProperties.ACORNS)));
     public static final DeferredItem<Item> DYE_RESIN = ITEMS.register("dye_resin",
             () -> new Item(new Item.Properties()));
     public static final DeferredItem<Item> DYE_ACORN = ITEMS.register("dye_acorn",
@@ -117,7 +125,10 @@ public class ModItems {
                     super.appendHoverText(stack, context, tooltipComponents, tooltipFlag);
                 }
             });
-
+    public static final DeferredItem<Item> HONEY_RESIN = ITEMS.register("honey_resin",
+            () -> new Item(new Item.Properties()));
+    public static final DeferredItem<Item> HONEY_ACORN = ITEMS.register("honey_acorn",
+            () -> new Item(new Item.Properties().food(ModFoodProperties.ACORNS)));
 
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);

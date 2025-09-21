@@ -1,0 +1,10 @@
+{
+  "values": {
+    "mysticaltrees:lava_acorn": {
+      "burn_time": 7800
+    },
+    "mysticaltrees:lava_resin": {
+      "burn_time": 8000
+    }
+  }
+}

@@ -3,16 +3,21 @@ package net.mreizy.mysticaltrees.datagen;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
 import net.minecraft.data.recipes.*;
+import net.minecraft.world.item.DyeColor;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.item.crafting.*;
 import net.minecraft.world.level.ItemLike;
+import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.Blocks;
 import net.mreizy.mysticaltrees.MysticalTrees;
 import net.mreizy.mysticaltrees.blocks.ModBlocks;
 import net.mreizy.mysticaltrees.items.ModItems;
 import net.neoforged.neoforge.common.conditions.IConditionBuilder;
 
 import java.util.List;
+import java.util.Map;
 import java.util.concurrent.CompletableFuture;
+import java.util.function.Supplier;
 
 public class ModRecipeProvider extends RecipeProvider implements IConditionBuilder {
     public ModRecipeProvider(PackOutput output, CompletableFuture<HolderLookup.Provider> registries) {
@@ -276,6 +281,44 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .requires(ModItems.LAVA_ACORN, 4)
                 .requires(Items.BUCKET)
                 .unlockedBy("has_acorn", has(ModItems.LAVA_ACORN)).save(recipeOutput);
+        // WATER
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.WATER_AMBER.get())
+                .pattern("ARA")
+                .pattern("RAR")
+                .pattern("ARA")
+                .define('A', ModItems.WATER_ACORN.get())
+                .define('R', ModItems.WATER_RESIN.get())
+                .unlockedBy("has_acorn", has(ModItems.WATER_ACORN)).save(recipeOutput);
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, Items.WATER_BUCKET, 1)
+                .requires(ModItems.WATER_ACORN, 4)
+                .requires(Items.BUCKET)
+                .unlockedBy("has_acorn", has(ModItems.WATER_ACORN)).save(recipeOutput);
+        // ICE
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.ICE_AMBER.get())
+                .pattern("ARA")
+                .pattern("RAR")
+                .pattern("ARA")
+                .define('A', ModItems.ICE_ACORN.get())
+                .define('R', ModItems.ICE_RESIN.get())
+                .unlockedBy("has_acorn", has(ModItems.ICE_ACORN)).save(recipeOutput);
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, Items.ICE, 4)
+                .pattern("AAA")
+                .pattern("A A")
+                .pattern("AAA")
+                .define('A', ModItems.ICE_ACORN.get())
+                .unlockedBy("has_acorn", has(ModItems.ICE_ACORN)).save(recipeOutput);
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, Items.PACKED_ICE, 4)
+                .pattern("AAA")
+                .pattern("AAA")
+                .pattern("AAA")
+                .define('A', ModItems.ICE_ACORN.get())
+                .unlockedBy("has_acorn", has(ModItems.ICE_ACORN)).save(recipeOutput);
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, Items.SNOW_BLOCK, 4)
+                .pattern(" A ")
+                .pattern("A A")
+                .pattern(" A ")
+                .define('A', ModItems.ICE_ACORN.get())
+                .unlockedBy("has_acorn", has(ModItems.ICE_ACORN)).save(recipeOutput);
 
         // DYE
         ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.DYE_AMBER.get())
@@ -285,6 +328,173 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .define('A', ModItems.DYE_ACORN.get())
                 .define('R', ModItems.DYE_RESIN.get())
                 .unlockedBy("has_acorn", has(ModItems.DYE_ACORN)).save(recipeOutput);
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, Items.WHITE_DYE, 4)
+                .pattern("   ")
+                .pattern("AAA")
+                .pattern("   ")
+                .define('A', ModItems.DYE_ACORN.get())
+                .unlockedBy("has_acorn", has(ModItems.DYE_ACORN)).save(recipeOutput);
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, Items.LIGHT_GRAY_DYE, 4)
+                .pattern("A  ")
+                .pattern("A  ")
+                .pattern(" A ")
+                .define('A', ModItems.DYE_ACORN.get())
+                .unlockedBy("has_acorn", has(ModItems.DYE_ACORN)).save(recipeOutput);
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, Items.GRAY_DYE, 4)
+                .pattern("  A")
+                .pattern(" A ")
+                .pattern("A  ")
+                .define('A', ModItems.DYE_ACORN.get())
+                .unlockedBy("has_acorn", has(ModItems.DYE_ACORN)).save(recipeOutput);
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, Items.BLACK_DYE, 4)
+                .pattern("AA ")
+                .pattern("  A")
+                .pattern("   ")
+                .define('A', ModItems.DYE_ACORN.get())
+                .unlockedBy("has_acorn", has(ModItems.DYE_ACORN)).save(recipeOutput);
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, Items.BROWN_DYE, 4)
+                .pattern(" A ")
+                .pattern("A  ")
+                .pattern(" A ")
+                .define('A', ModItems.DYE_ACORN.get())
+                .unlockedBy("has_acorn", has(ModItems.DYE_ACORN)).save(recipeOutput);
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, Items.RED_DYE, 4)
+                .pattern(" A ")
+                .pattern("A  ")
+                .pattern("A  ")
+                .define('A', ModItems.DYE_ACORN.get())
+                .unlockedBy("has_acorn", has(ModItems.DYE_ACORN)).save(recipeOutput);
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, Items.ORANGE_DYE, 4)
+                .pattern("  A")
+                .pattern("   ")
+                .pattern("AA ")
+                .define('A', ModItems.DYE_ACORN.get())
+                .unlockedBy("has_acorn", has(ModItems.DYE_ACORN)).save(recipeOutput);
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, Items.YELLOW_DYE, 4)
+                .pattern("  A")
+                .pattern("A  ")
+                .pattern(" A ")
+                .define('A', ModItems.DYE_ACORN.get())
+                .unlockedBy("has_acorn", has(ModItems.DYE_ACORN)).save(recipeOutput);
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, Items.LIME_DYE, 4)
+                .pattern("  A")
+                .pattern("  A")
+                .pattern("A  ")
+                .define('A', ModItems.DYE_ACORN.get())
+                .unlockedBy("has_acorn", has(ModItems.DYE_ACORN)).save(recipeOutput);
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, Items.GREEN_DYE, 4)
+                .pattern("  A")
+                .pattern("AA ")
+                .pattern("   ")
+                .define('A', ModItems.DYE_ACORN.get())
+                .unlockedBy("has_acorn", has(ModItems.DYE_ACORN)).save(recipeOutput);
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, Items.CYAN_DYE, 4)
+                .pattern("A A")
+                .pattern(" A ")
+                .pattern("   ")
+                .define('A', ModItems.DYE_ACORN.get())
+                .unlockedBy("has_acorn", has(ModItems.DYE_ACORN)).save(recipeOutput);
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, Items.LIGHT_BLUE_DYE, 4)
+                .pattern("AA ")
+                .pattern("   ")
+                .pattern("  A")
+                .define('A', ModItems.DYE_ACORN.get())
+                .unlockedBy("has_acorn", has(ModItems.DYE_ACORN)).save(recipeOutput);
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, Items.BLUE_DYE, 4)
+                .pattern(" A ")
+                .pattern("A A")
+                .pattern("   ")
+                .define('A', ModItems.DYE_ACORN.get())
+                .unlockedBy("has_acorn", has(ModItems.DYE_ACORN)).save(recipeOutput);
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, Items.PURPLE_DYE, 4)
+                .pattern("  A")
+                .pattern("A A")
+                .pattern("   ")
+                .define('A', ModItems.DYE_ACORN.get())
+                .unlockedBy("has_acorn", has(ModItems.DYE_ACORN)).save(recipeOutput);
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, Items.MAGENTA_DYE, 4)
+                .pattern(" A ")
+                .pattern("  A")
+                .pattern("A  ")
+                .define('A', ModItems.DYE_ACORN.get())
+                .unlockedBy("has_acorn", has(ModItems.DYE_ACORN)).save(recipeOutput);
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, Items.PINK_DYE, 4)
+                .pattern("A  ")
+                .pattern("   ")
+                .pattern("A A")
+                .define('A', ModItems.DYE_ACORN.get())
+                .unlockedBy("has_acorn", has(ModItems.DYE_ACORN)).save(recipeOutput);
+
+        // HONEY
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.HONEY_AMBER.get())
+                .pattern("ARA")
+                .pattern("RAR")
+                .pattern("ARA")
+                .define('A', ModItems.HONEY_ACORN.get())
+                .define('R', ModItems.HONEY_RESIN.get())
+                .unlockedBy("has_acorn", has(ModItems.HONEY_ACORN)).save(recipeOutput);
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, Items.HONEYCOMB, 4)
+                .pattern("AAA")
+                .pattern("A A")
+                .pattern("AAA")
+                .define('A', ModItems.HONEY_ACORN.get())
+                .unlockedBy("has_acorn", has(ModItems.HONEY_ACORN)).save(recipeOutput);
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, Items.HONEY_BOTTLE, 1)
+                .requires(ModItems.HONEY_RESIN, 1)
+                .requires(Items.GLASS_BOTTLE)
+                .unlockedBy("has_acorn", has(ModItems.HONEY_ACORN)).save(recipeOutput);
+
+        //Loops
+// Define color mappings for concrete powder and concrete
+        Map<DyeColor, Supplier<Block>> COLORED_CONCRETE_POWDERS = Map.ofEntries(
+                Map.entry(DyeColor.WHITE, () -> Blocks.WHITE_CONCRETE_POWDER),
+                Map.entry(DyeColor.LIGHT_GRAY, () -> Blocks.LIGHT_GRAY_CONCRETE_POWDER),
+                Map.entry(DyeColor.GRAY, () -> Blocks.GRAY_CONCRETE_POWDER),
+                Map.entry(DyeColor.BLACK, () -> Blocks.BLACK_CONCRETE_POWDER),
+                Map.entry(DyeColor.BROWN, () -> Blocks.BROWN_CONCRETE_POWDER),
+                Map.entry(DyeColor.RED, () -> Blocks.RED_CONCRETE_POWDER),
+                Map.entry(DyeColor.ORANGE, () -> Blocks.ORANGE_CONCRETE_POWDER),
+                Map.entry(DyeColor.YELLOW, () -> Blocks.YELLOW_CONCRETE_POWDER),
+                Map.entry(DyeColor.LIME, () -> Blocks.LIME_CONCRETE_POWDER),
+                Map.entry(DyeColor.GREEN, () -> Blocks.GREEN_CONCRETE_POWDER),
+                Map.entry(DyeColor.CYAN, () -> Blocks.CYAN_CONCRETE_POWDER),
+                Map.entry(DyeColor.LIGHT_BLUE, () -> Blocks.LIGHT_BLUE_CONCRETE_POWDER),
+                Map.entry(DyeColor.BLUE, () -> Blocks.BLUE_CONCRETE_POWDER),
+                Map.entry(DyeColor.PURPLE, () -> Blocks.PURPLE_CONCRETE_POWDER),
+                Map.entry(DyeColor.MAGENTA, () -> Blocks.MAGENTA_CONCRETE_POWDER),
+                Map.entry(DyeColor.PINK, () -> Blocks.PINK_CONCRETE_POWDER)
+        );
+
+        Map<DyeColor, Supplier<Block>> COLORED_CONCRETE = Map.ofEntries(
+                Map.entry(DyeColor.WHITE, () -> Blocks.WHITE_CONCRETE),
+                Map.entry(DyeColor.LIGHT_GRAY, () -> Blocks.LIGHT_GRAY_CONCRETE),
+                Map.entry(DyeColor.GRAY, () -> Blocks.GRAY_CONCRETE),
+                Map.entry(DyeColor.BLACK, () -> Blocks.BLACK_CONCRETE),
+                Map.entry(DyeColor.BROWN, () -> Blocks.BROWN_CONCRETE),
+                Map.entry(DyeColor.RED, () -> Blocks.RED_CONCRETE),
+                Map.entry(DyeColor.ORANGE, () -> Blocks.ORANGE_CONCRETE),
+                Map.entry(DyeColor.YELLOW, () -> Blocks.YELLOW_CONCRETE),
+                Map.entry(DyeColor.LIME, () -> Blocks.LIME_CONCRETE),
+                Map.entry(DyeColor.GREEN, () -> Blocks.GREEN_CONCRETE),
+                Map.entry(DyeColor.CYAN, () -> Blocks.CYAN_CONCRETE),
+                Map.entry(DyeColor.LIGHT_BLUE, () -> Blocks.LIGHT_BLUE_CONCRETE),
+                Map.entry(DyeColor.BLUE, () -> Blocks.BLUE_CONCRETE),
+                Map.entry(DyeColor.PURPLE, () -> Blocks.PURPLE_CONCRETE),
+                Map.entry(DyeColor.MAGENTA, () -> Blocks.MAGENTA_CONCRETE),
+                Map.entry(DyeColor.PINK, () -> Blocks.PINK_CONCRETE)
+        );
+
+// Generate recipes for all colors
+        COLORED_CONCRETE_POWDERS.forEach((dyeColor, concretePowder) -> {
+            ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, COLORED_CONCRETE.get(dyeColor).get(), 8)
+                    .pattern("PPP")
+                    .pattern("PWP")
+                    .pattern("PPP")
+                    .define('P', concretePowder.get())
+                    .define('W', ModItems.WATER_RESIN.get())
+                    .unlockedBy("has_water_resin", has(ModItems.WATER_RESIN.get()))
+                    .save(recipeOutput, "mysticaltrees:concrete_hardening/" + dyeColor.getName());
+        });
 
 
 

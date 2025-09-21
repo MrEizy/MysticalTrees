@@ -78,6 +78,12 @@ public class ModFlammableRotatedPillarBlock extends RotatedPillarBlock {
                 STRIPPABLES.put(ModBlocks.CLAY_OAK_WOOD.get(), Blocks.STRIPPED_OAK_WOOD);
                 STRIPPABLES.put(ModBlocks.LAVA_OAK_LOG.get(), Blocks.STRIPPED_OAK_LOG);
                 STRIPPABLES.put(ModBlocks.LAVA_OAK_WOOD.get(), Blocks.STRIPPED_OAK_WOOD);
+                STRIPPABLES.put(ModBlocks.WATER_OAK_LOG.get(), Blocks.STRIPPED_OAK_LOG);
+                STRIPPABLES.put(ModBlocks.WATER_OAK_WOOD.get(), Blocks.STRIPPED_OAK_WOOD);
+                STRIPPABLES.put(ModBlocks.ICE_OAK_LOG.get(), Blocks.STRIPPED_OAK_LOG);
+                STRIPPABLES.put(ModBlocks.ICE_OAK_WOOD.get(), Blocks.STRIPPED_OAK_WOOD);
+                STRIPPABLES.put(ModBlocks.HONEY_OAK_LOG.get(), Blocks.STRIPPED_OAK_LOG);
+                STRIPPABLES.put(ModBlocks.HONEY_OAK_WOOD.get(), Blocks.STRIPPED_OAK_WOOD);
                 STRIPPABLES.put(ModBlocks.DYE_OAK_LOG.get(), Blocks.STRIPPED_OAK_LOG);
                 STRIPPABLES.put(ModBlocks.DYE_OAK_WOOD.get(), Blocks.STRIPPED_OAK_WOOD);
 

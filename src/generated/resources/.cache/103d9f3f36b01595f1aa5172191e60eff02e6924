@@ -1,4 +1,4 @@
-// 1.21.1	2025-09-21T14:15:40.5857042	Registries
+// 1.21.1	2025-09-21T17:06:24.871143	Registries
 ede831a1bb8415f1d0603e5ea65703d39c260773 data/mysticaltrees/worldgen/configured_feature/amethyst_oak.json
 f3e329e120b25ac2ebc48d0914a26597a39e2f23 data/mysticaltrees/worldgen/configured_feature/clay_oak.json
 272ad62479c85c9158caf347821100483bb8fbc4 data/mysticaltrees/worldgen/configured_feature/coal_oak.json
@@ -9,6 +9,8 @@ bb66410c5bb1380e8920a8337ea23f6a3830d190 data/mysticaltrees/worldgen/configured_
 3b98da93374d7ead41b913662d8325f3742a56a8 data/mysticaltrees/worldgen/configured_feature/emerald_oak.json
 75d035667c6399b4178526cb822981939200b726 data/mysticaltrees/worldgen/configured_feature/gold_oak.json
 df18acaa776d66f6b988986cb4e019d0fee6e5cc data/mysticaltrees/worldgen/configured_feature/gravel_oak.json
+b262ad7af7af632bb779705de3dcf1dc917bf187 data/mysticaltrees/worldgen/configured_feature/honey_oak.json
+65e7e500297eab9ea951f2df88668794701396ed data/mysticaltrees/worldgen/configured_feature/ice_oak.json
 57d427bc71986f42987fb9a9499eea065163d0f1 data/mysticaltrees/worldgen/configured_feature/iron_oak.json
 746aba631dacb37343c11d13c907d291b00b7a6b data/mysticaltrees/worldgen/configured_feature/lapis_oak.json
 6b1c5f2320200b2fe86ae7a33018ddfd71a06292 data/mysticaltrees/worldgen/configured_feature/lava_oak.json
@@ -17,3 +19,4 @@ a4847d87634ec093d0bc3af35ce70ceeeb5cb046 data/mysticaltrees/worldgen/configured_
 7ea94ccb3f119e1ed935c89e105f3b5fdb7d5f3f data/mysticaltrees/worldgen/configured_feature/redstone_oak.json
 d9be719e042cceedcb4b4a86162216873d16f864 data/mysticaltrees/worldgen/configured_feature/sand_oak.json
 f05f40c215ba2cf3f1399042e0ade96d5be809d5 data/mysticaltrees/worldgen/configured_feature/stone_oak.json
+447bc5bdb4a5ff08c7dbdd66b0a5312aaef1bdbc data/mysticaltrees/worldgen/configured_feature/water_oak.json

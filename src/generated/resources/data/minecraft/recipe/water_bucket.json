@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "mysticaltrees:water_acorn"
+    },
+    {
+      "item": "mysticaltrees:water_acorn"
+    },
+    {
+      "item": "mysticaltrees:water_acorn"
+    },
+    {
+      "item": "mysticaltrees:water_acorn"
+    },
+    {
+      "item": "minecraft:bucket"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "minecraft:water_bucket"
+  }
+}

@@ -176,6 +176,22 @@ public class lang extends LanguageProvider {
         add("block.mysticaltrees.lava_amber", "Lava Amber");
         add("item.mysticaltrees.lava_resin", "Lava Resin");
         add("item.mysticaltrees.lava_acorn", "Lava Acorn");
+        // WATER
+        add("block.mysticaltrees.water_oak_log", "Water Oak Log");
+        add("block.mysticaltrees.water_oak_wood", "Water Oak Wood");
+        add("block.mysticaltrees.water_oak_leaves", "Water Oak Leaves");
+        add("block.mysticaltrees.water_oak_sapling", "Water Oak Sapling");
+        add("block.mysticaltrees.water_amber", "Water Amber");
+        add("item.mysticaltrees.water_resin", "Water Resin");
+        add("item.mysticaltrees.water_acorn", "Water Acorn");
+        // ICE
+        add("block.mysticaltrees.ice_oak_log", "Ice Oak Log");
+        add("block.mysticaltrees.ice_oak_wood", "Ice Oak Wood");
+        add("block.mysticaltrees.ice_oak_leaves", "Ice Oak Leaves");
+        add("block.mysticaltrees.ice_oak_sapling", "Ice Oak Sapling");
+        add("block.mysticaltrees.ice_amber", "Ice Amber");
+        add("item.mysticaltrees.ice_resin", "Ice Resin");
+        add("item.mysticaltrees.ice_acorn", "Ice Acorn");
 
         // DYE
         add("block.mysticaltrees.dye_oak_log", "Dye Oak Log");
@@ -186,6 +202,15 @@ public class lang extends LanguageProvider {
         add("item.mysticaltrees.dye_resin", "Dye Resin");
         add("item.mysticaltrees.dye_acorn", "Dye Acorn");
         add("tooltip.mysticaltrees.dye_acorn", "Omniscient & Omnipresent Dye Acorn");
+
+        // HONEY
+        add("block.mysticaltrees.honey_oak_log", "Honey Oak Log");
+        add("block.mysticaltrees.honey_oak_wood", "Honey Oak Wood");
+        add("block.mysticaltrees.honey_oak_leaves", "Honey Oak Leaves");
+        add("block.mysticaltrees.honey_oak_sapling", "Honey Oak Sapling");
+        add("block.mysticaltrees.honey_amber", "Honey Amber");
+        add("item.mysticaltrees.honey_resin", "Honey Resin");
+        add("item.mysticaltrees.honey_acorn", "Honey Acorn");
 
     }
 }

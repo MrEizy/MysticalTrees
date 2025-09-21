@@ -172,6 +172,23 @@ public class ModBlockStateProvider extends BlockStateProvider {
         blockItem(ModBlocks.LAVA_OAK_WOOD);
         leavesBlock(ModBlocks.LAVA_OAK_LEAVES);
         saplingBlock(ModBlocks.LAVA_OAK_SAPLING);
+        // WATER
+        logMBlock(((RotatedPillarBlock) ModBlocks.WATER_OAK_LOG.get()));
+        axisBlock(((RotatedPillarBlock) ModBlocks.WATER_OAK_WOOD.get()), blockTexture(ModBlocks.WATER_OAK_LOG.get()), blockTexture(ModBlocks.WATER_OAK_LOG.get()));
+        simpleBlockWithItem(ModBlocks.WATER_AMBER);
+        blockItem(ModBlocks.WATER_OAK_LOG);
+        blockItem(ModBlocks.WATER_OAK_WOOD);
+        leavesBlock(ModBlocks.WATER_OAK_LEAVES);
+        saplingBlock(ModBlocks.WATER_OAK_SAPLING);
+
+        // ICE
+        logMBlock(((RotatedPillarBlock) ModBlocks.ICE_OAK_LOG.get()));
+        axisBlock(((RotatedPillarBlock) ModBlocks.ICE_OAK_WOOD.get()), blockTexture(ModBlocks.ICE_OAK_LOG.get()), blockTexture(ModBlocks.ICE_OAK_LOG.get()));
+        simpleBlockWithItem(ModBlocks.ICE_AMBER);
+        blockItem(ModBlocks.ICE_OAK_LOG);
+        blockItem(ModBlocks.ICE_OAK_WOOD);
+        leavesBlock(ModBlocks.ICE_OAK_LEAVES);
+        saplingBlock(ModBlocks.ICE_OAK_SAPLING);
 
         // DYE
         logMBlock(((RotatedPillarBlock) ModBlocks.DYE_OAK_LOG.get()));
@@ -181,6 +198,15 @@ public class ModBlockStateProvider extends BlockStateProvider {
         blockItem(ModBlocks.DYE_OAK_WOOD);
         leavesBlock(ModBlocks.DYE_OAK_LEAVES);
         saplingBlock(ModBlocks.DYE_OAK_SAPLING);
+
+        // HONEY
+        logMBlock(((RotatedPillarBlock) ModBlocks.HONEY_OAK_LOG.get()));
+        axisBlock(((RotatedPillarBlock) ModBlocks.HONEY_OAK_WOOD.get()), blockTexture(ModBlocks.HONEY_OAK_LOG.get()), blockTexture(ModBlocks.HONEY_OAK_LOG.get()));
+        simpleBlockWithItem(ModBlocks.HONEY_AMBER);
+        blockItem(ModBlocks.HONEY_OAK_LOG);
+        blockItem(ModBlocks.HONEY_OAK_WOOD);
+        leavesBlock(ModBlocks.HONEY_OAK_LEAVES);
+        saplingBlock(ModBlocks.HONEY_OAK_SAPLING);
     }
 
 

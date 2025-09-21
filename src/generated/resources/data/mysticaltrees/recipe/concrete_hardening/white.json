@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "P": {
+      "item": "minecraft:white_concrete_powder"
+    },
+    "W": {
+      "item": "mysticaltrees:water_resin"
+    }
+  },
+  "pattern": [
+    "PPP",
+    "PWP",
+    "PPP"
+  ],
+  "result": {
+    "count": 8,
+    "id": "minecraft:white_concrete"
+  }
+}

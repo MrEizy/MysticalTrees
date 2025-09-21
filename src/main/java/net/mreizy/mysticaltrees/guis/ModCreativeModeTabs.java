@@ -63,7 +63,20 @@ public class ModCreativeModeTabs {
                         output.accept(ModBlocks.LAVA_OAK_SAPLING);
                         output.accept(ModItems.LAVA_RESIN);
                         output.accept(ModItems.LAVA_ACORN);
-
+                        output.accept(ModBlocks.WATER_OAK_LOG);
+                        output.accept(ModBlocks.WATER_OAK_WOOD);
+                        output.accept(ModBlocks.WATER_OAK_LEAVES);
+                        output.accept(ModBlocks.WATER_AMBER);
+                        output.accept(ModBlocks.WATER_OAK_SAPLING);
+                        output.accept(ModItems.WATER_RESIN);
+                        output.accept(ModItems.WATER_ACORN);
+                        output.accept(ModBlocks.ICE_OAK_LOG);
+                        output.accept(ModBlocks.ICE_OAK_WOOD);
+                        output.accept(ModBlocks.ICE_OAK_LEAVES);
+                        output.accept(ModBlocks.ICE_AMBER);
+                        output.accept(ModBlocks.ICE_OAK_SAPLING);
+                        output.accept(ModItems.ICE_RESIN);
+                        output.accept(ModItems.ICE_ACORN);
                         output.accept(ModBlocks.DYE_OAK_LOG);
                         output.accept(ModBlocks.DYE_OAK_WOOD);
                         output.accept(ModBlocks.DYE_OAK_LEAVES);
@@ -71,6 +84,13 @@ public class ModCreativeModeTabs {
                         output.accept(ModBlocks.DYE_OAK_SAPLING);
                         output.accept(ModItems.DYE_RESIN);
                         output.accept(ModItems.DYE_ACORN);
+                        output.accept(ModBlocks.HONEY_OAK_LOG);
+                        output.accept(ModBlocks.HONEY_OAK_WOOD);
+                        output.accept(ModBlocks.HONEY_OAK_LEAVES);
+                        output.accept(ModBlocks.HONEY_AMBER);
+                        output.accept(ModBlocks.HONEY_OAK_SAPLING);
+                        output.accept(ModItems.HONEY_RESIN);
+                        output.accept(ModItems.HONEY_ACORN);
 
                         output.accept(ModBlocks.COAL_OAK_LOG);
                         output.accept(ModBlocks.COAL_OAK_WOOD);

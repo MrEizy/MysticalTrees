@@ -33,6 +33,10 @@ public class ModBlockEntities {
                     ModBlocks.GRAVEL_OAK_SAPLING.get(),
                     ModBlocks.STONE_OAK_SAPLING.get(),
                     ModBlocks.DIRT_OAK_SAPLING.get(),
+                    ModBlocks.WATER_OAK_SAPLING.get(),
+                    ModBlocks.LAVA_OAK_SAPLING.get(),
+                    ModBlocks.ICE_OAK_SAPLING.get(),
+                    ModBlocks.HONEY_OAK_SAPLING.get(),
                     ModBlocks.DYE_OAK_SAPLING.get()
 
                     ).build(null));

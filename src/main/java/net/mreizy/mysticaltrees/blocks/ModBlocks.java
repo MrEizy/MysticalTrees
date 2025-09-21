@@ -215,6 +215,17 @@ public class ModBlocks {
             () -> new EtherSapling(ModTreeGrowers.LAVA_OAK, BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_SAPLING),new BigDecimal("200"),new BigDecimal("0.1")));
     public static final DeferredBlock<Block> LAVA_AMBER = registerBlock("lava_amber",
             () -> new ColoredFallingBlock(new ColorRGBA(13214124), BlockBehaviour.Properties.of().strength(0.6f, 0.6f).sound(SoundType.GRAVEL)));
+    //Water
+    public static final DeferredBlock<Block> WATER_OAK_LOG = registerBlock("water_oak_log",
+            () -> new ModFlammableRotatedPillarBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_LOG)));
+    public static final DeferredBlock<Block> WATER_OAK_WOOD = registerBlock("water_oak_wood",
+            () -> new ModFlammableRotatedPillarBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_WOOD)));
+    public static final DeferredBlock<Block> WATER_OAK_LEAVES = registerBlock("water_oak_leaves",
+            () -> new LeavesBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_LEAVES)));
+    public static final DeferredBlock<Block> WATER_OAK_SAPLING = registerBlock("water_oak_sapling",
+            () -> new EtherSapling(ModTreeGrowers.WATER_OAK, BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_SAPLING),new BigDecimal("200"),new BigDecimal("0.1")));
+    public static final DeferredBlock<Block> WATER_AMBER = registerBlock("water_amber",
+            () -> new ColoredFallingBlock(new ColorRGBA(13214124), BlockBehaviour.Properties.of().strength(0.6f, 0.6f).sound(SoundType.GRAVEL)));
     //Dye
     public static final DeferredBlock<Block> DYE_OAK_LOG = registerBlock("dye_oak_log",
             () -> new ModFlammableRotatedPillarBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_LOG)));
@@ -225,6 +236,28 @@ public class ModBlocks {
     public static final DeferredBlock<Block> DYE_OAK_SAPLING = registerBlock("dye_oak_sapling",
             () -> new EtherSapling(ModTreeGrowers.DYE_OAK, BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_SAPLING),new BigDecimal("200"),new BigDecimal("0.1")));
     public static final DeferredBlock<Block> DYE_AMBER = registerBlock("dye_amber",
+            () -> new ColoredFallingBlock(new ColorRGBA(13214124), BlockBehaviour.Properties.of().strength(0.6f, 0.6f).sound(SoundType.GRAVEL)));
+    //Ice
+    public static final DeferredBlock<Block> ICE_OAK_LOG = registerBlock("ice_oak_log",
+            () -> new ModFlammableRotatedPillarBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_LOG)));
+    public static final DeferredBlock<Block> ICE_OAK_WOOD = registerBlock("ice_oak_wood",
+            () -> new ModFlammableRotatedPillarBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_WOOD)));
+    public static final DeferredBlock<Block> ICE_OAK_LEAVES = registerBlock("ice_oak_leaves",
+            () -> new LeavesBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_LEAVES)));
+    public static final DeferredBlock<Block> ICE_OAK_SAPLING = registerBlock("ice_oak_sapling",
+            () -> new EtherSapling(ModTreeGrowers.ICE_OAK, BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_SAPLING),new BigDecimal("200"),new BigDecimal("0.1")));
+    public static final DeferredBlock<Block> ICE_AMBER = registerBlock("ice_amber",
+            () -> new ColoredFallingBlock(new ColorRGBA(13214124), BlockBehaviour.Properties.of().strength(0.6f, 0.6f).sound(SoundType.GRAVEL)));
+    //Honey
+    public static final DeferredBlock<Block> HONEY_OAK_LOG = registerBlock("honey_oak_log",
+            () -> new ModFlammableRotatedPillarBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_LOG)));
+    public static final DeferredBlock<Block> HONEY_OAK_WOOD = registerBlock("honey_oak_wood",
+            () -> new ModFlammableRotatedPillarBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_WOOD)));
+    public static final DeferredBlock<Block> HONEY_OAK_LEAVES = registerBlock("honey_oak_leaves",
+            () -> new LeavesBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_LEAVES)));
+    public static final DeferredBlock<Block> HONEY_OAK_SAPLING = registerBlock("honey_oak_sapling",
+            () -> new EtherSapling(ModTreeGrowers.HONEY_OAK, BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_SAPLING),new BigDecimal("200"),new BigDecimal("0.1")));
+    public static final DeferredBlock<Block> HONEY_AMBER = registerBlock("honey_amber",
             () -> new ColoredFallingBlock(new ColorRGBA(13214124), BlockBehaviour.Properties.of().strength(0.6f, 0.6f).sound(SoundType.GRAVEL)));
 
     private static <T extends Block> DeferredBlock<T> registerBlock(String name, Supplier<T> block) {

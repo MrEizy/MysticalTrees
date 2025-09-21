@@ -34,6 +34,12 @@
     "mysticaltrees:gravel_oak_wood",
     "mysticaltrees:lava_oak_log",
     "mysticaltrees:lava_oak_wood",
+    "mysticaltrees:water_oak_log",
+    "mysticaltrees:water_oak_wood",
+    "mysticaltrees:ice_oak_log",
+    "mysticaltrees:ice_oak_wood",
+    "mysticaltrees:honey_oak_log",
+    "mysticaltrees:honey_oak_wood",
     "mysticaltrees:dye_oak_log",
     "mysticaltrees:dye_oak_wood"
   ]

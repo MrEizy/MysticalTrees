@@ -90,11 +90,25 @@ public class ModItemModelProvider extends ItemModelProvider {
         saplingItem(ModBlocks.LAVA_OAK_SAPLING);
         basicItem(ModItems.LAVA_RESIN.get());
         basicItem(ModItems.LAVA_ACORN.get());
+        // WATER
+        saplingItem(ModBlocks.WATER_OAK_SAPLING);
+        basicItem(ModItems.WATER_RESIN.get());
+        basicItem(ModItems.WATER_ACORN.get());
+
+        // ICE
+        saplingItem(ModBlocks.ICE_OAK_SAPLING);
+        basicItem(ModItems.ICE_RESIN.get());
+        basicItem(ModItems.ICE_ACORN.get());
 
         // DYE
         saplingItem(ModBlocks.DYE_OAK_SAPLING);
         basicItem(ModItems.DYE_RESIN.get());
         basicItem(ModItems.DYE_ACORN.get());
+
+        // HONEY
+        saplingItem(ModBlocks.HONEY_OAK_SAPLING);
+        basicItem(ModItems.HONEY_RESIN.get());
+        basicItem(ModItems.HONEY_ACORN.get());
 
 
 

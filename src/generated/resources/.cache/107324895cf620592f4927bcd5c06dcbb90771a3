@@ -1,4 +1,4 @@
-// 1.21.1	2025-09-21T14:15:40.5724093	Item Models: mysticaltrees
+// 1.21.1	2025-09-21T17:06:24.8481868	Item Models: mysticaltrees
 32aa7677b7404ff75c51b7beaf1a117462dc596e assets/mysticaltrees/models/item/amethyst_acorn.json
 ab1969043ba05a76934cfce28ad46a99a2c0991b assets/mysticaltrees/models/item/amethyst_oak_sapling.json
 bba29b562343494a25eb4e08141a5b659a38d2dd assets/mysticaltrees/models/item/amethyst_resin.json
@@ -29,6 +29,12 @@ ec3058e30db74e8bb0b30a2ba0667ad828637c6a assets/mysticaltrees/models/item/emeral
 9b48aad2f2bacb03f2f5e268bc8540a69dfec948 assets/mysticaltrees/models/item/gravel_acorn.json
 30533723fc754e50c800acc55de3bf328ab6662e assets/mysticaltrees/models/item/gravel_oak_sapling.json
 c8e6ec3c30a9cfd4656bee95236d4568a7d3fcf8 assets/mysticaltrees/models/item/gravel_resin.json
+be4d492b29f6500848e9a2dc5b0d093f9ba3b559 assets/mysticaltrees/models/item/honey_acorn.json
+365d1425786a0b83f3205b413a163f2548dafa2f assets/mysticaltrees/models/item/honey_oak_sapling.json
+923e798f6fa9b04462412802ae1a223f8f4555f9 assets/mysticaltrees/models/item/honey_resin.json
+1201f2b89fd176102dcec5d398c9a4315fd1df0c assets/mysticaltrees/models/item/ice_acorn.json
+10c2deb492baa4917e9a687bd2f0d2eab51a7e83 assets/mysticaltrees/models/item/ice_oak_sapling.json
+e033effe0e7633e1e4b74c6856d453da3cb684fc assets/mysticaltrees/models/item/ice_resin.json
 eef7abc585fe27df16c428116fc04494d7fec361 assets/mysticaltrees/models/item/iron_acorn.json
 07cb55cf10adb7af1358583018e1d71840843777 assets/mysticaltrees/models/item/iron_oak_sapling.json
 6c93c31ff5536b6ee7ae0ced462d754c8ee8a4e7 assets/mysticaltrees/models/item/iron_resin.json
@@ -53,3 +59,6 @@ b35d3089972c4b5ecc01607a1106722641451d3b assets/mysticaltrees/models/item/sand_r
 430c5142825f63310a6cc2085b6079aa6803b517 assets/mysticaltrees/models/item/stone_acorn.json
 b83b719a187406a62c9a4acd2a322ea74ad55a5b assets/mysticaltrees/models/item/stone_oak_sapling.json
 5a4204559710f0dc354ab7bb150eb1083dec6eda assets/mysticaltrees/models/item/stone_resin.json
+1bbdbcf9dc3493bc0533490f120ace04b6283e4a assets/mysticaltrees/models/item/water_acorn.json
+480676c6520431158ef1ee10a0c00267ad3832eb assets/mysticaltrees/models/item/water_oak_sapling.json
+7e59d31b50ab73dd096005a4c054e42a20a4a534 assets/mysticaltrees/models/item/water_resin.json
