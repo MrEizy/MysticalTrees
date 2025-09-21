@@ -23,6 +23,10 @@ public class lang extends LanguageProvider {
         add("mysticaltrees.configuration.EtherSaplingOptions.button", "Ether Mechanic");
         add("mysticaltrees.configuration.title", "Mystical Trees");
 
+        add("block.mysticaltrees.main_pedestal", "Main Pedestal");
+        add("block.mysticaltrees.side_pedestal", "Side Pedestal");
+        add("blockentity.mysticaltrees.pedestal", "Side Pedestal");
+
         // COAL
         add("block.mysticaltrees.coal_oak_log", "Coal Oak Log");
         add("block.mysticaltrees.coal_oak_wood", "Coal Oak Wood");

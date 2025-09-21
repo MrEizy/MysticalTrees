@@ -3,6 +3,8 @@ package net.mreizy.mysticaltrees.blocks;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.world.level.block.entity.BlockEntityType;
 import net.mreizy.mysticaltrees.MysticalTrees;
+import net.mreizy.mysticaltrees.blocks.entity.PedestalBlockEntity;
+import net.mreizy.mysticaltrees.blocks.entity.SidePedestalBlockEntity;
 import net.mreizy.mysticaltrees.blocks.saplings.EtherSaplingBlockEntity;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredRegister;
@@ -40,6 +42,14 @@ public class ModBlockEntities {
                     ModBlocks.DYE_OAK_SAPLING.get()
 
                     ).build(null));
+
+    public static final Supplier<BlockEntityType<PedestalBlockEntity>> MAIN_PEDESTAL_BE =
+            BLOCK_ENTITIES.register("main_pedestal_be", () -> BlockEntityType.Builder.of(
+                    PedestalBlockEntity::new, ModBlocks.MAIN_PEDESTAL.get()).build(null));
+
+    public static final Supplier<BlockEntityType<SidePedestalBlockEntity>> SIDE_PEDESTAL_BE =
+            BLOCK_ENTITIES.register("side_pedestal_be", () -> BlockEntityType.Builder.of(
+                    SidePedestalBlockEntity::new, ModBlocks.SIDE_PEDESTAL.get()).build(null));
 
     public static void register(IEventBus eventBus){
 

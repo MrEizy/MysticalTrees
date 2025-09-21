@@ -3,8 +3,8 @@
 	"credit": "Made with Blockbench",
 	"texture_size": [64, 64],
 	"textures": {
-		"0": "mysticaltrees:block/ether_generator",
-		"particle": "mysticaltrees:block/ether_generator"
+		"0": "mysticaltrees:block/side_pedestal",
+		"particle": "mysticaltrees:block/side_pedestal"
 	},
 	"elements": [
 		{

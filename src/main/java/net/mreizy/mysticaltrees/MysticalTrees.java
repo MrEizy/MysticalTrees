@@ -4,6 +4,8 @@ import net.mreizy.mysticaltrees.blocks.ModBlockEntities;
 import net.mreizy.mysticaltrees.blocks.ModBlocks;
 import net.mreizy.mysticaltrees.items.ModItems;
 import net.mreizy.mysticaltrees.network.ModPayloads;
+import net.mreizy.mysticaltrees.recipe.ModRecipes;
+import net.mreizy.mysticaltrees.screen.ModMenuTypes;
 import net.mreizy.mysticaltrees.util.ModAttachments;
 import net.neoforged.neoforge.client.event.RegisterMenuScreensEvent;
 import net.mreizy.mysticaltrees.guis.ModCreativeModeTabs;
@@ -43,6 +45,8 @@ public class MysticalTrees {
 
         ModBlocks.register(modEventBus);
         ModBlockEntities.register(modEventBus);
+        ModMenuTypes.register(modEventBus);
+        ModRecipes.register(modEventBus);
         ModItems.register(modEventBus);
         ModCreativeModeTabs.register(modEventBus);
         ModAttachments.register(modEventBus);

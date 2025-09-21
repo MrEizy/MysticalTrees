@@ -1,2 +1,4 @@
-// 1.21.1	2025-09-21T17:06:24.8634438	Tags for minecraft:block mod id mysticaltrees
+// 1.21.1	2025-09-21T20:38:34.3660232	Tags for minecraft:block mod id mysticaltrees
 5964645a3f5ca122afd55183b52086aef1b9b72f data/minecraft/tags/block/logs_that_burn.json
+f143a374d9e1a45e5d2e6dc3d0a7fd5322adff12 data/minecraft/tags/block/mineable/pickaxe.json
+f143a374d9e1a45e5d2e6dc3d0a7fd5322adff12 data/minecraft/tags/block/needs_iron_tool.json

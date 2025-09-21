@@ -1,4 +1,4 @@
-// 1.21.1	2025-09-21T17:06:24.8644727	Loot Tables
+// 1.21.1	2025-09-21T20:38:34.3671008	Loot Tables
 f7b83b90a9dd7651e3762630b104a86cd6a517a9 data/mysticaltrees/loot_table/blocks/amethyst_amber.json
 ef464a1294102e0e770401ce5003f6332bb5ae00 data/mysticaltrees/loot_table/blocks/amethyst_oak_leaves.json
 6d71fbe982e942ec080f9b2374697c1fbcb1a514 data/mysticaltrees/loot_table/blocks/amethyst_oak_log.json
@@ -74,6 +74,7 @@ aea5e3823e993279748412c1496fd91d9fb80c3d data/mysticaltrees/loot_table/blocks/la
 d55d412dcef488b297e506d1891b66891ae1a1ee data/mysticaltrees/loot_table/blocks/lava_oak_log.json
 fc59f6a4b17b869fdcc40ddbf5745b9ae2c823ef data/mysticaltrees/loot_table/blocks/lava_oak_sapling.json
 82abbc63b1f5d00c6ba5938c26e36c4803ffbd10 data/mysticaltrees/loot_table/blocks/lava_oak_wood.json
+64b88ce740c5438ad6d8966b4701ca8c0fb6876b data/mysticaltrees/loot_table/blocks/main_pedestal.json
 28f5cfb39871254c54de70bd47978f4872f451a7 data/mysticaltrees/loot_table/blocks/netherite_amber.json
 216a66836298c3fe8111aa8965d8fac56b1ae187 data/mysticaltrees/loot_table/blocks/netherite_oak_leaves.json
 67108c43c05c9f51e9961240072751497f3b4e72 data/mysticaltrees/loot_table/blocks/netherite_oak_log.json
@@ -94,6 +95,7 @@ bc405af0ebeb54e449766892e3796acd4ec462fe data/mysticaltrees/loot_table/blocks/sa
 3bba87a360b997fa15e58387d360748557d97052 data/mysticaltrees/loot_table/blocks/sand_oak_log.json
 1c43e5e6bc0308da7a7f6d362e1c149055f7e148 data/mysticaltrees/loot_table/blocks/sand_oak_sapling.json
 2815e824f60b67fe6735695cded7c86b210bb58c data/mysticaltrees/loot_table/blocks/sand_oak_wood.json
+98007e79dc80074d306016b6f0ee9b67527f2f8d data/mysticaltrees/loot_table/blocks/side_pedestal.json
 80f1c9ecac0cd622b80ee9bf5b568c9f71775c1a data/mysticaltrees/loot_table/blocks/stone_amber.json
 b2f7037863959c9ea45143650993cd93f8a08072 data/mysticaltrees/loot_table/blocks/stone_oak_leaves.json
 2f840e8996ec7d305e4aed286bb2631b35305c2f data/mysticaltrees/loot_table/blocks/stone_oak_log.json

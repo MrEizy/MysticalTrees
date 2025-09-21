@@ -22,6 +22,14 @@ public class ModBlockTagProvider extends BlockTagsProvider {
                 .add(ModBlocks.JADE_BLOCK.get())
                 .add(ModBlocks.JADE_ORE.get());*/
 
+        tag(BlockTags.MINEABLE_WITH_PICKAXE)
+                .add(ModBlocks.MAIN_PEDESTAL.get())
+                .add(ModBlocks.SIDE_PEDESTAL.get());
+
+        tag(BlockTags.NEEDS_IRON_TOOL)
+                .add(ModBlocks.MAIN_PEDESTAL.get())
+                .add(ModBlocks.SIDE_PEDESTAL.get());
+
         this.tag(BlockTags.LOGS_THAT_BURN)
                 .add(ModBlocks.COAL_OAK_LOG.get())
                 .add(ModBlocks.COAL_OAK_WOOD.get())

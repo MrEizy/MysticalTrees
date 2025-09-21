@@ -21,6 +21,11 @@ public class ModCreativeModeTabs {
             () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModItems.COAL_RESIN.get()))
                     .title(Component.translatable("creativetab.mysticaltrees.root"))
                     .displayItems((itemDisplayParameters, output) -> {
+                        output.accept(ModBlocks.MAIN_PEDESTAL);
+                        output.accept(ModBlocks.SIDE_PEDESTAL);
+
+
+
                         output.accept(ModBlocks.STONE_OAK_LOG);
                         output.accept(ModBlocks.STONE_OAK_WOOD);
                         output.accept(ModBlocks.STONE_OAK_LEAVES);

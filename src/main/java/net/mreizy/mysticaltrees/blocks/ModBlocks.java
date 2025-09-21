@@ -6,6 +6,8 @@ import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.*;
 import net.minecraft.world.level.block.state.BlockBehaviour;
+import net.mreizy.mysticaltrees.blocks.custom.PedestalBlock;
+import net.mreizy.mysticaltrees.blocks.custom.SidePedestalBlock;
 import net.mreizy.mysticaltrees.blocks.logs.ModFlammableRotatedPillarBlock;
 import net.mreizy.mysticaltrees.blocks.saplings.EtherSapling;
 import net.mreizy.mysticaltrees.items.ModItems;
@@ -25,6 +27,13 @@ public class ModBlocks {
     //block entity saplings
     //public static final DeferredBlock<Block> TEST_SAPLING = registerBlock("test_sapling",
     //        ()-> new EtherSaplingOld(ModTreeGrowers.DIRT_OAK, BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_SAPLING), BigDecimal.TEN,BigDecimal.ONE));
+
+    //Pedestals ETC
+    public static final DeferredBlock<Block> MAIN_PEDESTAL = registerBlock("main_pedestal",
+            () -> new PedestalBlock(BlockBehaviour.Properties.of().noOcclusion().requiresCorrectToolForDrops().sound(SoundType.STONE)));
+
+    public static final DeferredBlock<Block> SIDE_PEDESTAL = registerBlock("side_pedestal",
+            () -> new SidePedestalBlock(BlockBehaviour.Properties.of().noOcclusion().requiresCorrectToolForDrops().sound(SoundType.STONE)));
 
 
     //Vanilla Ore Trees
