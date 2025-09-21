@@ -1,4 +1,4 @@
-// 1.21.1	2025-09-16T17:32:59.6720836	Recipes
+// 1.21.1	2025-09-21T14:15:40.5846985	Recipes
 76a06610f694cadc5b5bb9a83aa136bd0d30b096 data/minecraft/advancement/recipes/misc/amethyst_shard.json
 114aaf3ab01116fe6df7199f3e766a79fd5e8d57 data/minecraft/advancement/recipes/misc/andesite.json
 9e1065ed1c2950268ff26deed65ee6b78e6b90c3 data/minecraft/advancement/recipes/misc/blackstone.json
@@ -47,6 +47,7 @@ f985e46e871ad85c14db7dcd6490d7fa8feb5f23 data/mysticaltrees/advancement/recipes/
 0860760060883d7bb603b05ea8f17b13dc04b7a6 data/mysticaltrees/advancement/recipes/misc/copper_amber.json
 99283bb5e70e1554be739c4defb3341c365f4467 data/mysticaltrees/advancement/recipes/misc/diamond_amber.json
 6a106073358533badbfe1b71205ed8b753146079 data/mysticaltrees/advancement/recipes/misc/dirt_amber.json
+20f22c3bd1c07092c9feb1eeecaa420b4d4e2334 data/mysticaltrees/advancement/recipes/misc/dye_amber.json
 3bcbd6e77a69dd4abaadd8b6e5a43b2c629e2a5c data/mysticaltrees/advancement/recipes/misc/emerald_amber.json
 4b7cd12cbbdd519d807c2213d75e29cd7bfb0340 data/mysticaltrees/advancement/recipes/misc/gold_amber.json
 05f06c9adbc28eff35250e30bec9d9368ab3bb91 data/mysticaltrees/advancement/recipes/misc/gravel_amber.json
@@ -64,6 +65,7 @@ eb48115f1e7f6880a2b4b7e057d53afe3d7f959f data/mysticaltrees/recipe/clay_amber.js
 d68676c632d52b610690ba25abd3ffc3bce1179d data/mysticaltrees/recipe/copper_amber.json
 7caf1f8083cc75e09ef1c72ef501f460719a7bc0 data/mysticaltrees/recipe/diamond_amber.json
 6fce6da28061ab3476f5540887ed8a275c4ccdba data/mysticaltrees/recipe/dirt_amber.json
+41b133f3c4d3d929732c9d152386e5059ffd1a24 data/mysticaltrees/recipe/dye_amber.json
 d9049b330b3dc7a1e4333e902a48273d078a86aa data/mysticaltrees/recipe/emerald_amber.json
 6d40fbbea0640bf59d05d80edd83dcb00cebf39a data/mysticaltrees/recipe/gold_amber.json
 a1e4eb76951f8509e19cfa602882ac81ddcadf88 data/mysticaltrees/recipe/gravel_amber.json

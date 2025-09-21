@@ -99,6 +99,24 @@ public class ModItems {
             () -> new Item(new Item.Properties()));
     public static final DeferredItem<Item> LAVA_ACORN = ITEMS.register("lava_acorn",
             () -> new Item(new Item.Properties().food(ModFoodProperties.ACORNS)));
+    public static final DeferredItem<Item> DYE_RESIN = ITEMS.register("dye_resin",
+            () -> new Item(new Item.Properties()));
+    public static final DeferredItem<Item> DYE_ACORN = ITEMS.register("dye_acorn",
+            () -> new Item(new Item.Properties().food(ModFoodProperties.ACORNS)){
+                private float time = 0;
+                @Override
+                public void appendHoverText(ItemStack stack, Item.TooltipContext context, List<Component> tooltipComponents, TooltipFlag tooltipFlag) {
+                    if (context.level() != null && context.level().isClientSide()) {
+                        String text = Component.translatable("tooltip.mysticaltrees.dye_acorn").getString();
+                        time += 0.001f;
+                        if (time > 1.0f) time = 0;
+                        tooltipComponents.add(Tooltips.RGBEachLetter(time, text, 0.01f));
+                    } else {
+                        tooltipComponents.add(Component.translatable("tooltip.mysticaltrees.dye_acorn"));
+                    }
+                    super.appendHoverText(stack, context, tooltipComponents, tooltipFlag);
+                }
+            });
 
 
     public static void register(IEventBus eventBus) {

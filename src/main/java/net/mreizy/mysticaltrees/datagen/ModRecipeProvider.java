@@ -277,6 +277,15 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .requires(Items.BUCKET)
                 .unlockedBy("has_acorn", has(ModItems.LAVA_ACORN)).save(recipeOutput);
 
+        // DYE
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.DYE_AMBER.get())
+                .pattern("ARA")
+                .pattern("RAR")
+                .pattern("ARA")
+                .define('A', ModItems.DYE_ACORN.get())
+                .define('R', ModItems.DYE_RESIN.get())
+                .unlockedBy("has_acorn", has(ModItems.DYE_ACORN)).save(recipeOutput);
+
 
 
         /*oreSmelting(recipeOutput, JADE_SMELTABLES, RecipeCategory.MISC, ModItems.JADE.get(), 0.25f, 200, "jade");

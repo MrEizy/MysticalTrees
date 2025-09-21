@@ -1,6 +1,7 @@
 package net.mreizy.mysticaltrees.blocks;
 
 import net.minecraft.util.ColorRGBA;
+import net.minecraft.util.valueproviders.UniformInt;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.*;
@@ -24,6 +25,7 @@ public class ModBlocks {
     //block entity saplings
     //public static final DeferredBlock<Block> TEST_SAPLING = registerBlock("test_sapling",
     //        ()-> new EtherSaplingOld(ModTreeGrowers.DIRT_OAK, BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_SAPLING), BigDecimal.TEN,BigDecimal.ONE));
+
 
     //Vanilla Ore Trees
     //Coal
@@ -212,6 +214,17 @@ public class ModBlocks {
     public static final DeferredBlock<Block> LAVA_OAK_SAPLING = registerBlock("lava_oak_sapling",
             () -> new EtherSapling(ModTreeGrowers.LAVA_OAK, BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_SAPLING),new BigDecimal("200"),new BigDecimal("0.1")));
     public static final DeferredBlock<Block> LAVA_AMBER = registerBlock("lava_amber",
+            () -> new ColoredFallingBlock(new ColorRGBA(13214124), BlockBehaviour.Properties.of().strength(0.6f, 0.6f).sound(SoundType.GRAVEL)));
+    //Dye
+    public static final DeferredBlock<Block> DYE_OAK_LOG = registerBlock("dye_oak_log",
+            () -> new ModFlammableRotatedPillarBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_LOG)));
+    public static final DeferredBlock<Block> DYE_OAK_WOOD = registerBlock("dye_oak_wood",
+            () -> new ModFlammableRotatedPillarBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_WOOD)));
+    public static final DeferredBlock<Block> DYE_OAK_LEAVES = registerBlock("dye_oak_leaves",
+            () -> new LeavesBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_LEAVES)));
+    public static final DeferredBlock<Block> DYE_OAK_SAPLING = registerBlock("dye_oak_sapling",
+            () -> new EtherSapling(ModTreeGrowers.DYE_OAK, BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_SAPLING),new BigDecimal("200"),new BigDecimal("0.1")));
+    public static final DeferredBlock<Block> DYE_AMBER = registerBlock("dye_amber",
             () -> new ColoredFallingBlock(new ColorRGBA(13214124), BlockBehaviour.Properties.of().strength(0.6f, 0.6f).sound(SoundType.GRAVEL)));
 
     private static <T extends Block> DeferredBlock<T> registerBlock(String name, Supplier<T> block) {

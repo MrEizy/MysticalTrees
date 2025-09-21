@@ -32,14 +32,10 @@ public class ModBlockEntities {
                     ModBlocks.CLAY_OAK_SAPLING.get(),
                     ModBlocks.GRAVEL_OAK_SAPLING.get(),
                     ModBlocks.STONE_OAK_SAPLING.get(),
-                    ModBlocks.DIRT_OAK_SAPLING.get()
-
-
-
-
+                    ModBlocks.DIRT_OAK_SAPLING.get(),
+                    ModBlocks.DYE_OAK_SAPLING.get()
 
                     ).build(null));
-
 
     public static void register(IEventBus eventBus){
 

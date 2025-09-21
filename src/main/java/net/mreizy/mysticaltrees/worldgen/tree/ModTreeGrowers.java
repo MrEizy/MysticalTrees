@@ -41,6 +41,8 @@ public class ModTreeGrowers {
             Optional.empty(), Optional.of(ModConfiguredFeatures.SAND_OAK_KEY), Optional.empty());
     public static final TreeGrower LAVA_OAK = new TreeGrower(MysticalTrees.MOD_ID + ":lava_oak",
             Optional.empty(), Optional.of(ModConfiguredFeatures.LAVA_OAK_KEY), Optional.empty());
+    public static final TreeGrower DYE_OAK = new TreeGrower(MysticalTrees.MOD_ID + ":dye_oak",
+            Optional.empty(), Optional.of(ModConfiguredFeatures.DYE_OAK_KEY), Optional.empty());
 
 
 }

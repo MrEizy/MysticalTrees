@@ -177,5 +177,15 @@ public class lang extends LanguageProvider {
         add("item.mysticaltrees.lava_resin", "Lava Resin");
         add("item.mysticaltrees.lava_acorn", "Lava Acorn");
 
+        // DYE
+        add("block.mysticaltrees.dye_oak_log", "Dye Oak Log");
+        add("block.mysticaltrees.dye_oak_wood", "Dye Oak Wood");
+        add("block.mysticaltrees.dye_oak_leaves", "Dye Oak Leaves");
+        add("block.mysticaltrees.dye_oak_sapling", "Dye Oak Sapling");
+        add("block.mysticaltrees.dye_amber", "Dye Amber");
+        add("item.mysticaltrees.dye_resin", "Dye Resin");
+        add("item.mysticaltrees.dye_acorn", "Dye Acorn");
+        add("tooltip.mysticaltrees.dye_acorn", "Omniscient & Omnipresent Dye Acorn");
+
     }
 }

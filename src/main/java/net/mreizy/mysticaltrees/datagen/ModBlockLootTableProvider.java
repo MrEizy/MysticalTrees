@@ -173,6 +173,14 @@ public class ModBlockLootTableProvider extends BlockLootSubProvider {
         dropSelf(ModBlocks.LAVA_AMBER.get());
         dropSelf(ModBlocks.LAVA_OAK_SAPLING.get());
 
+        // DYE
+        add(ModBlocks.DYE_OAK_LEAVES.get(), createMystLeafDrop(ModBlocks.DYE_OAK_LEAVES.get(), ModBlocks.DYE_OAK_SAPLING.get(),
+                NORMAL_LEAVES_SAPLING_CHANCES, ModItems.DYE_ACORN.get(), 0.15f));
+        add(ModBlocks.DYE_OAK_LOG.get(), createMystLogDrop(ModBlocks.DYE_OAK_LOG.get(), ModItems.DYE_RESIN.get()));
+        dropSelf(ModBlocks.DYE_OAK_WOOD.get());
+        dropSelf(ModBlocks.DYE_AMBER.get());
+        dropSelf(ModBlocks.DYE_OAK_SAPLING.get());
+
     }
 
     protected LootTable.Builder createMystLogDrop(Block mysticalLog, Item coalResin) {

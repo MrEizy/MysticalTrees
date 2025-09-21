@@ -33,6 +33,8 @@
     "mysticaltrees:gravel_oak_log",
     "mysticaltrees:gravel_oak_wood",
     "mysticaltrees:lava_oak_log",
-    "mysticaltrees:lava_oak_wood"
+    "mysticaltrees:lava_oak_wood",
+    "mysticaltrees:dye_oak_log",
+    "mysticaltrees:dye_oak_wood"
   ]
 }

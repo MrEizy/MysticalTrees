@@ -29,6 +29,11 @@
   "block.mysticaltrees.dirt_oak_log": "Dirt Oak Log",
   "block.mysticaltrees.dirt_oak_sapling": "Dirt Oak Sapling",
   "block.mysticaltrees.dirt_oak_wood": "Dirt Oak Wood",
+  "block.mysticaltrees.dye_amber": "Dye Amber",
+  "block.mysticaltrees.dye_oak_leaves": "Dye Oak Leaves",
+  "block.mysticaltrees.dye_oak_log": "Dye Oak Log",
+  "block.mysticaltrees.dye_oak_sapling": "Dye Oak Sapling",
+  "block.mysticaltrees.dye_oak_wood": "Dye Oak Wood",
   "block.mysticaltrees.emerald_amber": "Emerald Amber",
   "block.mysticaltrees.emerald_oak_leaves": "Emerald Oak Leaves",
   "block.mysticaltrees.emerald_oak_log": "Emerald Oak Log",
@@ -97,6 +102,8 @@
   "item.mysticaltrees.diamond_resin": "Diamond Resin",
   "item.mysticaltrees.dirt_acorn": "Dirt Acorn",
   "item.mysticaltrees.dirt_resin": "Dirt Resin",
+  "item.mysticaltrees.dye_acorn": "Dye Acorn",
+  "item.mysticaltrees.dye_resin": "Dye Resin",
   "item.mysticaltrees.emerald_acorn": "Emerald Acorn",
   "item.mysticaltrees.emerald_resin": "Emerald Resin",
   "item.mysticaltrees.gold_acorn": "Gold Acorn",
@@ -127,5 +134,6 @@
   "mysticaltrees.configuration.section.mysticaltrees.common.toml": "All Configs for Mystical Trees",
   "mysticaltrees.configuration.section.mysticaltrees.common.toml.title": "All Configs for Mystical Trees",
   "mysticaltrees.configuration.title": "Mystical Trees",
+  "tooltip.mysticaltrees.dye_acorn": "Omniscient & Omnipresent Dye Acorn",
   "tooltip.mysticaltrees.stone_acorn": "Omniscient & Omnipresent Stone Acorn"
 }

@@ -1,4 +1,4 @@
-// 1.21.1	2025-09-16T17:32:59.6588276	Item Models: mysticaltrees
+// 1.21.1	2025-09-21T14:15:40.5724093	Item Models: mysticaltrees
 32aa7677b7404ff75c51b7beaf1a117462dc596e assets/mysticaltrees/models/item/amethyst_acorn.json
 ab1969043ba05a76934cfce28ad46a99a2c0991b assets/mysticaltrees/models/item/amethyst_oak_sapling.json
 bba29b562343494a25eb4e08141a5b659a38d2dd assets/mysticaltrees/models/item/amethyst_resin.json
@@ -17,6 +17,9 @@ dfc791d27a102a7d5d317a6e365810b74a56b661 assets/mysticaltrees/models/item/diamon
 56154a34b623a122972bcc95ffcc54ce0e435c0d assets/mysticaltrees/models/item/dirt_acorn.json
 211508f2314a6136ee39d58618d189dafad0c3a7 assets/mysticaltrees/models/item/dirt_oak_sapling.json
 a3ea0d4f138f79c99952b78cc324ca8fd2111614 assets/mysticaltrees/models/item/dirt_resin.json
+d9875efbc7c5e003207c91d31d590a2f56e34a2d assets/mysticaltrees/models/item/dye_acorn.json
+585b40255a0d2d017b1c270bea347ac0f0e2425d assets/mysticaltrees/models/item/dye_oak_sapling.json
+534ac25dfd4aca71a9190a33308abe6a896638a1 assets/mysticaltrees/models/item/dye_resin.json
 ec3058e30db74e8bb0b30a2ba0667ad828637c6a assets/mysticaltrees/models/item/emerald_acorn.json
 9593e2cf4e143b9ab6104606aa2e0e3ffa6c689e assets/mysticaltrees/models/item/emerald_oak_sapling.json
 91e5caccdedfd955d67f6f03ea4dbc81e4b1ca2e assets/mysticaltrees/models/item/emerald_resin.json

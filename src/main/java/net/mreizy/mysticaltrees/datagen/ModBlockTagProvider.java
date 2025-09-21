@@ -56,7 +56,9 @@ public class ModBlockTagProvider extends BlockTagsProvider {
                 .add(ModBlocks.GRAVEL_OAK_LOG.get())
                 .add(ModBlocks.GRAVEL_OAK_WOOD.get())
                 .add(ModBlocks.LAVA_OAK_LOG.get())
-                .add(ModBlocks.LAVA_OAK_WOOD.get());
+                .add(ModBlocks.LAVA_OAK_WOOD.get())
+                .add(ModBlocks.DYE_OAK_LOG.get())
+                .add(ModBlocks.DYE_OAK_WOOD.get());
 
     }
 }

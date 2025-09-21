@@ -91,6 +91,11 @@ public class ModItemModelProvider extends ItemModelProvider {
         basicItem(ModItems.LAVA_RESIN.get());
         basicItem(ModItems.LAVA_ACORN.get());
 
+        // DYE
+        saplingItem(ModBlocks.DYE_OAK_SAPLING);
+        basicItem(ModItems.DYE_RESIN.get());
+        basicItem(ModItems.DYE_ACORN.get());
+
 
 
     }

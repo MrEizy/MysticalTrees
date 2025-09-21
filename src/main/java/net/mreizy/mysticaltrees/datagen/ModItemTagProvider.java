@@ -57,7 +57,9 @@ public class ModItemTagProvider extends ItemTagsProvider {
                 .add(ModBlocks.GRAVEL_OAK_LOG.get().asItem())
                 .add(ModBlocks.GRAVEL_OAK_WOOD.get().asItem())
                 .add(ModBlocks.LAVA_OAK_LOG.get().asItem())
-                .add(ModBlocks.LAVA_OAK_WOOD.get().asItem());
+                .add(ModBlocks.LAVA_OAK_WOOD.get().asItem())
+                .add(ModBlocks.DYE_OAK_LOG.get().asItem())
+                .add(ModBlocks.DYE_OAK_WOOD.get().asItem());
 
     }
 }
