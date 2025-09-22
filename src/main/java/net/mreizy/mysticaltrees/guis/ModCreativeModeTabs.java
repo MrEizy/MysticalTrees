@@ -23,6 +23,9 @@ public class ModCreativeModeTabs {
                     .displayItems((itemDisplayParameters, output) -> {
                         output.accept(ModBlocks.MAIN_PEDESTAL);
                         output.accept(ModBlocks.SIDE_PEDESTAL);
+                        output.accept(ModItems.KNIFE);
+                        output.accept(ModItems.VIAL_EMPTY);
+                        output.accept(ModItems.VIAL_BLOOD);
 
 
 

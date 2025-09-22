@@ -26,6 +26,12 @@ public class lang extends LanguageProvider {
         add("block.mysticaltrees.main_pedestal", "Main Pedestal");
         add("block.mysticaltrees.side_pedestal", "Side Pedestal");
         add("blockentity.mysticaltrees.pedestal", "Side Pedestal");
+        add("jei.mysticaltrees.infusion_crafting", "Infusion Crafting");
+
+
+        add("item.mysticaltrees.knife", "Knife");
+        add("item.mysticaltrees.vial_blood", "Vial Blood");
+        add("item.mysticaltrees.vial_empty", "Vial");
 
         // COAL
         add("block.mysticaltrees.coal_oak_log", "Coal Oak Log");

@@ -18,6 +18,14 @@ public class ModItemModelProvider extends ItemModelProvider {
 
     @Override
     protected void registerModels() {
+
+        basicItem(ModItems.KNIFE.get());
+        basicItem(ModItems.VIAL_BLOOD.get());
+        basicItem(ModItems.VIAL_EMPTY.get());
+
+
+
+
         // COAL
         saplingItem(ModBlocks.COAL_OAK_SAPLING);
         basicItem(ModItems.COAL_RESIN.get());

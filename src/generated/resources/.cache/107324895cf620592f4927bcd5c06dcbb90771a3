@@ -1,4 +1,4 @@
-// 1.21.1	2025-09-21T17:06:24.8481868	Item Models: mysticaltrees
+// 1.21.1	2025-09-22T14:06:43.1275989	Item Models: mysticaltrees
 32aa7677b7404ff75c51b7beaf1a117462dc596e assets/mysticaltrees/models/item/amethyst_acorn.json
 ab1969043ba05a76934cfce28ad46a99a2c0991b assets/mysticaltrees/models/item/amethyst_oak_sapling.json
 bba29b562343494a25eb4e08141a5b659a38d2dd assets/mysticaltrees/models/item/amethyst_resin.json
@@ -38,6 +38,7 @@ e033effe0e7633e1e4b74c6856d453da3cb684fc assets/mysticaltrees/models/item/ice_re
 eef7abc585fe27df16c428116fc04494d7fec361 assets/mysticaltrees/models/item/iron_acorn.json
 07cb55cf10adb7af1358583018e1d71840843777 assets/mysticaltrees/models/item/iron_oak_sapling.json
 6c93c31ff5536b6ee7ae0ced462d754c8ee8a4e7 assets/mysticaltrees/models/item/iron_resin.json
+59b898288a711e10ffa0644fb6facdcf7d780f8f assets/mysticaltrees/models/item/knife.json
 886cdfb3b1e511e3195ced3de033ae8ec4f97763 assets/mysticaltrees/models/item/lapis_acorn.json
 56d9a1b716a7747a77ebd4bf6f003dfb1993ef4d assets/mysticaltrees/models/item/lapis_oak_sapling.json
 6642aea2dc2be18f8f8ec3b33f06756051810ed4 assets/mysticaltrees/models/item/lapis_resin.json
@@ -59,6 +60,8 @@ b35d3089972c4b5ecc01607a1106722641451d3b assets/mysticaltrees/models/item/sand_r
 430c5142825f63310a6cc2085b6079aa6803b517 assets/mysticaltrees/models/item/stone_acorn.json
 b83b719a187406a62c9a4acd2a322ea74ad55a5b assets/mysticaltrees/models/item/stone_oak_sapling.json
 5a4204559710f0dc354ab7bb150eb1083dec6eda assets/mysticaltrees/models/item/stone_resin.json
+982467e8a636206ad4404d8e39a6df223ef975be assets/mysticaltrees/models/item/vial_blood.json
+6b2a22d35536ccacb4fd50b8594cd8f060044f99 assets/mysticaltrees/models/item/vial_empty.json
 1bbdbcf9dc3493bc0533490f120ace04b6283e4a assets/mysticaltrees/models/item/water_acorn.json
 480676c6520431158ef1ee10a0c00267ad3832eb assets/mysticaltrees/models/item/water_oak_sapling.json
 7e59d31b50ab73dd096005a4c054e42a20a4a534 assets/mysticaltrees/models/item/water_resin.json

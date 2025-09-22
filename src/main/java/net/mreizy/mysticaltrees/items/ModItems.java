@@ -4,6 +4,9 @@ import net.minecraft.network.chat.Component;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.TooltipFlag;
+import net.mreizy.mysticaltrees.items.custom.BloodVialItem;
+import net.mreizy.mysticaltrees.items.custom.EmptyVialItem;
+import net.mreizy.mysticaltrees.items.custom.KnifeItem;
 import net.mreizy.mysticaltrees.util.Tooltips;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.fml.common.Mod;
@@ -16,6 +19,15 @@ import java.util.List;
 public class ModItems {
     public static final DeferredRegister.Items ITEMS = DeferredRegister.createItems(MysticalTrees.MOD_ID);
 
+    public static final DeferredItem<Item> KNIFE = ITEMS.register("knife",
+            () -> new KnifeItem(new Item.Properties().durability(128)));
+    public static final DeferredItem<Item> VIAL_BLOOD = ITEMS.register("vial_blood",
+            () -> new BloodVialItem(new Item.Properties().stacksTo(1)));
+    public static final DeferredItem<Item> VIAL_EMPTY = ITEMS.register("vial_empty",
+            () -> new EmptyVialItem(new Item.Properties().stacksTo(16)));
+
+
+
     public static final DeferredItem<Item> COAL_RESIN = ITEMS.register("coal_resin",
             () -> new Item(new Item.Properties()));
     public static final DeferredItem<Item> COAL_ACORN = ITEMS.register("coal_acorn",
@@ -24,7 +36,6 @@ public class ModItems {
             () -> new Item(new Item.Properties()));
     public static final DeferredItem<Item> COPPER_ACORN = ITEMS.register("copper_acorn",
             () -> new Item(new Item.Properties().food(ModFoodProperties.ACORNS)));
-
     public static final DeferredItem<Item> IRON_RESIN = ITEMS.register("iron_resin",
             () -> new Item(new Item.Properties()));
     public static final DeferredItem<Item> IRON_ACORN = ITEMS.register("iron_acorn",

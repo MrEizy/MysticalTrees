@@ -30,7 +30,7 @@ public class PedestalRecipeCategory implements IRecipeCategory<PedestalRecipe> {
 
     public PedestalRecipeCategory(IGuiHelper helper) {
         this.background = helper.createDrawable(TEXTURE, 0, 0, 144, 81);
-        this.icon = helper.createDrawableIngredient(VanillaTypes.ITEM_STACK, new ItemStack(ModBlocks.SIDE_PEDESTAL));
+        this.icon = helper.createDrawableIngredient(VanillaTypes.ITEM_STACK, new ItemStack(ModBlocks.MAIN_PEDESTAL));
     }
 
     @Override
@@ -40,7 +40,7 @@ public class PedestalRecipeCategory implements IRecipeCategory<PedestalRecipe> {
 
     @Override
     public Component getTitle() {
-        return Component.translatable("block.mysticaltrees.side_pedestal");
+        return Component.translatable("jei.mysticaltrees.infusion_crafting");
     }
 
     @Override
@@ -90,9 +90,20 @@ public class PedestalRecipeCategory implements IRecipeCategory<PedestalRecipe> {
 
     @Override
     public void draw(PedestalRecipe recipe, IRecipeSlotsView recipeSlotsView, GuiGraphics guiGraphics, double mouseX, double mouseY) {
-        // Draw the background
         background.draw(guiGraphics);
 
-        // You can add custom drawing here if needed (like arrows, etc.)
+        String etherRequired = recipe.getEther();
+        if (etherRequired != null && !etherRequired.isEmpty() && !etherRequired.equals("0")) {
+            String etherText = etherRequired + " Ether";
+            net.minecraft.client.Minecraft minecraft = net.minecraft.client.Minecraft.getInstance();
+            int textWidth = minecraft.font.width(etherText);
+            int xPos = 113 + 8 - (textWidth / 2);
+            int yPos = 25 - 12;
+
+            // Draw shadow first
+            guiGraphics.drawString(minecraft.font, etherText, xPos + 1, yPos + 1, 0x000000, false);
+            // Draw main text
+            guiGraphics.drawString(minecraft.font, etherText, xPos, yPos, 0x55FF55, false);
+        }
     }
 }
