@@ -22,5 +22,10 @@ public class ModPayloads {
                 RequestChunkEtherData.STREAM_CODEC,
                 RequestChunkEtherData::handlePayload
         );
+        registrar.playToClient(
+                PedestalCraftCountS2C.TYPE,
+                PedestalCraftCountS2C.STREAM_CODEC,
+                ClientPayloadHandler::handleCountOnClient
+        );
     }
 }
