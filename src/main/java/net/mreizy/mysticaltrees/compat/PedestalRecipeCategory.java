@@ -22,7 +22,6 @@ public class PedestalRecipeCategory implements IRecipeCategory<PedestalRecipe> {
     public static final ResourceLocation UID = ResourceLocation.fromNamespaceAndPath(MysticalTrees.MOD_ID, "infusion");
     public static final ResourceLocation TEXTURE = ResourceLocation.fromNamespaceAndPath(MysticalTrees.MOD_ID, "textures/jei/infusion.png");
 
-
     public static final RecipeType<PedestalRecipe> PEDESTAL_RECIPE_TYPE =
             new RecipeType<>(UID, PedestalRecipe.class);
 
@@ -30,7 +29,7 @@ public class PedestalRecipeCategory implements IRecipeCategory<PedestalRecipe> {
     private final IDrawable icon;
 
     public PedestalRecipeCategory(IGuiHelper helper) {
-        this.background = helper.createDrawable(TEXTURE, 0, 0, 176, 86);
+        this.background = helper.createDrawable(TEXTURE, 0, 0, 144, 81);
         this.icon = helper.createDrawableIngredient(VanillaTypes.ITEM_STACK, new ItemStack(ModBlocks.SIDE_PEDESTAL));
     }
 
@@ -49,16 +48,51 @@ public class PedestalRecipeCategory implements IRecipeCategory<PedestalRecipe> {
         return icon;
     }
 
+
+    @Override
+    public int getWidth() {
+        return 144; // Width of your background texture
+    }
+
+    @Override
+    public int getHeight() {
+        return 81; // Height of your background texture
+    }
+
     @Override
     public void setRecipe(IRecipeLayoutBuilder builder, PedestalRecipe recipe, IFocusGroup focuses) {
-        builder.addSlot(RecipeIngredientRole.INPUT, 54, 34).addIngredients(recipe.getIngredients().get(0));
+        // Main pedestal input (center slot)
+        builder.addSlot(RecipeIngredientRole.INPUT, 33, 33).addIngredients(recipe.getIngredients().get(0));
 
-        builder.addSlot(RecipeIngredientRole.OUTPUT, 104, 34).addItemStack(recipe.getResultItem(null));
+        // Side pedestal inputs (3x3 grid around the center)
+        int[][] sideSlots = {
+                {7, 7},  // top-left
+                {33, 1},  // top-center
+                {59, 7}, // top-right
+                {1, 33},  // middle-left
+                {59, 59}, // middle-right
+                {33, 64},  // bottom-left
+                {7, 59},  // bottom-center
+                {65, 33}  // bottom-right
+        };
+
+        for (int i = 1; i < recipe.getIngredients().size(); i++) {
+            if (i - 1 < sideSlots.length) {
+                int[] pos = sideSlots[i - 1];
+                builder.addSlot(RecipeIngredientRole.INPUT, pos[0], pos[1])
+                        .addIngredients(recipe.getIngredients().get(i));
+            }
+        }
+
+        // Output slot (right side)
+        builder.addSlot(RecipeIngredientRole.OUTPUT, 123, 33).addItemStack(recipe.getResultItem(null));
     }
 
     @Override
     public void draw(PedestalRecipe recipe, IRecipeSlotsView recipeSlotsView, GuiGraphics guiGraphics, double mouseX, double mouseY) {
-        IRecipeCategory.super.draw(recipe, recipeSlotsView, guiGraphics, mouseX, mouseY);
+        // Draw the background
         background.draw(guiGraphics);
+
+        // You can add custom drawing here if needed (like arrows, etc.)
     }
 }

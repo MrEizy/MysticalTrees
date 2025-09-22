@@ -17,8 +17,6 @@ import java.util.List;
 
 @JeiPlugin
 public class JEIModPlugin implements IModPlugin {
-
-
     @Override
     public ResourceLocation getPluginUid() {
         return ResourceLocation.fromNamespaceAndPath(MysticalTrees.MOD_ID, "jei_plugin");
@@ -34,7 +32,15 @@ public class JEIModPlugin implements IModPlugin {
         RecipeManager recipeManager = Minecraft.getInstance().level.getRecipeManager();
 
         List<PedestalRecipe> pedestalRecipes = recipeManager
-                .getAllRecipesFor(ModRecipes.PEDESTAL_TYPE.get()).stream().map(RecipeHolder::value).toList();
+                .getAllRecipesFor(ModRecipes.PEDESTAL_TYPE.get()).stream()
+                .map(RecipeHolder::value)
+                .toList();
+
         registration.addRecipes(PedestalRecipeCategory.PEDESTAL_RECIPE_TYPE, pedestalRecipes);
+    }
+
+    @Override
+    public void registerGuiHandlers(IGuiHandlerRegistration registration) {
+        // Register any GUIs if you have them
     }
 }
