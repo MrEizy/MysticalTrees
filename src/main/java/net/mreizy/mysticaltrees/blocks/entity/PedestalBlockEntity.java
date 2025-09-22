@@ -125,11 +125,16 @@ public class PedestalBlockEntity extends BlockEntity implements MenuProvider {
             spawnVisualLightningBolt((ServerLevel) level, blockPos);
             spawnExplosionParticles((ServerLevel) level);
         } else {
+            testRecipe();
             countUp();
             spawnCraftingParticles(level);
         }
     }
-
+    private void testRecipe(){
+        Optional<RecipeHolder<PedestalRecipe>> recipe = getCurrentRecipe();
+        if(recipe.isEmpty()) return;
+        System.out.println("ether: "+recipe.get().value().ether());
+    }
     private void countUp() {
         count++;
         PacketDistributor.sendToAllPlayers(new PedestalCraftCountS2C("Count Up", this.getBlockPos(), count));

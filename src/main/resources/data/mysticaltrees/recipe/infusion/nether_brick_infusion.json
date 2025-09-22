@@ -33,5 +33,6 @@
   ],
   "result": {
     "id": "minecraft:slime_ball"
-  }
+  },
+  "ether": "200"
 }
