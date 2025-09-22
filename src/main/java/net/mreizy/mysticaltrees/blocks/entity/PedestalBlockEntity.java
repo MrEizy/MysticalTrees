@@ -59,7 +59,7 @@ public class PedestalBlockEntity extends BlockEntity implements MenuProvider {
     public int count = 0;
     private int maxCount = 80; // 4 seconds
 
-    public EntityType<?> entityLastSacrificed = null;
+    // REMOVED: entityLastSacrificed field
 
     public static List<Vector2i> offsets = List.of(
             new Vector2i(3, 0),
@@ -77,9 +77,7 @@ public class PedestalBlockEntity extends BlockEntity implements MenuProvider {
         super(ModBlockEntities.MAIN_PEDESTAL_BE.get(), pPos, pBlockState);
     }
 
-    public void setSacrificedEntity(EntityType<?> entityType) {
-        this.entityLastSacrificed = entityType;
-    }
+    // REMOVED: setSacrificedEntity method
 
     public void clearContents() {
         inventory.setStackInSlot(0, ItemStack.EMPTY);
@@ -98,12 +96,14 @@ public class PedestalBlockEntity extends BlockEntity implements MenuProvider {
     protected void saveAdditional(CompoundTag pTag, HolderLookup.Provider pRegistries) {
         super.saveAdditional(pTag, pRegistries);
         pTag.put("inventory", inventory.serializeNBT(pRegistries));
+        // REMOVED: entity saving
     }
 
     @Override
     protected void loadAdditional(CompoundTag pTag, HolderLookup.Provider pRegistries) {
         super.loadAdditional(pTag, pRegistries);
         inventory.deserializeNBT(pRegistries, pTag.getCompound("inventory"));
+        // REMOVED: entity loading
     }
 
     public float getRenderingRotation() {
@@ -115,7 +115,7 @@ public class PedestalBlockEntity extends BlockEntity implements MenuProvider {
     }
 
     public void tick(Level level, BlockPos blockPos, BlockState blockState) {
-        if (!hasRecipe() || entityLastSacrificed == null)
+        if (!hasRecipe()) // REMOVED: || entityLastSacrificed == null
             return;
 
         if(countFinished()) {
@@ -137,6 +137,7 @@ public class PedestalBlockEntity extends BlockEntity implements MenuProvider {
 
 
     private void spawnVisualLightningBolt(ServerLevel level, BlockPos blockPos) {
+        // REMOVED: Lightning bolt spawning (optional - you can keep or remove)
         EntityType.LIGHTNING_BOLT.spawn(level, blockPos, MobSpawnType.TRIGGERED).setVisualOnly(true);
     }
 
@@ -185,7 +186,7 @@ public class PedestalBlockEntity extends BlockEntity implements MenuProvider {
                                         inventory.getStackInSlot(0);
                             } else {
                                 return ItemStack.EMPTY;
-                            }}).toList(), entityLastSacrificed), level);
+                            }}).toList()), level); // REMOVED: entityLastSacrificed parameter
     }
 
     private void exchangeItemInMainPedestal() {

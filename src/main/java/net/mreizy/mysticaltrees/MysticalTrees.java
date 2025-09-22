@@ -85,6 +85,7 @@ public class MysticalTrees {
         @SubscribeEvent
         public static void registerPayloads(RegisterPayloadHandlersEvent event){
             ModPayloads.registerPayloads(event);
+
         }
     }
 }

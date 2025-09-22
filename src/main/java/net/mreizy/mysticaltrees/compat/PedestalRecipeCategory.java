@@ -55,4 +55,10 @@ public class PedestalRecipeCategory implements IRecipeCategory<PedestalRecipe> {
 
         builder.addSlot(RecipeIngredientRole.OUTPUT, 104, 34).addItemStack(recipe.getResultItem(null));
     }
+
+    @Override
+    public void draw(PedestalRecipe recipe, IRecipeSlotsView recipeSlotsView, GuiGraphics guiGraphics, double mouseX, double mouseY) {
+        IRecipeCategory.super.draw(recipe, recipeSlotsView, guiGraphics, mouseX, mouseY);
+        background.draw(guiGraphics);
+    }
 }

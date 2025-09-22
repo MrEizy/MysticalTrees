@@ -16,12 +16,12 @@ public class ModRecipes {
             DeferredRegister.create(Registries.RECIPE_TYPE, MysticalTrees.MOD_ID);
 
     public static final DeferredHolder<RecipeSerializer<?>, RecipeSerializer<PedestalRecipe>> PEDESTAL_SERIALIZER =
-            SERIALIZERS.register("pedestal_crafting", PedestalRecipe.Serializer::new);
+            SERIALIZERS.register("infusion", PedestalRecipe.Serializer::new);
     public static final DeferredHolder<RecipeType<?>, RecipeType<PedestalRecipe>> PEDESTAL_TYPE =
-            TYPES.register("pedestal_crafting", () -> new RecipeType<PedestalRecipe>() {
+            TYPES.register("infusion", () -> new RecipeType<PedestalRecipe>() {
                 @Override
                 public String toString() {
-                    return "pedestal_crafting";
+                    return "infusion";
                 }
             });
 

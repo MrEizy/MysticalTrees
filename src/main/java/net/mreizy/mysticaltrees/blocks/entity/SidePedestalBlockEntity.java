@@ -77,7 +77,7 @@ public class SidePedestalBlockEntity extends BlockEntity implements MenuProvider
 
     @Override
     public Component getDisplayName() {
-        return Component.translatable("blockentity.livestreammods.pedestal");
+        return Component.translatable("blockentity.mysticaltrees.pedestal");
     }
 
     @Nullable
