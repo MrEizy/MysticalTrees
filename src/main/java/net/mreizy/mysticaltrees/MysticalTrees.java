@@ -7,6 +7,7 @@ import net.mreizy.mysticaltrees.network.ModPayloads;
 import net.mreizy.mysticaltrees.recipe.ModRecipes;
 import net.mreizy.mysticaltrees.screen.ModMenuTypes;
 import net.mreizy.mysticaltrees.util.ModAttachments;
+import net.neoforged.fml.common.EventBusSubscriber;
 import net.neoforged.neoforge.client.event.RegisterMenuScreensEvent;
 import net.mreizy.mysticaltrees.guis.ModCreativeModeTabs;
 import net.neoforged.neoforge.client.gui.ConfigurationScreen;
@@ -74,7 +75,8 @@ public class MysticalTrees {
     }
 
     // You can use EventBusSubscriber to automatically register all static methods in the class annotated with @SubscribeEvent
-    public static class ClientModEvents {
+    @EventBusSubscriber(modid = MysticalTrees.MOD_ID)
+    public static class ModEvents {
         @SubscribeEvent
         public static void onClientSetup(FMLClientSetupEvent event) {
 
