@@ -2,6 +2,7 @@ package net.mreizy.mysticaltrees;
 
 import net.mreizy.mysticaltrees.blocks.ModBlockEntities;
 import net.mreizy.mysticaltrees.blocks.ModBlocks;
+import net.mreizy.mysticaltrees.commands.EtherCommand;
 import net.mreizy.mysticaltrees.items.ModItems;
 import net.mreizy.mysticaltrees.network.ModPayloads;
 import net.mreizy.mysticaltrees.recipe.ModRecipes;
@@ -12,6 +13,7 @@ import net.neoforged.neoforge.client.event.RegisterMenuScreensEvent;
 import net.mreizy.mysticaltrees.guis.ModCreativeModeTabs;
 import net.neoforged.neoforge.client.gui.ConfigurationScreen;
 import net.neoforged.neoforge.client.gui.IConfigScreenFactory;
+import net.neoforged.neoforge.event.RegisterCommandsEvent;
 import net.neoforged.neoforge.network.event.RegisterPayloadHandlersEvent;
 import org.slf4j.Logger;
 
@@ -77,6 +79,13 @@ public class MysticalTrees {
     // You can use EventBusSubscriber to automatically register all static methods in the class annotated with @SubscribeEvent
     @EventBusSubscriber(modid = MysticalTrees.MOD_ID)
     public static class ModEvents {
+
+
+        @SubscribeEvent
+        public static void registerCommands(RegisterCommandsEvent event) {
+            EtherCommand.register(event.getDispatcher());
+        }
+
         @SubscribeEvent
         public static void onClientSetup(FMLClientSetupEvent event) {
 
